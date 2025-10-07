@@ -60,6 +60,9 @@
     font-style: italic;
   }
 
+
+
+
 * {
     margin: 0;
   }
@@ -70,23 +73,23 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    gap: 2vw;
     height: 8vh;
 
-    position: fixed;       /* makes it float and stay in one place */
-    top: 0;                /* stick to top of page */
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;           /* full width */
-    height: 8vh;           /* your existing height */
+    width: 100%;
+    height: 8vh;
 
-    transition: all 0.5s ease; /* smooth animation */
+    transition: all 0.5s ease;
 }
 
 .header:hover {
-    background-color: white;   /* background turns white */
+    background-color: white;
 }
 
 .header > a {
-    padding-inline: 2vw;
     color: #FFFFFF;
     color: white;
     font-size: 2rem;
@@ -94,11 +97,18 @@
     font-weight: 100;
     text-decoration: none;
     align-self: flex-start;
-    transition: all 0.5s ease; /* smooth animation */
+    transition: all 0.5s ease;
 }
 
 .header:hover a{
-    color: black;   /* background turns white */
+    color: black;
+}
+
+.header > a.language-change {
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+    font-size: 2rem;
 }
 
 .hero-section {
