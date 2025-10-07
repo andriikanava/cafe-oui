@@ -1,0 +1,125 @@
+/* ------------------- Fonts ------------------- */
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+  }
+
+* {
+    margin: 0;
+  }
+
+.header {
+    grid-column: 1/5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 8vh;
+
+    position: fixed;       /* makes it float and stay in one place */
+    top: 0;                /* stick to top of page */
+    left: 0;
+    width: 100%;           /* full width */
+    height: 8vh;           /* your existing height */
+
+    transition: all 0.5s ease; /* smooth animation */
+}
+
+.header:hover {
+    background-color: white;   /* background turns white */
+}
+
+.header > a {
+    padding-inline: 2vw;
+    color: #FFFFFF;
+    color: white;
+    font-size: 2rem;
+    font-family: "Circular";
+    font-weight: 100;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: all 0.5s ease; /* smooth animation */
+}
+
+.header:hover a{
+    color: black;   /* background turns white */
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/f68e70c872fdc53439e4f0fb2a0eb47bc512f60a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-title {
+    color: white;
+    font-size: 5rem;
+    font-family: "Circular";
+    font-style: italic;
+    font-weight: 100;
+}
+
