@@ -67,6 +67,8 @@
     margin: 0;
   }
 
+/* ------------------- Header ------------------- */
+
 .header {
     grid-column: 1/5;
     display: flex;
@@ -111,6 +113,9 @@
     font-size: 2rem;
 }
 
+
+/* ------------------- Hero ------------------- */
+
 .hero-section {
     height: 100vh;
     width: 100vw;
@@ -133,3 +138,171 @@
     font-weight: 100;
 }
 
+/* ------------------- Main Dishes ------------------- */
+
+.main-dishes {
+    height: 200vh;
+    width: 100vw;
+    background-color: #00657C;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.main-dishes .menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 3vw;
+    padding-top: 1rem;
+}
+
+.main-dishes .menu-title h2 {
+    color: white;
+    font-size: 4vw;
+    font-family: "Circular";
+    font-style: italic;
+    font-weight: 500;
+}
+
+.main-dishes .menu-title .horizontal-line {
+    width: 100%;      /* во всю ширину экрана */
+    height: 1px;      /* толщина линии */
+    background-color: white; /* цвет линии */
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.dish-box {
+    padding-inline: 4vw;
+}
+
+.dish-title .vertical-line {
+    width: 1px;      /* во всю ширину экрана */
+    height: 4rem;     /* толщина линии */
+    background-color: white; /* цвет линии */
+}
+
+.dish-title {
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.dish-title h3 {
+    color: white;
+    font-size: 2vw;
+    font-family: "Circular";
+    font-style: italic;
+    font-weight: 200;
+}
+
+.pain-box img {
+    object-fit: cover;
+    max-width: 35vw;
+    padding-top: 5rem;
+    padding: 0;
+}
+
+.pain-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3vh;
+
+}
+
+.dish-name-box {
+  background-color: #EDE5BB;
+  width: fit-content;
+  height: fit-content;
+  padding-inline: 1vw;
+}
+
+.pain-box .dish-name-box {
+  padding-left: 4vw;
+  padding-right: 2vw;
+  padding-block: 1vw;
+  margin-left: -2vw;
+}
+
+.dish-name-box h3 {
+  font-family: "Circular";
+  color: #074C5C;
+  line-height: 2vw;
+  font-weight: 100;
+  font-size: 1vw;
+}
+.salad-box {
+  padding-top: 3vh;
+  display: grid;
+  grid-template-columns: repeat(5, 6vw);
+  grid-template-rows: repeat(5, 6vw);
+}
+
+.salad-box img {
+  object-fit: cover;
+  max-width: 30vw;
+  padding-top: 5rem;
+  padding: 0;
+}
+
+#egg-text {
+  grid-row: 5;
+  grid-column: 1/3;
+  align-self: end;   /* выравнивание по вертикали: низ ячейки */
+  justify-self: start; /* по горизонтали: по левому краю */
+}
+
+#tuna-text {
+  grid-row: 3;
+  grid-column: 4;
+  align-self: end;   /* выравнивание по вертикали: низ ячейки */
+  justify-self: start; /* по горизонтали: по левому краю */
+}
+
+
+
+/* ------------------- MOBILE RESPONSIVENESS ------------------- */
+@media (max-width: 768px) {
+  .menu-box {
+    flex-direction: column;
+  }
+  .main-dishes .menu-title h2 {
+    font-size: 6vw;
+  }
+  .dish-title .vertical-line {
+    height: 2rem;     /* толщина линии */
+}
+  .dish-title h3{
+    font-size: 6vw;
+  }
+  .pain-box {
+    flex-direction: column;
+  }
+  .dish-box img {
+    max-width: 80vw;
+    padding-top: 1rem;
+  }
+  .pain-box {
+    padding-top: 1rem;
+  }
+  .dish-name-box h3 {
+    line-height: 7vw;
+    font-size: 4vw;
+  }
+  .dish-name-box {
+    margin-top: 2vh;
+  }
+}
