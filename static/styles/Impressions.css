@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-height: 3128px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #074C5C;
+  color: white;
+  z-index: 100;
+}
+
+ul {
+  list-style-type: none;
+  height: 100%;
+  gap: 25px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Circular";
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.language {
+  font-family: "Circular";
+  font-weight: 400;
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  align-items: center;
+  right: 42px;
+}
+
+h1 {
+  font-family: "Circular";
+  font-weight: 50;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+.hero-text {
+  width: 100%;
+  height: 79px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image-container {
+  width: 100%;
+  height: auto;
+  padding: 21px;
+  background-color: #00657C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 840px;
+  height: auto;
+  border-top: #D9D9D9 21px solid;
+  border-bottom: #D9D9D9 95px solid;
+  border-left: #D9D9D9 30px solid;
+  border-right: #D9D9D9 28px solid;
+} 
