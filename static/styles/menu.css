@@ -179,11 +179,11 @@
     flex-direction: row;
     /* align-items: center; */
     justify-content: space-between;
-    padding-top: 3rem;
 }
 
 .dish-box {
     padding-inline: 4vw;
+    padding-top: 3rem;
 }
 
 .dish-title .vertical-line {
@@ -254,8 +254,6 @@
 .salad-box img {
   object-fit: cover;
   max-width: 30vw;
-  padding-top: 5rem;
-  padding: 0;
 }
 
 #egg-text {
@@ -304,5 +302,23 @@
   }
   .dish-name-box {
     margin-top: 2vh;
+  }
+
+  .salad-box {
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: repeat(5, 18vw);
+    grid-template-rows: repeat(5, 18vw);
+  }
+  #egg-text {
+    align-self: end;   /* выравнивание по вертикали: низ ячейки */
+  }
+  
+  #tuna-text {
+    align-self: end;   /* выравнивание по вертикали: низ ячейки */
+  }
+  .salad-box img {
+    max-width: 90vw;
+    padding-top: 0;
   }
 }
