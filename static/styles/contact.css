@@ -58,6 +58,18 @@
     font-weight: 500;
     font-style: italic;
 }
+@font-face {
+    font-family: "Caveat";
+    src: url("../fonts/Caveat-Regular.ttf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Caveat";
+    src: url("../fonts/Caveat-Bold.ttf") format("opentype");
+    font-weight: 900;
+    font-style: bold;
+}
 
 *
 {
@@ -69,11 +81,13 @@
 body
 {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    font-family: "Circular";
+    color: #00657C;
 }
 
 header {
-    grid-column: 1/10;
+    grid-column: 1/19;
     position: sticky;
     top: 0;
     width: 100%;
@@ -120,8 +134,8 @@ hr
 
 .location
 {
-    grid-column: 2/5;
-    padding-block: 8vh;
+    grid-column: 3/9;
+    margin-block-start: 3vh;
     display: flex;
     flex-direction: column;
 }
@@ -133,27 +147,28 @@ hr
 
 .details
 {
-    padding-block: 2vh;
+    margin-block: 2vh;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
 .details > *
 {
-    padding-block: 3vh;
+    padding-block: 2vh;
 }
 
 .hours
 {
-    grid-column: 6/9;
-    padding-block: 8vh;
+    grid-column: 12/17;
+    margin-block-start: 3vh;
     display: flex;
     flex-direction: column;
 }
 
 .hours > h3
 {
-    padding-block: 2vh;
+    margin-block: 2vh;
     text-align: right;
 }
 
@@ -164,12 +179,48 @@ hr
 
 #googleMap
 {
-    grid-column: 2/9;
-    height: 60vh;
+    grid-column: 3/17;
+    min-height: 45vh;
+    margin-block: 3vh;
+    width: 100%;
+    filter: grayscale(100);
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    outline: 2px solid #cccccc;
 }
 
 .getInTouch
 {
-    grid-column: 4/7;
-    padding-top: 8vh;
+    grid-column: 8/13;
+    justify-self: center;
+    text-align: center;
+}
+
+.getInTouch > p, h2
+{
+    padding-block: 2vh;
+}
+
+.getInTouch > h2
+{
+    font-family: "Caveat";
+    font-size: 40px;
+}
+
+.vl
+{
+    justify-self: center;
+    display: block;
+    width: 1px;
+    background-color: #00657C;
+}
+
+.span-50
+{
+    height: 50px;
+}
+
+.span-25
+{
+    height: 25px;
 }
