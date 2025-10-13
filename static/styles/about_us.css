@@ -1,73 +1,72 @@
-@font-face 
-{
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Black.otf") format("opentype");
-    font-weight: 900;
-    font-style: normal;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
-    font-weight: 900;
-    font-style: italic;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
-    font-weight: 700;
-    font-style: italic;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Book.otf") format("opentype");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
-    font-weight: 400;
-    font-style: italic;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Light.otf") format("opentype");
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
-    font-weight: 300;
-    font-style: italic;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face 
-  {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
-    font-weight: 500;
-    font-style: italic;
-  }
+@font-face {
+  font-family: "Circular-Black";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-BlackItalic";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular-Bold";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-BoldItalic";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-BookItalic";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular-Light";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-LightItalic";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular-Medium";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-MediumItalic";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
 *
 {
     margin: 0;
@@ -88,7 +87,7 @@
 .DiscoverText
 {
 color: #FFFFFF;
-font-family: "Circular";
+font-family: "Circular-Light";
 font-size: 1rem;
 font-weight: lighter;
 position: absolute;
@@ -147,7 +146,7 @@ animation: DiscoverText 1.5s ease-in-out infinite;
 {
     color: #FFFFFF;
     font-size: 2rem;
-    font-family: "Circular";
+    font-family: "Circular-Light";
     font-weight: 100;
     text-decoration: none;
     align-self: flex-start;
@@ -181,10 +180,8 @@ animation: DiscoverText 1.5s ease-in-out infinite;
 
 .footerlogo
 {
-font-family: "Circular";
+font-family: "Circular-Medium";
 color:#EDE5BB ;
-font-weight: 500;
-font-style: normal;
 font-size: 8vh;
 }
 
@@ -202,10 +199,8 @@ font-size: 8vh;
 
 .footertext
 {
-font-family: "Circular";
+font-family: "Circular-Light";
 color:#ffffff ;
-font-weight: 300;
-font-style: normal;
 font-size: 2vh;
 }
 
@@ -244,10 +239,8 @@ font-size: 2vh;
 
 .language
 {
-font-family: "Circular";
+font-family: "Circular-Light";
 color:#ffffff ;
-font-weight: 300;
-font-style: normal;
 font-size: 2vh;
 
 }
@@ -258,10 +251,8 @@ font-size: 2vh;
 }
 .copyrightbox
 {
-font-family: "Circular";
+font-family: "Circular-Light";
 color:#ffffff ;
-font-weight: 300;
-font-style: normal;
 font-size: 1.5vh;
 }
 
