@@ -163,3 +163,115 @@ animation: DiscoverText 1.5s ease-in-out infinite;
     font-size:2rem;
 }
 
+.footer
+{
+  background-color: rgba(0, 101, 124, 0.7);
+  width: 100vw;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18,1fr);
+}
+
+.boxfooterlogo
+{
+  grid-area: 3/1/9/5;
+  place-items: center;
+}
+
+.footerlogo
+{
+font-family: "Circular";
+color:#EDE5BB ;
+font-weight: 500;
+font-style: normal;
+font-size: 8vh;
+}
+
+.footerillustrationbox
+{
+  grid-area: 1/8/19/12;
+
+}
+.imgfooter
+{
+  width: 100%;
+  height: 100%;
+
+}
+
+.footertext
+{
+font-family: "Circular";
+color:#ffffff ;
+font-weight: 300;
+font-style: normal;
+font-size: 2vh;
+}
+
+.footertextbox1
+{
+  grid-area: 10/1/14/5;
+  padding-left: 5vh;
+}
+
+.footertextbox2
+{
+  grid-area: 10/14/14/16;
+}
+
+.footerline1
+{
+  margin-left: 3vh;
+  grid-area: 15/1/15/7;
+  height: 1px;
+  background-color:#00657C;
+ 
+}
+
+.footerline2
+{
+  grid-area: 15/14/15/18;
+  height: 1px;
+  background-color:#00657C;
+}
+
+.languagebox
+{
+  padding-left: 2vh;
+  grid-area: -6/18/-4/19;
+}
+
+.language
+{
+font-family: "Circular";
+color:#ffffff ;
+font-weight: 300;
+font-style: normal;
+font-size: 2vh;
+
+}
+
+.copyrightbox
+{
+  grid-area: -4/14/-2/17;
+}
+.copyrightbox
+{
+font-family: "Circular";
+color:#ffffff ;
+font-weight: 300;
+font-style: normal;
+font-size: 1.5vh;
+}
+
+.footerbuttons
+{
+  padding-left: 5vh;
+  display: flex;
+  justify-content: start;
+  gap: 2vh;
+  flex-direction: row;
+  align-items: center;
+  grid-area: 16/1/18/7;
+}
