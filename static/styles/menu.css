@@ -150,7 +150,7 @@ section {
 /* ------------------- Main Dishes ------------------- */
 .main-dishes {
   grid-column: 1 / -1;
-  height: 200vh;
+  height: fit-content;
   background-color: #00657C;
 
   display: grid;
@@ -438,7 +438,7 @@ section {
   }
 
   .main-dishes {
-    height: 600vh;
+    height: fit-content;
   }
 
   .main-dishes .menu-title h2 {
