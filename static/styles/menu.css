@@ -1,226 +1,234 @@
 /* ------------------- Fonts ------------------- */
 @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Black.otf") format("opentype");
-    font-weight: 900;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
-    font-weight: 900;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
-    font-weight: 700;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Book.otf") format("opentype");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
-    font-weight: 400;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Light.otf") format("opentype");
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
-    font-weight: 300;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
-    font-weight: 500;
-    font-style: italic;
-  }
-
-
-
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
 
 * {
-    margin: 0;
-  }
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------- GRID SYSTEM ------------------- */
+body {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+section {
+  grid-column: 1 / -1;
+}
 
 /* ------------------- Header ------------------- */
-
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 2vw;
-    height: 8vh;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  height: 8vh;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8vh;
-
-    transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 100;
 }
 
 .header:hover {
-    background-color: white;
+  background-color: white;
 }
 
 .header > a {
-    color: #FFFFFF;
-    color: white;
-    font-size: 2rem;
-    font-family: "Circular";
-    font-weight: 100;
-    text-decoration: none;
-    align-self: flex-start;
-    transition: all 0.5s ease;
+  color: white;
+  font-size: 2rem;
+  font-family: "Circular";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
 
-.header:hover a{
-    color: black;
+.header:hover a {
+  color: black;
 }
 
 .header > a.language-change {
-    position: absolute;
-    right: 2vw;
-    top: 2vh;
-    font-size: 2rem;
+  position: absolute;
+  right: 2vw;
+  top: 2vh;
+  font-size: 2rem;
 }
 
-
 /* ------------------- Hero ------------------- */
-
 .hero-section {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../images/f68e70c872fdc53439e4f0fb2a0eb47bc512f60a.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  grid-column: 1 / -1;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/f68e70c872fdc53439e4f0fb2a0eb47bc512f60a.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  align-items: center;
+  justify-items: center;
 }
 
 .hero-title {
-    color: white;
-    font-size: 5rem;
-    font-family: "Circular";
-    font-style: italic;
-    font-weight: 100;
+  grid-column: 1 / -1;
+  color: white;
+  font-size: 5rem;
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 100;
 }
 
+
 /* ------------------- Main Dishes ------------------- */
-
 .main-dishes {
-    height: 200vh;
-    width: 100vw;
-    background-color: #00657C;
+  grid-column: 1 / -1;
+  height: 200vh;
+  background-color: #00657C;
 
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  justify-content: center;
+  align-content: start;
 }
 
 .main-dishes .menu-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 3vw;
-    padding-top: 1rem;
+  grid-column: 2 / 18;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 1rem;
 }
 
 .main-dishes .menu-title h2 {
-    color: white;
-    font-size: 3vw;
-    font-family: "Circular";
-    font-style: italic;
-    font-weight: 500;
+  color: white;
+  font-size: 3vw;
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 500;
 }
 
 .main-dishes .menu-title .horizontal-line {
-    width: 100%;      /* во всю ширину экрана */
-    height: 1px;      /* толщина линии */
-    background-color: white; /* цвет линии */
+  width: 100%;
+  height: 1px;
+  background-color: white;
 }
 
+/* ------------------- Dishes Layout ------------------- */
 .menu-box {
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    justify-content: center;
-    padding-bottom: 15vh;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 15vh;
 }
 
 .dish-box {
-    padding-inline: 4vw;
-    padding-top: 3rem;
-}
-
-.dish-title .vertical-line {
-    width: 1px;      /* во всю ширину экрана */
-    height: 4rem;     /* толщина линии */
-    background-color: white; /* цвет линии */
+  padding-inline: 4vw;
+  padding-top: 3rem;
 }
 
 .dish-title {
-    display: flex;
-    align-items: center; 
-    gap: 1rem;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dish-title .vertical-line {
+  width: 1px;
+  height: 4rem;
+  background-color: white;
 }
 
 .dish-title h3 {
-    color: white;
-    font-size: 2vw;
-    font-family: "Circular";
-    font-style: italic;
-    font-weight: 200;
+  color: white;
+  font-size: 2vw;
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 200;
 }
 
-.pain-box img {
-    object-fit: cover;
-    max-width: 35vw;
-    padding-top: 5rem;
-    padding: 0;
-}
-
+/* ------------------- Pain Box ------------------- */
 .pain-box {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding-top: 3vh;
+}
 
+.pain-box img {
+  object-fit: cover;
+  max-width: 35vw;
+  padding: 0;
 }
 
 .dish-name-box {
@@ -244,6 +252,8 @@
   font-weight: 100;
   font-size: 1vw;
 }
+
+/* ------------------- Salad Box ------------------- */
 .salad-box {
   padding-top: 3vh;
   display: grid;
@@ -258,20 +268,19 @@
 
 #egg-text {
   grid-row: 5;
-  grid-column: 1/3;
-  align-self: end;   /* выравнивание по вертикали: низ ячейки */
-  justify-self: start; /* по горизонтали: по левому краю */
+  grid-column: 1 / 3;
+  align-self: end;
+  justify-self: start;
 }
 
 #tuna-text {
   grid-row: 3;
   grid-column: 4;
-  align-self: end;   /* выравнивание по вертикали: низ ячейки */
-  justify-self: start; /* по горизонтали: по левому краю */
+  align-self: end;
+  justify-self: start;
 }
 
-
-
+/* ------------------- Pastry Boxes ------------------- */
 .ecleir-box img {
   object-fit: cover;
   max-width: 25vw;
@@ -292,32 +301,44 @@
 
 /* ------------------- MOBILE RESPONSIVENESS ------------------- */
 @media (max-width: 768px) {
+  body {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   .menu-box {
     flex-direction: column;
   }
+
   .main-dishes .menu-title h2 {
     font-size: 6vw;
   }
+
   .dish-title .vertical-line {
-    height: 2rem;     /* толщина линии */
-}
-  .dish-title h3{
+    height: 2rem;
+  }
+
+  .dish-title h3 {
     font-size: 6vw;
   }
+
   .pain-box {
     flex-direction: column;
   }
+
   .dish-box img {
     max-width: 80vw;
     padding-top: 1rem;
   }
+
   .pain-box {
     padding-top: 1rem;
   }
+
   .dish-name-box h3 {
     line-height: 7vw;
     font-size: 4vw;
   }
+
   .dish-name-box {
     margin-top: 2vh;
   }
@@ -328,13 +349,15 @@
     grid-template-columns: repeat(5, 18vw);
     grid-template-rows: repeat(5, 18vw);
   }
+
   #egg-text {
-    align-self: end;   /* выравнивание по вертикали: низ ячейки */
+    align-self: end;
   }
-  
+
   #tuna-text {
-    align-self: end;   /* выравнивание по вертикали: низ ячейки */
+    align-self: end;
   }
+
   .salad-box img {
     max-width: 90vw;
     padding-top: 0;
