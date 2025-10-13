@@ -402,7 +402,7 @@ section {
 /* ------------------- Hot Drinks ------------------- */
 .hot-drinks {
   grid-column: 1 / -1;
-  height: 100vh;
+  height: 66vw;
   background-color: #EDE5BB;
 
   display: grid;
@@ -419,7 +419,7 @@ section {
   justify-content: space-between;
   align-items: center;
   gap: 3vw;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .hot-drinks .menu-title h2 {
@@ -439,7 +439,7 @@ section {
 .hot-drinks .dish-title {
   grid-column: 8/12;
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .hot-drinks .dish-title h3 {
@@ -519,23 +519,23 @@ section {
 
   background-image: url("../illustrations/196e37f8fdab934dc3640374eab6bce04460c444.png");
   background-repeat: repeat;
-  background-size: 10%;
+  background-size: 6%;
   background-position: center;
 
   z-index: 0; /* под контентом */
   opacity: 0.15; /* можешь убрать, если не нужна прозрачность */
 }
 .hot-drinks #upper-background {
-  top: 11%; /* по центру секции */
+  top: 5vw; /* по центру секции */
 }
 
 .hot-drinks #bottom-background {
-  bottom:0%; /* по центру секции */
+  bottom:0vw; /* по центру секции */
 }
 
 .white-decoration-line {
   position: absolute;
-  top: 55%; /* по центру секции */
+  top: 40vw; /* по центру секции */
   left: 0;
   transform: translateY(-50%); /* чтобы центрировать по вертикали */
   width: 100%;
@@ -637,5 +637,50 @@ section {
   .salad-box img {
     max-width: 90vw;
     padding-top: 0;
+  }
+
+  .hot-drinks {
+    height: 90vh;
+  }
+
+  .hot-drinks .menu-title h2{
+    font-size: 6vw;
+  }
+  .hot-drinks .dish-title h2{
+    font-size: 4vw;
+  }
+  .hot-drinks .dish-title{
+    grid-column: 6/14;
+  }
+  .coffe-menu {
+    max-width: 100%;
+    grid-column: 3 / 17;
+  }
+  .coffe-menu img {
+    width: 70%;
+  }
+
+  .tea-menu {
+    padding-top: 3rem;
+    max-width: 100%;
+    grid-column: 3 / 17;
+  }
+  .tea-menu img {
+    width: 70%;
+  }
+
+  #upper-background {
+    height: 15vh;
+    background-size: 15%;
+    /* top: 25vh; */
+  }
+
+  #bottom-background {
+    height: 15vh;
+    background-size: 15%;
+  }
+
+  .white-decoration-line {
+    background-color: transparent;
   }
 }
