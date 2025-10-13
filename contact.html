@@ -20,7 +20,7 @@
             <p class="language">NL</p>
         </header>
         
-        <div class="location">
+        <div class="leftSpacing location">
             <h3>Location</h3>
             <hr>
             <div class="details">
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="hours">
+        <div class="rightSpacing hours">
             <h3>Hours</h3>
             <hr>
             <div class="details">
@@ -39,13 +39,62 @@
             </div>
         </div>
         
-        <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1080.829793190758!2d6.563101236849623!3d53.21740167424447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd51c83a8147%3A0xeea091ed29dc030f!2sCroissanterie%20Pigalle!5e0!3m2!1snl!2snl!4v1760086560207!5m2!1snl!2snl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+        <div id="googleMap" class="centerSpacing">
+            <script>
+                function myMap() {
+                var mapProp= {
+                center:new google.maps.LatLng(53.21770822600133, 6.56354717281754),
+                zoom:17,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        </div>
         
-        <div class="getInTouch">
+        <div class="centerSpacing getInTouch">
             <div class="vl span-50"></div>
             <h2>Get In Touch</h2>
             <div class="vl span-25"></div>
             <p>We would like to hear from you!</p>
         </div>
+        <div class="contactWrapper">
+            <div class="contactInfo">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="headingLine"></div>
+            <div class="contactInfo">
+                <p>+31 6 31782094</p>
+                <p>claire@oui-cafe.fr</p>
+                <div class="triangleList"> <!-- This needs to become a background image instead of X amount of triangles -->
+                    <div class="triangleUp"></div>
+                    <div class="triangleUp"></div>
+                    <div class="triangleUp"></div>
+                    <div class="triangleUp"></div>
+                    <div class="triangleUp"></div>
+                    <div class="triangleUp"></div> 
+                </div>
+                
+            </div>
+
+            <div class="contactForm">
+                <form>
+                    <p class="formNote">
+                    If you have any inquiries or just want to say hi, please use the contact form!
+                    </p>
+                    <div class="formRow">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="email" placeholder="Email*" required>
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Say Bonjour!</button>
+                </form>
+            </div>
+
+
+        </div>
+        
+        
     </body>
 </html>
