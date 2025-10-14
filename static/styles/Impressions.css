@@ -75,26 +75,28 @@
 }
 
 body {
-  max-height: 3128px;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
 }
 
 header {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 12svh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #074C5C;
   color: white;
   z-index: 100;
+  grid-column: 1/19;
 }
 
 ul {
   list-style-type: none;
   height: 100%;
-  gap: 25px;
+  gap: 4svh;
   display: flex;
   align-items: center;
 }
@@ -104,51 +106,160 @@ a {
   text-decoration: none;
   font-family: "Circular";
   font-weight: 300;
-  font-size: 25px;
+  font-size: 4svh;
 }
 
 .language {
   font-family: "Circular";
   font-weight: 400;
-  font-size: 13px;
+  font-size: 2.2svh;
   color: white;
   position: absolute;
   align-items: center;
-  right: 42px;
+  right: 5.5svh;
 }
 
 h1 {
   font-family: "Circular";
   font-weight: 50;
   font-style: italic;
-  font-size: 30px;
+  font-size: 5svh;
   text-align: center;
 }
 
 .hero-text {
   width: 100%;
-  height: 79px;
+  height: 13svh;
   background-color: white;
   align-items: center;
   display: flex;
   justify-content: center;
+  grid-column: 1/19;
 }
 
 .hero-image-container {
   width: 100%;
   height: auto;
-  padding: 21px;
+  padding: 3.5svh;
   background-color: #00657C;
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 1/19;
 }
 
 .hero-image {
-  width: 840px;
+  width: 143svh;
   height: auto;
-  border-top: #D9D9D9 21px solid;
-  border-bottom: #D9D9D9 95px solid;
-  border-left: #D9D9D9 30px solid;
-  border-right: #D9D9D9 28px solid;
+  border-top: #D9D9D9 3.5svh solid;
+  border-bottom: #D9D9D9 16svh solid;
+  border-left: #D9D9D9 5svh solid;
+  border-right: #D9D9D9 4.5svh solid;
 } 
+
+.impressions-container {
+  width: 100%;
+  height: auto;
+  grid-column: 1/19;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.impression-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#impression1 {
+  grid-column: 1/9;
+}
+
+#impression2 {
+  grid-column: 9/16;
+}
+
+#impression3 {
+  grid-column: 16/21;
+}
+
+#impression4 {
+  grid-column: 1/4;
+}
+
+#impression5 {
+  grid-column: 4/11;
+}
+
+#impression6 {
+  grid-column: 11/17;
+}
+
+#impression7 {
+  grid-column: 17/21;
+}
+
+#impression8 {
+  grid-column: 1/3;
+}
+
+#impression9 {
+  grid-column: 3/6;
+}
+
+#impression10 {
+  grid-column: 6/13;
+}
+
+#impression11 {
+  grid-column: 13/18;
+}
+
+#impression12 {
+  grid-column: 18/21;
+}
+
+#impression13 {
+  grid-column: 1/7;
+}
+
+#impression14 {
+  grid-column: 7/13;
+}
+
+#impression15 {
+  grid-column: 13/19;
+}
+
+#impression16 {
+  grid-column: 19/21;
+}
+
+#impression17 {
+  grid-column: 1/4;
+}
+
+#impression18 {
+  grid-column: 4/8;
+}
+
+#impression19 {
+  grid-column: 8/11;
+}
+
+#impression20 {
+  grid-column: 11/15;
+}
+
+#impression21 {
+  grid-column: 15/21;
+}
+
+.footer-line {
+  border: none; /* remove default HR border */
+  height: 1.5px; /* visible thickness */
+  background-color: #458d9d; /* dark teal matching hero background */
+  margin: 40px; /* spacing above and below */
+  grid-column: 6/15; /* span the full grid */
+}
