@@ -257,9 +257,9 @@ h1 {
 }
 
 .footer-line {
-  border: none; /* remove default HR border */
-  height: 1.5px; /* visible thickness */
-  background-color: #458d9d; /* dark teal matching hero background */
-  margin: 40px; /* spacing above and below */
-  grid-column: 6/15; /* span the full grid */
+  border: none;
+  height: 1.5px;
+  background-color: #458d9d; 
+  margin: 40px;
+  grid-column: 6/15;
 }
