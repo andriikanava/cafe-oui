@@ -69,6 +69,38 @@
   font-weight: 500;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Caveat-Bold";
+  src: url("../fonts/Caveat-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caveat-Medium";
+  src: url("../fonts/Caveat-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Caveat-Regular";
+  src: url("../fonts/Caveat-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Caveat-SemiBold";
+  src: url("../fonts/Caveat-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 *
 {
     margin: 0;
@@ -387,9 +419,9 @@ font-size: 2vh;
 
 .about-oui-text-header
 {
-  font-family: "Circular-Medium";
+  font-family: "Caveat-SemiBold";
   color: #00657C;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .about-oui-decoration-line
