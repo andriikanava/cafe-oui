@@ -172,10 +172,20 @@ animation: DiscoverText 1.5s ease-in-out infinite;
   grid-template-rows: repeat(18,1fr);
 }
 
-.boxfooterlogo
+.footertext
 {
-  grid-area: 3/1/9/5;
-  place-items: center;
+font-family: "Circular-Light";
+color:#ffffff ;
+font-size: 2vh;
+}
+
+.footerbox1
+{
+  padding-left: 2vh;
+  grid-area: 1/1/15/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .footerlogo
@@ -184,12 +194,83 @@ font-family: "Circular-Medium";
 color:#EDE5BB ;
 font-size: 8vh;
 }
+.footerline1
+{
+  margin-top: 2vh;
+  background-color:#00657C;
+  width: 100%;
+  min-height: 1px;
+
+}
+.footerline2
+{
+  grid-area: -8/14/-8/18;
+  margin-top: 2vh;
+  background-color:#00657C;
+  min-height: 1px;
+  width: 20vw;
+}
+
+.footerbuttons
+{
+  padding-left: 0;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2vh;
+  list-style-type: none;
+} 
+
+ .footerbuttons ul
+{
+  padding: 0;
+  margin: 0;
+}
+ 
+ .footerbuttons li
+{
+  margin: 0;
+  padding: 0;
+}
+
+ .footerbuttons a
+{
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footerbuttons a::after
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #EDE5BB;
+  transition: width 0.4s ease-in-out;
+}
+
+.footerbuttons a:hover
+{
+  color: #EDE5BB;
+}
+
+.footerbuttons a:hover::after
+{
+  width: 100%;
+}
+
 
 .footerillustrationbox
 {
   grid-area: 1/8/19/12;
 
 }
+
 .imgfooter
 {
   width: 100%;
@@ -197,44 +278,22 @@ font-size: 8vh;
 
 }
 
-.footertext
+.footerbox2
 {
+  grid-area: 7/14/19/19;
+}
+
+.copyright
+{
+margin-top: 2vh;
 font-family: "Circular-Light";
 color:#ffffff ;
-font-size: 2vh;
-}
-
-.footertextbox1
-{
-  grid-area: 10/1/14/5;
-  padding-left: 5vh;
-}
-
-.footertextbox2
-{
-  grid-area: 10/14/14/16;
-}
-
-.footerline1
-{
-  margin-left: 3vh;
-  grid-area: 15/1/15/7;
-  height: 1px;
-  background-color:#00657C;
- 
-}
-
-.footerline2
-{
-  grid-area: 15/14/15/18;
-  height: 1px;
-  background-color:#00657C;
+font-size: 1.5vh;
 }
 
 .languagebox
 {
-  padding-left: 2vh;
-  grid-area: -6/18/-4/19;
+  grid-area: -8/18/-7/19;
 }
 
 .language
@@ -243,26 +302,4 @@ font-family: "Circular-Light";
 color:#ffffff ;
 font-size: 2vh;
 
-}
-
-.copyrightbox
-{
-  grid-area: -4/14/-2/17;
-}
-.copyrightbox
-{
-font-family: "Circular-Light";
-color:#ffffff ;
-font-size: 1.5vh;
-}
-
-.footerbuttons
-{
-  padding-left: 5vh;
-  display: flex;
-  justify-content: start;
-  gap: 2vh;
-  flex-direction: row;
-  align-items: center;
-  grid-area: 16/1/18/7;
 }
