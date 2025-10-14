@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Circular";
+}
+
+/* ------------------- Fonts ------------------- */
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  }
+
+@font-face {
+  font-family: "Circular-Black";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-BlackItalic";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular-Bold";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-BoldItalic";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-BookItalic";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular-Light";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-LightItalic";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular-Medium";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-MediumItalic";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* ------------------- Colours ------------------- */
+:root{
+    --oui_darkblue: #00657C;
+    --oui_beige: #EDE5BB;
+    --oui_red: #95261F;
+    --oui_lightblue: #BAD3EE;
+    --offwhite: #D9D9D9;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+}
+
+/* ------------------- Home Bar ------------------- */
+.header{
+    grid-column: 1/5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2vw;
+    height: 8vh;
+    border-bottom: 2px solid white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+
+    transition: all 0.5s ease;
+    z-index: 90; /*arranges element to the front of all other elements*/
+}
+
+.header:hover{
+    background-color: white;
+}
+
+.header > a{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: "Circular";
+    text-decoration: none;
+    align-self: flex-start;
+    transition: all 0.5s ease;
+}
+
+.header:hover a{
+    color: black
+}
+
+.header >a.language-change{
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+    font-size: 1rem;
+}
+
+.top{
+    grid-column: 1/19;
+    background-image: url(images/headerimage-homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    height: 772px;
+}
+
+.inTop{
+    display: flex;
+}
+
+.headerImage{
+    width: 100%;
+}
+
+/* ------------------- Logo ------------------- */
+
+.ouiLogo{
+    position: absolute;
+    justify-self: anchor-center;
+    align-self: anchor-center;
+    width: 215px;
+    height: 120px;
+}
+
+.smallCircle{
+    position: absolute;
+    justify-self: anchor-center;
+    align-self: anchor-center;
+    background-color: var(--oui_beige);
+    display:inline-block ;
+    width: 325px;
+    height: 198px;
+    border-radius: 50%;
+}
+
+.mediumCircle{
+    position: absolute;
+    justify-self: anchor-center;
+    align-self: anchor-center;
+    background-color: var(--oui_beige);
+    opacity: 80%;
+    width: 413px;
+    height: 286px;
+    border-radius: 50%;
+}
+
+.largeCircle{
+    position: absolute;
+    justify-self: anchor-center;
+    align-self: anchor-center;
+    background-color: var(--oui_beige);
+    opacity: 30%;
+    width: 457px;
+    height: 338px;
+    border-radius: 50%;
+}
+
+/* ------------------- Text(s) ------------------- */
+
+.bounce {
+    color: white;
+    font-weight: 100;
+    animation: myAnimation 2s infinite alternate;
+    position:absolute;
+    top: 700px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes myAnimation {
+    0%  {left:50%; top:700px;}
+    50% {left:50%; top: 710px;;}
+}
+
+.content >h3{
+    text-align: center;
+    justify-self: center;
+    color: var(--oui_darkblue);
+    padding-block: 1rem;
+    padding-inline: 13rem;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+h2{
+    padding-block: 2rem;
+    padding-inline: 5rem;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.cafebw{
+    transform: translate(-20%, -200%);
+    justify-self: right;
+    width: 558px;
+    height: 428px;
+}
+
+.readMore{
+    /*box*/
+    background-color: var(--oui_darkblue);
+    position: relative;
+    border-radius: 3ch;
+    padding-inline: 2rem;
+    padding-block: 1.25rem;
+    top: 5%;
+    left: 4rem;
+    /*text*/
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.content{
+    grid-template-columns: repeat(18, 1fr);
+    display: grid;
+    grid-column: 1/19;
+}
+
+/* ------------------- Vertical Lines ------------------- */
+.vl1{
+    height: 30px;
+}
+
+.vl2{
+    height: 76px;
+}
+
+.vl1, .vl2{
+    grid-column: 10;
+    justify-items: center;
+    background-color: var(--oui_darkblue);
+    width: 1px;
+}
+
+/* ------------------- Content Sections ------------------- */
+.r1{
+    grid-column: 1/19;
+    height: 582px;
+    width: 100%;
+    background-color: var(--offwhite);
+    margin-block: 1rem;
+    h3{
+        font-weight: lighter;
+        box-sizing: border-box;
+        line-height: 2rem;
+        padding-block: 2rem;
+        padding-inline: 5rem;
+        width: 50%;
+        justify-self: left;
+        text-align: left;
+    }
+}
+
+.blueBackdrop{
+    transform: translate(-28%, -108%);
+    justify-self: right;
+    width: 558px;
+    height: 428px;
+    background-color: var(--oui_darkblue);
+}
+
+.textc1{
+    justify-items: center;
+    padding-block: 1rem;
+    grid-column: 8 / 12;
+    text-align: center;
+}
+
+.textc2{
+    justify-items: center;
+    padding-block: 1rem;
+    grid-column: 2/17;
+    text-align: center;
+}
+/*.hl{
+    padding-left: 3rem;
+    position:absolute;
+    justify-self: left;
+    background-color: var(--oui_darkblue);
+    display: block;
+    width: 76px;
+    height: 1px;
+}*/
