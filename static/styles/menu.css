@@ -412,7 +412,7 @@ section {
 /* ------------------- Hot Drinks ------------------- */
 .hot-drinks {
   grid-column: 1 / -1;
-  height: 66vw;
+  padding-bottom: 5vh;
   background-color: #EDE5BB;
 
   display: grid;
@@ -752,10 +752,6 @@ section {
   .salad-box img {
     max-width: 90vw;
     padding-top: 0;
-  }
-
-  .hot-drinks {
-    height: 90vh;
   }
 
   .hot-drinks .menu-title h2{
