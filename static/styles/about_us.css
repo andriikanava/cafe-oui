@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: "Circular-Black";
   src: url("../fonts/CircularStd-Black.otf") format("opentype");
@@ -74,7 +76,7 @@
 
 .Hero 
 {
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     background-image: url("../images/AboutUsHeroSection.svg");
     background-size: cover;
@@ -93,6 +95,7 @@ font-weight: lighter;
 position: absolute;
 bottom: 2vh;
 animation: DiscoverText 1.5s ease-in-out infinite;
+padding-bottom: 1vh;
 }
 
 @keyframes DiscoverText
@@ -301,5 +304,99 @@ font-size: 1.5vh;
 font-family: "Circular-Light";
 color:#ffffff ;
 font-size: 2vh;
+}
 
+.aboutoui
+{
+  height: 90vh;
+  width: 100vw;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+
+.about-oui-slogan
+{
+  grid-area: 1/6/3/14;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+.about-oui-line
+{
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  background-color:#00657C;
+  grid-area: 1/10/2/10;
+  width: 1px;
+  height: 100%;
+}
+
+.about-oui-text
+{
+  font-family: "Circular-Book";
+  color: #00657C;
+  font-size: 2.5vh;
+}
+
+.about-oui-info-box
+{
+  grid-area: 4/1/17/19;
+  background-color:rgb(217, 217, 217);
+  opacity: 0.2;
+}
+
+.blue-box-frame
+{
+  grid-area: 5/10/15/16;
+  background-color: #00657C;
+  opacity: 1;
+}
+
+.illustration-box-frame
+{
+  grid-area: 6/12/17/19;
+  margin-bottom: 1vh;
+  width: 100%;
+  background-image: url("../images/croissant\ background\ yellow_about\ us\ page.svg");
+  
+}
+
+.about-us-image-history
+{
+  grid-area: 7/11/15/18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-history-textbox
+{
+  grid-area: 6/2/16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: flex-start;
+}
+
+
+.about-oui-text-header
+{
+  font-family: "Circular-Medium";
+  color: #00657C;
+  font-size: 3vw;
+}
+
+.about-oui-decoration-line
+{
+  background-color:#00657C;
+  grid-area: 2/7/5/7;
+  width: 15vw;
+  height: 1px;
+  margin-bottom: 5vh;
 }
