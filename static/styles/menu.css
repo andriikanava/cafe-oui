@@ -566,8 +566,10 @@ section {
   width: 100vw;
 
   display: grid;
-  grid-template-columns: repeat(18, 1fr);
-  justify-content: center;
+  width: 100vw;              /* точно не больше ширины экрана */
+  overflow-x: hidden;        /* убираем вылезания */
+  grid-template-columns: repeat(18, minmax(0, 1fr)); /* чтобы колонки сжимались */
+  /* justify-content: center; */
   align-content: start;
   padding-bottom: 5vh;
   gap: 5vh;
@@ -604,15 +606,27 @@ section {
 .cold-drinks .lemonade-box {
   grid-column: 2/19;
   display: grid;
-  grid-template-columns: repeat(17, 1fr);
+  width: 100vw;              /* точно не больше ширины экрана */
+  overflow-x: hidden;        /* убираем вылезания */
+  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(13, 1fr);
-  justify-content: center;
+  /* justify-content: center; */
   align-content: start;
 }
 
 .cold-drinks .lemonade-box img {
   grid-area: 1/1/13/10;
-  max-width: 100%
+  max-width: 100%;
+}
+
+.cold-drinks .lemonade-box h2 {
+  grid-area: 4/11/4/16;
+  max-width: 100%;
+  color: white;
+  font-size: 2vw;
+  font-family: "Circular-Light";
+  font-style: italic;
+  font-weight: 100;
 }
 
 .yellow-decoration-line {
@@ -626,25 +640,39 @@ section {
 .cold-drinks .ice-tea-box {
   grid-column: 1/18;
   display: grid;
-  grid-template-columns: repeat(17, 1fr);
+  width: 100vw;              /* точно не больше ширины экрана */
+  overflow-x: hidden;        /* убираем вылезания */
+  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(10, 1fr);
-  justify-content: center;
+  /* justify-content: center; */
   align-content: start;
 }
 
 .cold-drinks .ice-tea-box img {
-  grid-area: 13/18/1/12;
-  max-width: 100%
+  grid-area: 13/17/1/12;
+  max-width: 100%;
+}
+
+.cold-drinks .ice-tea-box h2 {
+  grid-area: 5/8/5/12;
+  max-width: 100%;
+  color: white;
+  font-size: 2vw;
+  font-family: "Circular-Light";
+  font-style: italic;
+  font-weight: 100;
 }
 
 .cold-drinks .ice-tea-box .yellow-decoration-line {
-  grid-area: 6/12/6/1;
+  grid-area: 6/12/6/7;
 }
 
 .cold-drinks .juice-box {
   grid-column: 2/19;
   display: grid;
-  grid-template-columns: repeat(17, 1fr);
+  width: 100vw;              /* точно не больше ширины экрана */
+  overflow-x: hidden;        /* убираем вылезания */
+  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(10, 1fr);
   justify-content: center;
   align-content: start;
@@ -652,11 +680,21 @@ section {
 
 .cold-drinks .juice-box img {
   grid-area: 1/1/13/7;
-  max-width: 100%
+  max-width: 100%;
+}
+
+.cold-drinks .juice-box h2 {
+  grid-area: 6/8/6/12;
+  max-width: 100%;
+  color: white;
+  font-size: 2vw;
+  font-family: "Circular-Light";
+  font-style: italic;
+  font-weight: 100;
 }
 
 .cold-drinks .juice-box .yellow-decoration-line {
-  grid-area: 7/7/7/18;
+  grid-area: 7/7/7/12;
 }
 
 /* ------------------- MOBILE RESPONSIVENESS ------------------- */
@@ -793,5 +831,25 @@ section {
 
   .white-decoration-line {
     background-color: transparent;
+  }
+  .cold-drinks {
+    grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
+    gap: 2vh;
+  }
+
+  .cold-drinks .menu-title h2 {
+    font-size: 6vw;
+  }
+  .cold-drinks .lemonade-box h2 {
+    font-size: 3vw;
+    grid-area: 4/10/4/18;
+  }
+  .cold-drinks .ice-tea-box h2 {
+    font-size: 3vw;
+    grid-area: 5/7/5/12;
+  }
+  .cold-drinks .juice-box h2 {
+    font-size: 3vw;
+    grid-area: 6/7/6/12;
   }
 }
