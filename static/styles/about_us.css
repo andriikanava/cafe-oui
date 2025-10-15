@@ -713,3 +713,59 @@ font-size: 2vh;
   height: 100%;
   background-color:#00657C;
 }
+
+.Our-Philosophy-section-box
+{
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(32,1fr);
+}
+.quote-box
+{
+  grid-area: 1/10/5/24 ;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.quote-text
+{
+  font-family: "Circular-LightItalic";
+  font-size: 1.5vw;
+  line-height: 2vw;
+  color: #00657C;
+  text-align: center;
+}
+
+.Image-Philosophy-box
+{
+  grid-area:4/7/27/27 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.philosophy-section-line
+{
+  grid-area: 27/17/29/17;
+  width: 1px;
+  height: 100%;
+  background-color:#00657C;
+}
+
+.catch-phrase-philosophy-box
+{
+  grid-area: 29/7/32/27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catch-phrase-philosophy-text
+{
+  font-family: "Circular-LightItalic";
+  font-size: 1.5vw;
+  color: #00657C;
+}
