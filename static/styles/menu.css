@@ -608,7 +608,7 @@ section {
   display: grid;
   width: 100vw;              /* точно не больше ширины экрана */
   grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
-  grid-template-rows: repeat(13, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   /* justify-content: center; */
   align-content: start;
 }
@@ -813,10 +813,10 @@ section {
 }
 
 #croisant-text {
-  grid-area: 4/10/4/19;
+  grid-area: 3/10/6/18;
 }
 #pommes-text {
-  grid-area: 8/3/10/9;
+  grid-area: 8/2/10/9;
 }
 
 /* ------------------- MOBILE RESPONSIVENESS ------------------- */
@@ -989,5 +989,9 @@ section {
   .vegan-dishes {
     grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
     gap: 2vh;
+  }
+
+  .vegan-content-box h2 {
+    font-size: 3vw;
   }
 }
