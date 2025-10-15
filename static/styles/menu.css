@@ -111,7 +111,26 @@ section {
   background-color: white;
 }
 
-.header > a {
+/* --- навигация --- */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* --- список без маркеров --- */
+.nav-list {
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- ссылки --- */
+.nav-list a {
   color: white;
   font-size: 2rem;
   font-family: "Circular-Light";
@@ -120,16 +139,27 @@ section {
   transition: all 0.5s ease;
 }
 
-.header:hover a {
+.header:hover .nav-list a {
   color: black;
 }
 
-.header > a.language-change {
+/* --- язык справа --- */
+.language-change {
   position: absolute;
   right: 2vw;
-  top: 2vh;
+  top: 0.5vh;
   font-size: 2rem;
+  color: white;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
+
+.header:hover .language-change {
+  color: black;
+}
+
 
 /* ------------------- Hero ------------------- */
 .hero-section {
@@ -969,6 +999,55 @@ font-size: 2vh;
 @media (max-width: 768px) {
   body {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+
+  .header {
+    height: 10vh;
+    gap: 4vw;
+    background-color: white;
+  }
+
+  .nav-list {
+    gap: 3vw;
+  }
+
+  .nav-list a {
+    font-size: 1.4rem;
+    color: black;
+  }
+
+  .language-change {
+    font-size: 1.4rem;
+    right: 4vw;
+    top: 2.5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .nav-list a {
+    font-size: 1rem;
+  }
+
+  .language-change {
+    position: static;
+    margin-top: 8px;
+    font-size: 1rem;
   }
 
   .pain-box,
