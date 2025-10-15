@@ -152,49 +152,80 @@ padding-bottom: 1vh;
 
 .header 
 {
-    grid-column: 1/5;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 2vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8vh;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  height: 8vh;
 
-    transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 100;
 }
 
 .header:hover 
 {
-    background-color: #EDE5BB;
-}
-
-.header:hover a
-{
-    color: rgb(255, 255, 255);
-}
-
-.header > a
-{
-    color: #FFFFFF;
-    font-size: 2rem;
-    font-family: "Circular-Light";
-    font-weight: 100;
-    text-decoration: none;
-    align-self: flex-start;
-    transition: all 0.5s ease;
+  background-color:#EDE5BB;
 }
 
 
-.header > a.language-change
+.nav 
 {
-    position: absolute;
-    right: 2vw;
-    top: 2vh;
-    font-size:2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+
+.nav-list 
+{
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-list a 
+{
+  color: white;
+  font-size: 2rem;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.header:hover .nav-list a 
+{
+  color: black;
+}
+
+
+.language-change
+ {
+  position: absolute;
+  right: 2vw;
+  top: 0.5vh;
+  font-size: 2rem;
+  color: white;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.header:hover .language-change
+ {
+  color: black;
 }
 
 .footer
@@ -350,12 +381,15 @@ font-size: 2vh;
 
 .about-oui-slogan
 {
-  grid-area: 1/6/3/14;
+  grid-area: 1/4/3/16;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
 }
+
+
 
 
 
@@ -768,4 +802,71 @@ font-size: 2vh;
   font-family: "Circular-LightItalic";
   font-size: 1.5vw;
   color: #00657C;
+}
+
+@media (max-width: 768px)
+{
+ .header {
+    height: 10vh;
+    gap: 4vw;
+    background-color:#EDE5BB;
+  }
+
+  .nav-list {
+    gap: 3vw;
+  }
+
+  .nav-list a {
+    font-size: 1.4rem;
+    color: black;
+  }
+
+  .language-change {
+    font-size: 1.4rem;
+    right: 4vw;
+    top: 2.5vh;
+  }
+  .about-oui-slogan p
+{
+  font-size: 4vw;
+}
+
+  .Hero {
+    background-image: url("/static/images/hero_mobile_img.svg");
+  }
+
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .nav-list a {
+    font-size: 1rem;
+  }
+
+  .language-change {
+    position: static;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  .HeroImage
+{
+    object-fit: cover;
+    width: 70vw;
+    
+}
 }
