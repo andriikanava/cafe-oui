@@ -80,7 +80,7 @@ body {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: #ffffff;
 }
 
@@ -567,7 +567,6 @@ section {
 
   display: grid;
   width: 100vw;              /* точно не больше ширины экрана */
-  overflow-x: hidden;        /* убираем вылезания */
   grid-template-columns: repeat(18, minmax(0, 1fr)); /* чтобы колонки сжимались */
   /* justify-content: center; */
   align-content: start;
@@ -607,7 +606,6 @@ section {
   grid-column: 2/19;
   display: grid;
   width: 100vw;              /* точно не больше ширины экрана */
-  overflow-x: hidden;        /* убираем вылезания */
   grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(13, 1fr);
   /* justify-content: center; */
@@ -641,7 +639,6 @@ section {
   grid-column: 1/18;
   display: grid;
   width: 100vw;              /* точно не больше ширины экрана */
-  overflow-x: hidden;        /* убираем вылезания */
   grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(10, 1fr);
   /* justify-content: center; */
@@ -671,7 +668,6 @@ section {
   grid-column: 2/19;
   display: grid;
   width: 100vw;              /* точно не больше ширины экрана */
-  overflow-x: hidden;        /* убираем вылезания */
   grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(10, 1fr);
   justify-content: center;
@@ -695,6 +691,130 @@ section {
 
 .cold-drinks .juice-box .yellow-decoration-line {
   grid-area: 7/7/7/12;
+}
+
+/* ------------------- DIVIDER ------------------- */
+.divider {
+  height: 7vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider .horizontal-line {
+  width: 70%;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 1vh;
+}
+
+/* ------------------- VEGAN DISHES ------------------- */
+.vegan-dishes {
+  grid-column: 1 / -1;
+  background-color: #00657C;
+  
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(18, minmax(0, 1fr)); /* чтобы колонки сжимались */
+  justify-content: center;
+  align-content: start;
+  padding-bottom: 5vh;
+  gap: 5vh;
+}
+
+.vegan-dishes .menu-title {
+  grid-column: 2 / 18;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 1rem;
+  text-wrap: nowrap;
+}
+
+.vegan-dishes .menu-title h2 {
+  color: white;
+  font-size: 3vw;
+  font-family: "Circular-Book";
+  font-style: italic;
+  font-weight: 500;
+}
+
+.vegan-dishes .menu-title .horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.vegan-dishes .menu-title img {
+  width: 6vw;
+  height: auto;
+}
+
+.vegan-content-box {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(18, minmax(0, 1fr));
+  grid-template-rows: repeat(11, minmax(0, 1fr));
+  grid-column: 1 / 19;
+}
+
+.vegan-content-box img {
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+#vegan-croisant-img {
+  grid-area: 1/2/6/9;
+}
+
+#vegan-pommes-img {
+  grid-area: 6/10/11/18;
+}
+
+.vegan-content-box .vegan-background {
+  background-image: url("../images/1b27290b037cdc2f492e3b753f5634193b4407e6.png");
+  background-size: 15%;
+  background-repeat: repeat;
+  opacity: 0.4;
+}
+#croisant-background {
+  grid-area: 3/8/7/15;
+}
+#pommes-background {
+  grid-area: 7/10/12/19;
+}
+
+.vegan-content-box .horizontal-line {
+  height: 1px;
+  background-color: white;
+}
+#croisant-line {
+  grid-column: 9/17;
+  grid-row: 2;
+}
+#pommes-line {
+  grid-column: 4/10;
+  grid-row: 7;
+}
+
+.vegan-content-box h2 {
+  grid-area: 5/8/5/12;
+  max-width: 100%;
+  color: white;
+  font-size: 2vw;
+  font-family: "Circular-Light";
+  font-weight: 100;
+}
+
+#croisant-text {
+  grid-area: 4/10/4/19;
+}
+#pommes-text {
+  grid-area: 8/3/10/9;
 }
 
 /* ------------------- MOBILE RESPONSIVENESS ------------------- */
@@ -851,5 +971,16 @@ section {
   .cold-drinks .juice-box h2 {
     font-size: 3vw;
     grid-area: 6/7/6/12;
+  }
+
+  .divider {
+    height: 3vh;
+  }
+
+  .vegan-dishes .menu-title h2 {
+    font-size: 6vw;
+  }
+  .vegan-dishes .menu-title img {
+    width: 8vw;
   }
 }
