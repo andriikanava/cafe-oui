@@ -82,6 +82,7 @@ body {
   width: 100vw;
   /* overflow-x: hidden; */
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 section {
@@ -632,7 +633,7 @@ section {
 }
 
 .cold-drinks .lemonade-box .yellow-decoration-line {
-  grid-area: 5/10/5/18;
+  grid-area: 5/10/5/17;
 }
 
 .cold-drinks .ice-tea-box {
@@ -751,6 +752,7 @@ section {
 .vegan-dishes .menu-title img {
   width: 6vw;
   height: auto;
+  margin-left: -2vw;
 }
 
 .vegan-content-box {
