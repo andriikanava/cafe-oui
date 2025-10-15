@@ -1,83 +1,94 @@
 
-
-@font-face {
+@font-face 
+{
   font-family: "Circular-Black";
   src: url("../fonts/CircularStd-Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-BlackItalic";
   src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
   font-weight: 900;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-Bold";
   src: url("../fonts/CircularStd-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-BoldItalic";
   src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-Book";
   src: url("../fonts/CircularStd-Book.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-BookItalic";
   src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-Light";
   src: url("../fonts/CircularStd-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-LightItalic";
   src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-Medium";
   src: url("../fonts/CircularStd-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-MediumItalic";
   src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
   font-weight: 500;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Caveat-Bold";
   src: url("../fonts/Caveat-Bold.ttf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Caveat-Medium";
   src: url("../fonts/Caveat-Medium.ttf") format("opentype");
   font-weight: 500;
@@ -85,7 +96,8 @@
 }
 
 
-@font-face {
+@font-face 
+{
   font-family: "Caveat-Regular";
   src: url("../fonts/Caveat-Regular.ttf") format("opentype");
   font-weight: 400;
@@ -93,13 +105,13 @@
 }
 
 
-@font-face {
+@font-face 
+{
   font-family: "Caveat-SemiBold";
   src: url("../fonts/Caveat-SemiBold.ttf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
-
 
 *
 {
@@ -142,7 +154,6 @@ padding-bottom: 1vh;
     }
 }
 
-
 .HeroImage
 {
     object-fit: cover;
@@ -172,7 +183,6 @@ padding-bottom: 1vh;
 {
   background-color:#EDE5BB;
 }
-
 
 .nav 
 {
@@ -334,14 +344,12 @@ font-size: 8vh;
 .footerillustrationbox
 {
   grid-area: 1/8/19/12;
-
 }
 
 .imgfooter
 {
   width: 100%;
   height: 100%;
-
 }
 
 .footerbox2
@@ -388,10 +396,6 @@ font-size: 2vh;
   align-items: center;
   text-align: center;
 }
-
-
-
-
 
 .about-oui-line
 {
@@ -441,6 +445,11 @@ font-size: 2vh;
   align-items: center;
 }
 
+.about-us-image-history img
+{
+width: 100%;
+}
+
 .about-us-history-textbox
 {
   grid-area: 6/2/16/9;
@@ -449,6 +458,7 @@ font-size: 2vh;
   justify-content: flex-start ;
   align-items: flex-start;
 }
+
 
 
 .about-oui-text-header
@@ -806,67 +816,129 @@ font-size: 2vh;
 
 @media (max-width: 768px)
 {
- .header {
+ .header
+  {
     height: 10vh;
     gap: 4vw;
     background-color:#EDE5BB;
   }
 
-  .nav-list {
+  .nav-list 
+  {
     gap: 3vw;
   }
 
-  .nav-list a {
+  .nav-list a 
+  {
     font-size: 1.4rem;
     color: black;
   }
 
-  .language-change {
+  .language-change 
+  {
     font-size: 1.4rem;
     right: 4vw;
     top: 2.5vh;
   }
   .about-oui-slogan p
-{
-  font-size: 4vw;
-}
-
-  .Hero {
+  {
+    font-size: 2.5vw;
+    padding-bottom: 1vw;
+  }
+  .about-oui-slogan 
+  {
+    grid-area: 1 / 4 / 4 / 16;
+  }
+  .Hero 
+  {
     background-image: url("/static/images/hero_mobile_img.svg");
   }
 
+    .about-us-history-textbox
+  {
+    grid-area: 5/1/19/9;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-oui-text
+  {
+    margin-left: 1vw;
+    font-size: 1vh;
+    text-align: center;
+  }
+
+  .about-oui-text-header
+  {
+    margin-left: 1vw;
+    font-size: 5vw;
+  }
+  .aboutoui
+  {
+    height: 35vh;
+  }
+   .blue-box-frame
+  {
+    grid-area: 7/10/13/17;
+  }
+
+.illustration-box-frame
+  {
+    grid-area: 9/11/15/19;
+  }
+
+  .about-oui-decoration-line
+  {
+    margin-left: 1vw;
+  }
+
+  .DiscoverText
+  {
+  bottom: 3.5vh;
+ }  
+
+ .about-oui-decoration-line
+  {
+    margin-bottom: 1vh;
+  }
 }
 
-@media (max-width: 480px) {
-  .header {
+@media (max-width: 480px) 
+{
+  .header 
+  {
     height: auto;
     padding: 10px 0;
   }
 
-  .nav {
+  .nav 
+  {
     flex-direction: column;
   }
 
-  .nav-list {
+  .nav-list 
+  {
     flex-wrap: wrap;
     justify-content: center;
     gap: 3vw;
   }
 
-  .nav-list a {
+  .nav-list a 
+  {
     font-size: 1rem;
   }
 
-  .language-change {
+  .language-change 
+  {
     position: static;
     margin-top: 8px;
     font-size: 1rem;
   }
 
   .HeroImage
-{
-    object-fit: cover;
-    width: 70vw;
-    
-}
+  {
+      object-fit: cover;
+      width: 70vw;
+      
+  }
+
 }
