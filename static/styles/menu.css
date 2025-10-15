@@ -719,7 +719,7 @@ section {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(18, minmax(0, 1fr)); /* чтобы колонки сжимались */
-  justify-content: center;
+  /* justify-content: center; */
   align-content: start;
   padding-bottom: 5vh;
   gap: 5vh;
@@ -757,7 +757,7 @@ section {
 
 .vegan-content-box {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(18, minmax(0, 1fr));
   grid-template-rows: repeat(11, minmax(0, 1fr));
@@ -984,5 +984,10 @@ section {
   }
   .vegan-dishes .menu-title img {
     width: 8vw;
+  }
+
+  .vegan-dishes {
+    grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
+    gap: 2vh;
   }
 }
