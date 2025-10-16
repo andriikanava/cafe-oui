@@ -1,4 +1,4 @@
-
+/* Fonts */
 @font-face 
 {
   font-family: "Circular-Black";
@@ -95,7 +95,6 @@
   font-style: normal;
 }
 
-
 @font-face 
 {
   font-family: "Caveat-Regular";
@@ -103,7 +102,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 
 @font-face 
 {
@@ -118,6 +116,81 @@
     margin: 0;
 }
 
+/* Header */
+.header 
+{
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.header:hover 
+{
+  background-color:#EDE5BB;
+}
+
+.nav 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.nav-list 
+{
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a 
+{
+  color: white;
+  font-size: 2rem;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.header:hover .nav-list a 
+{
+  color: black;
+}
+
+.language-change
+ {
+  position: absolute;
+  right: 2vw;
+  top: 0.5vh;
+  font-size: 2rem;
+  color: white;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.header:hover .language-change
+ {
+  color: black;
+}
+
+/* Hero section */
 .Hero 
 {
     height: 95vh;
@@ -158,86 +231,437 @@ padding-bottom: 1vh;
 {
     object-fit: cover;
     width: 30vw;
-    
 }
 
-.header 
+ /* About OUI Hisotry section  */
+.aboutoui
 {
-  grid-column: 1 / -1;
+  height: 90vh;
+  width: 100vw;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+
+.about-oui-slogan
+{
+  grid-area: 1/4/3/16;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  gap: 2vw;
-  height: 8vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
 
-  position: fixed;
-  top: 0;
-  left: 0;
+.about-oui-line
+{
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  background-color:#00657C;
+  grid-area: 1/10/2/10;
+  width: 1px;
+  height: 100%;
+}
+
+.about-oui-text
+{
+  font-family: "Circular-Book";
+  color: #00657C;
+  font-size: 2.5vh;
+}
+
+.about-oui-info-box
+{
+  grid-area: 4/1/17/19;
+  background-color: rgba(217, 217, 217, 0.2);
+}
+
+.blue-box-frame
+{
+  grid-area: 5/10/15/16;
+  background-color: #00657C;
+  opacity: 1;
+}
+
+.illustration-box-frame
+{
+  grid-area: 6/12/17/19;
+  margin-bottom: 1vh;
   width: 100%;
-  transition: all 0.5s ease;
-  z-index: 100;
+  background-image: url("../images/croissant\ background\ yellow_about\ us\ page.svg");
+  
 }
 
-.header:hover 
+.about-us-image-history
 {
-  background-color:#EDE5BB;
-}
-
-.nav 
-{
+  grid-area: 7/11/15/18;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  position: relative;
 }
 
-
-.nav-list 
+.about-us-image-history img
 {
+width: 100%;
+}
+
+.about-us-history-textbox
+{
+  grid-area: 6/2/16/9;
   display: flex;
-  gap: 2vw;
-  list-style: none;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: flex-start;
+}
+
+.about-oui-text-header
+{
+  font-family: "Caveat-SemiBold";
+  color: #00657C;
+  font-size: 4vw;
+}
+
+.about-oui-decoration-line
+{
+  background-color:#00657C;
+  grid-area: 2/7/5/7;
+  width: 15vw;
+  height: 1px;
+  margin-bottom: 5vh;
+}
+
+.about-oui-decoration-line2
+{
+  margin-top: 2vh;
+  background-color:#00657C;
+  grid-area: 17/10/18/10;
+  width: 1px;
+  height: 100%;
+}
+
+/* Timelines section */
+.timeline
+{
+  display: grid;
+  grid-template-columns: repeat(32,1fr);
+  grid-template-rows: repeat(32,1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+.timeline-text-box
+{
+  grid-area: 2/14/4/20;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+} 
+.about-oui-timeline-line
+{
   margin: 0;
-  padding: 0;
+  background-color:#00657C;
+  grid-area: 1/10/2/10;
+  width: 1px;
+  height: 5vh;
 }
 
-
-.nav-list a 
+.timeline-header-text
 {
-  color: white;
-  font-size: 2rem;
-  font-family: "Circular-Light";
-  font-weight: 100;
-  text-decoration: none;
-  transition: all 0.5s ease;
+  font-family: "Circular-Bold";
+  font-size: 2vh;
+  color: #00657C;
+  font-size: 4vh;
 }
 
-.header:hover .nav-list a 
+.our-story-text
 {
-  color: black;
+  padding-top: 1vh;
+  font-family: "Circular-Book";
+  font-size: 2.5vh;
+  color: #00657C;
 }
 
+.timeline-line-box 
+{
+  padding-top: 2.5vh;
+  grid-area: 4/9/17/11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.language-change
- {
-  position: absolute;
-  right: 2vw;
-  top: 0.5vh;
-  font-size: 2rem;
-  color: white;
+.timeline-right-box1
+{
+  grid-area: 9/18/12/31;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.timeline-right-box2
+{
+  grid-area: 17/18/21/31;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.timeline-right-box3
+{
+  grid-area: 25/18/29/31;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.timeline-left-box1
+{
+  grid-area: 13/2/16/16;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+  text-align: right;
+}
+
+.timeline-left-box2
+{
+  grid-area: 21/2/24/16;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.timeline-intext-heading
+{
+  font-family: "Circular-Bold";
+  font-size: 2.5vh;
+  color: #00657C;
+  padding-bottom: 1vh;
+}
+
+.timeline-intext-main
+{
+  font-family: "Circular-Book";
+  font-size: 2vh;
+  color: #00657C;
+}
+
+.timeline-bottom-line
+{
+  grid-area: 32/-24/32/-10;
+  background-color:  #00657C;
+  width: 100%;
+  height: 1px;
+}
+
+/* OUI Philosophy section */
+.Our-Philosophy-box
+{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18,1fr);
+  width: 100vw;
+  height: 80vh;
+}
+
+.Our-Philosophy-square
+{
+  grid-area: 1/7/3/13;
+  background-color: #00657C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Our-Philosophy-text
+{
+  font-family: "Circular-Book";
+  font-size: 2vw;
+  color:#FFFFFF;
+}
+
+.Our-Philosophy-illustartion
+{
+  grid-area: 4/1/16/19;
+  z-index: 0;
+  background-image: url("/static/images/our_philosophy_illustration.svg");
+}
+
+.line-our-philosophy1
+{
+  z-index: 1;
+  grid-area: 4/3/4/17;
+  background-color: #00657C;
+  width: 100%;
+  height: 3px;
+}
+
+.line-our-philosophy2
+{
+  grid-area: 4/5/6/5;
+  background-color: #00657C;
+  width: 3px;
+  height: 100%;
+}
+
+.line-our-philosophy3
+{
+  grid-area: 4/10/6/10;
+  background-color: #00657C;
+  width: 3px;
+  height: 100%;
+}
+
+.line-our-philosophy4
+{
+  grid-area: 4/15/6/15;
+  background-color: #00657C;
+  width: 3px;
+  height: 70%;
+}
+
+.line-our-philosophy5
+{
+  grid-area: 10/10/12/10;
+  background-color: #00657C;
+  width: 3px;
+  height: 70%;
+}
+
+.Our-Philosophy-box-left
+{
+  grid-area: 6/3/12/7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.Our-Philosophy-header-text
+{
   font-family: "Circular-Light";
-  font-weight: 100;
-  text-decoration: none;
-  transition: all 0.5s ease;
+  font-size: 2vw;
+  color: #00657C;
 }
 
-.header:hover .language-change
- {
-  color: black;
+.Our-Philosophy-main-text
+{
+  font-family: "Circular-Book";
+  font-size: 1vw;
+  color: #00657C;
+  text-align: center;
+  margin-top: 1vw;
 }
 
+.Our-Philosophy-box-middle1
+{
+  grid-area: 6/8/12/12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.Our-Philosophy-box-middle2
+{
+  grid-area: 12/8/16/12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.Our-Philosophy-box-right
+{
+  grid-area: 6/13/9/17;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.line-our-philosophy-bottom
+{
+  grid-area: 16/6/16/14;
+  height: 1px;
+  width: 100%;
+  background-color:#00657C;
+}
+
+.line-our-philosophy-bottomvertical
+{
+  grid-area: 17/10/18/10;
+  width: 1px;
+  height: 100%;
+  background-color:#00657C;
+}
+
+/* OUI Philosophy section closing part */
+.OUI-Philosophy-section-box
+{
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(32,1fr);
+}
+.quote-box
+{
+  grid-area: 1/10/5/24 ;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 2vh;
+}
+
+.quote-text
+{
+  font-family: "Circular-LightItalic";
+  font-size: 1.5vw;
+  line-height: 2vw;
+  color: #00657C;
+  text-align: center;
+}
+
+.Image-Philosophy-box
+{
+  grid-area:4/7/27/27 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.philosophy-section-line
+{
+  grid-area: 27/17/29/17;
+  width: 1px;
+  height: 100%;
+  background-color:#00657C;
+}
+
+.catch-phrase-philosophy-box
+{
+  grid-area: 29/7/32/27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catch-phrase-philosophy-text
+{
+  font-family: "Circular-LightItalic";
+  font-size: 1.5vw;
+  color: #00657C;
+}
+
+/* Footer */
 .footer
 {
   background-color: rgba(0, 101, 124, 0.7);
@@ -270,6 +694,7 @@ font-family: "Circular-Medium";
 color:#EDE5BB ;
 font-size: 8vh;
 }
+
 .footerline1
 {
   margin-top: 2vh;
@@ -278,6 +703,7 @@ font-size: 8vh;
   min-height: 1px;
 
 }
+
 .footerline2
 {
   grid-area: -8/14/-8/18;
@@ -340,7 +766,6 @@ font-size: 8vh;
   width: 100%;
 }
 
-
 .footerillustrationbox
 {
   grid-area: 1/8/19/12;
@@ -377,443 +802,7 @@ color:#ffffff ;
 font-size: 2vh;
 }
 
-.aboutoui
-{
-  height: 90vh;
-  width: 100vw;
-  background-color: #FFFFFF;
-  display: grid;
-  grid-template-columns: repeat(18,1fr);
-  grid-template-rows: repeat(18, 1fr);
-}
-
-.about-oui-slogan
-{
-  grid-area: 1/4/3/16;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-}
-
-.about-oui-line
-{
-  margin-top: 1.5vh;
-  margin-bottom: 1.5vh;
-  background-color:#00657C;
-  grid-area: 1/10/2/10;
-  width: 1px;
-  height: 100%;
-}
-
-.about-oui-text
-{
-  font-family: "Circular-Book";
-  color: #00657C;
-  font-size: 2.5vh;
-}
-
-.about-oui-info-box
-{
-  grid-area: 4/1/17/19;
-  background-color:rgb(217, 217, 217);
-  opacity: 0.2;
-}
-
-.blue-box-frame
-{
-  grid-area: 5/10/15/16;
-  background-color: #00657C;
-  opacity: 1;
-}
-
-.illustration-box-frame
-{
-  grid-area: 6/12/17/19;
-  margin-bottom: 1vh;
-  width: 100%;
-  background-image: url("../images/croissant\ background\ yellow_about\ us\ page.svg");
-  
-}
-
-.about-us-image-history
-{
-  grid-area: 7/11/15/18;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-us-image-history img
-{
-width: 100%;
-}
-
-.about-us-history-textbox
-{
-  grid-area: 6/2/16/9;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start ;
-  align-items: flex-start;
-}
-
-
-
-.about-oui-text-header
-{
-  font-family: "Caveat-SemiBold";
-  color: #00657C;
-  font-size: 4vw;
-}
-
-.about-oui-decoration-line
-{
-  background-color:#00657C;
-  grid-area: 2/7/5/7;
-  width: 15vw;
-  height: 1px;
-  margin-bottom: 5vh;
-}
-
-.about-oui-decoration-line2
-{
-  margin-top: 2vh;
-  background-color:#00657C;
-  grid-area: 17/10/18/10;
-  width: 1px;
-  height: 100%;
-}
-
-
-.timeline
-{
-  display: grid;
-  grid-template-columns: repeat(32,1fr);
-  grid-template-rows: repeat(32,1fr);
-  width: 100vw;
-  height: 100vh;
-}
-
-
-.timeline-text-box
-{
-  grid-area: 2/14/4/20;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-} 
-.about-oui-timeline-line
-{
-  margin: 0;
-  background-color:#00657C;
-  grid-area: 1/10/2/10;
-  width: 1px;
-  height: 5vh;
-}
-
-.timeline-header-text
-{
-  font-family: "Circular-Bold";
-  font-size: 2vh;
-  color: #00657C;
-  font-size: 4vh;
-}
-
-.our-story-text
-{
-  padding-top: 1vh;
-  font-family: "Circular-Book";
-  font-size: 2.5vh;
-  color: #00657C;
-}
-
-.timeline-line-box 
-{
-  padding-top: 2.5vh;
-  grid-area: 4/9/17/11;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.timeline-right-box1
-{
-
-  grid-area: 9/18/12/31;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: flex-start;
-}
-
-.timeline-right-box2
-{
-
-  grid-area: 17/18/21/31;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: flex-start;
-}
-
-.timeline-right-box3
-{
-  grid-area: 25/18/29/31;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: flex-start;
-}
-
-.timeline-left-box1
-{
-
-  grid-area: 13/2/16/16;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: right;
-  text-align: right;
-}
-
-.timeline-left-box2
-{
-
-  grid-area: 21/2/24/16;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: flex-start;
-  text-align: right;
-}
-
-.timeline-intext-heading
-{
-  font-family: "Circular-Bold";
-  font-size: 2.5vh;
-  color: #00657C;
-  padding-bottom: 1vh;
-}
-
-.timeline-intext-main
-{
-  font-family: "Circular-Book";
-  font-size: 2vh;
-  color: #00657C;
-
-}
-
-.timeline-bottom-line
-{
-  grid-area: 32/-24/32/-10;
-  background-color:  #00657C;
-  width: 100%;
-  height: 1px;
-
-}
-
-.Our-Philosophy-box
-{
-  display: grid;
-  grid-template-columns: repeat(18,1fr);
-  grid-template-rows: repeat(18,1fr);
-  width: 100vw;
-  height: 80vh;
-}
-
-.Our-Philosophy-square
-{
-  grid-area: 1/7/3/13;
-  background-color: #00657C;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Our-Philosophy-text
-{
-  font-family: "Circular-Book";
-  font-size: 2vw;
-  color:#FFFFFF;
-}
-
-.Our-Philosophy-illustartion
-{
-  grid-area: 4/1/16/19;
-  z-index: 0;
-  background-image: url("/static/images/our_philosophy_illustration.svg");
-}
-
-.line-our-philosophy1
-{
-  z-index: 1;
-  grid-area: 4/3/4/17;
-  background-color: #00657C;
-  width: 100%;
-  height: 3px;
-}
-
-
-.line-our-philosophy2
-{
-  grid-area: 4/5/6/5;
-  background-color: #00657C;
-  width: 3px;
-  height: 100%;
-}
-
-
-.line-our-philosophy3
-{
-  grid-area: 4/10/6/10;
-  background-color: #00657C;
-  width: 3px;
-  height: 100%;
-}
-
-.line-our-philosophy4
-{
-  grid-area: 4/15/6/15;
-  background-color: #00657C;
-  width: 3px;
-  height: 70%;
-}
-
-.line-our-philosophy5
-{
-  grid-area: 10/10/12/10;
-  background-color: #00657C;
-  width: 3px;
-  height: 70%;
-}
-
-.Our-Philosophy-box-left
-{
-    grid-area: 6/3/12/7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
-
-.Our-Philosophy-header-text
-{
-  font-family: "Circular-Light";
-  font-size: 2vw;
-  color: #00657C;
-}
-
-.Our-Philosophy-main-text
-{
-  font-family: "Circular-Book";
-  font-size: 1vw;
-  color: #00657C;
-  text-align: center;
-  margin-top: 1vw;
-}
-
-.Our-Philosophy-box-middle1
-{
-    grid-area: 6/8/12/12;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
-
-.Our-Philosophy-box-middle2
-{
-    grid-area: 12/8/16/12;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
-.Our-Philosophy-box-right
-{
-    grid-area: 6/13/9/17;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
-
-.line-our-philosophy-bottom
-{
-  grid-area: 16/6/16/14;
-  height: 1px;
-  width: 100%;
-  background-color:#00657C;
-}
-
-.line-our-philosophy-bottomvertical
-{
-  grid-area: 17/10/18/10;
-  width: 1px;
-  height: 100%;
-  background-color:#00657C;
-}
-
-.Our-Philosophy-section-box
-{
-  width: 100vw;
-  height: 90vh;
-  display: grid;
-  grid-template-columns: repeat(32, 1fr);
-  grid-template-rows: repeat(32,1fr);
-}
-.quote-box
-{
-  grid-area: 1/10/5/24 ;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
-.quote-text
-{
-  font-family: "Circular-LightItalic";
-  font-size: 1.5vw;
-  line-height: 2vw;
-  color: #00657C;
-  text-align: center;
-}
-
-.Image-Philosophy-box
-{
-  grid-area:4/7/27/27 ;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.philosophy-section-line
-{
-  grid-area: 27/17/29/17;
-  width: 1px;
-  height: 100%;
-  background-color:#00657C;
-}
-
-.catch-phrase-philosophy-box
-{
-  grid-area: 29/7/32/27;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.catch-phrase-philosophy-text
-{
-  font-family: "Circular-LightItalic";
-  font-size: 1.5vw;
-  color: #00657C;
-}
-
+/* Mobile responsiveness */
 @media (max-width: 768px)
 {
  .header
@@ -872,10 +861,12 @@ width: 100%;
     margin-left: 1vw;
     font-size: 5vw;
   }
+
   .aboutoui
   {
     height: 35vh;
   }
+
    .blue-box-frame
   {
     grid-area: 7/10/13/17;
@@ -936,9 +927,8 @@ width: 100%;
 
   .HeroImage
   {
-      object-fit: cover;
-      width: 70vw;
-      
+    object-fit: cover;
+    width: 70vw; 
   }
 
 }
