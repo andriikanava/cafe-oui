@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="static/styles/contact.css">
-        <title>contact</title>
+        <title>Contact</title>
     </head>
     <body>
         <header>
@@ -17,7 +17,7 @@
                     <li><a href="Impressions.html">Impressions</a></li>
                 </ul>
             </nav>
-            <p class="language">NL</p>
+            <button class="language languagebutton">NL</button>
         </header>
         
         <div class="leftSpacing location">
@@ -66,35 +66,68 @@
             <div class="contactInfo">
                 <p>+31 6 31782094</p>
                 <p>claire@oui-cafe.fr</p>
-                <div class="triangleList"> <!-- This needs to become a background image instead of X amount of triangles -->
-                    <div class="triangleUp"></div>
-                    <div class="triangleUp"></div>
-                    <div class="triangleUp"></div>
-                    <div class="triangleUp"></div>
-                    <div class="triangleUp"></div>
-                    <div class="triangleUp"></div> 
-                </div>
+                <img src="static/images/triangle_line.png" alt="triangleLine">
+                <br>
+                <img src="static/images/facebook.png" alt="facebookImage">
+                <img src="static/images/instagram.png" alt="instagramImage">
                 
             </div>
 
-            <div class="contactForm">
+            <div class="contactFormWrapper">
+                <div class="filler formTop">
+                    <p>If you have any inquiries or just want to say hi, please use the contact form!</p>
+                </div>
+                <div class="filler formLeft"></div>
                 <form>
-                    <p class="formNote">
-                    If you have any inquiries or just want to say hi, please use the contact form!
-                    </p>
-                    <div class="formRow">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
+                    <div class="formContent">
+                        <label for="firstName" class="firstName">First Name</label>
+                        <label for="lastName" class="lastName">Last Name</label>
+
+                        <input type="text" class="firstName">
+                        <input type="text" class="lastName">
+
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" required>
+
+                        <label for="textArea">Message</label>
+                        <textarea id="textArea"></textarea>
                     </div>
-                    <input type="email" placeholder="Email*" required>
-                    <textarea placeholder="Message"></textarea>
-                    <button type="submit">Say Bonjour!</button>
+                    <button type="submit" id="submit">Say Bonjour!</button>
                 </form>
+                <div class="filler formRight"></div>
+                <div class="filler formCorner"></div>
+                <div class="filler formBottom"></div>
             </div>
-
-
         </div>
         
+        <!-- Footer -->
+        <footer>
+            <div class="footerbox1">
+                <p class="footerlogo">OUI Café</p>
+                <p class="footertext">Hoofdstraat 75</p>
+                <p class="footertext">7811 ED Emmen, The Netherlands</p>
+                <div class="footerline1"></div>
+                <ul class="footerbuttons">
+                    <li><a href="#" class="footertext"><b>Home</b></a></li>
+                    <li><a href="#" class="footertext"><b>About Us</b></a></li>
+                    <li><a href="#" class="footertext"><b>Menu</b></a></li>
+                    <li><a href="#" class="footertext"><b>Contact</b></a></li>
+                    <li><a href="#" class="footertext"><b>Impressions</b></a></li>
+                </ul>               
+            </div>
+            <div class="footerillustrationbox">
+                <img src="static/images/footerimg.svg" alt="macaroon illustration" class="imgfooter">
+            </div>
+            <div class="footerbox2">
+                <p class="footertext">claire@oui-cafe.fr</p>
+                <p class="footertext">+31 6 31782094</p>
+                <div class="footerline2"></div>
+                <p class="copyright">COPYRIGHT @ 2025 GROUP 1B</p>
+            </div>
+            <div class="languagebox">
+                <p class="language">Fr/En</p>
+            </div>
+        </footer>
         
     </body>
 </html>
