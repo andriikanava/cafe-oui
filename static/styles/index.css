@@ -153,8 +153,7 @@
     position: absolute;
     justify-self: anchor-center;
     align-self: anchor-center;
-    width: 215px;
-    height: 120px;
+    width: 20vw;
 }
 
 .smallCircle{
@@ -163,8 +162,8 @@
     align-self: anchor-center;
     background-color: var(--oui_beige);
     display:inline-block ;
-    width: 325px;
-    height: 198px;
+    width: 24vw;
+    height: 17vw;
     border-radius: 50%;
 }
 
@@ -174,8 +173,8 @@
     align-self: anchor-center;
     background-color: var(--oui_beige);
     opacity: 80%;
-    width: 413px;
-    height: 286px;
+    width: 28vw;
+    height: 20vw;
     border-radius: 50%;
 }
 
@@ -185,8 +184,8 @@
     align-self: anchor-center;
     background-color: var(--oui_beige);
     opacity: 30%;
-    width: 457px;
-    height: 338px;
+    width: 32vw;
+    height: 23vw;
     border-radius: 50%;
 }
 
@@ -221,11 +220,11 @@
 
 .carousel{
     display: flex;
-    width: 573px;
+    width: 39vw;
     overflow-x: auto;
     position: absolute;
     margin-left: 3rem;
-    padding-top: 2rem;
+    margin-top: 3rem;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     anchor-name: --carousel;
@@ -270,17 +269,16 @@
 .r1{
     grid-column: 1/19;
     height: 582px;
+    grid-template-columns: repeat(19, 1fr);
+    display: grid;
     width: 100%;
     background-color: var(--offwhite);
     margin-block: 1rem;
     h3{
         font-weight: lighter;
-        box-sizing: border-box;
         line-height: 2rem;
-        padding-block: 2rem;
-        padding-inline: 5rem;
-        width: 50%;
-        justify-self: left;
+        padding-inline: 1rem;
+        width: 100%;
         text-align: left;
     }
 }
@@ -290,7 +288,6 @@
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     margin-block: 1rem;
-    border: 2px solid black;
     padding-bottom: 5rem;
     .hl{
         align-self: center;
@@ -319,12 +316,23 @@
 
 .vegan1{
     grid-column: 1/9;
+    grid-row: 2;
+    z-index: 2;
+    height: 350px;
+    img{
+        width: 100%;
+    }
 }
 
 .vegan2{
     grid-column: 12/19;
+    grid-row: 2;
     padding-top: 10rem;
     padding-left: 4rem;
+    z-index: 2;
+    img{
+        width: 100%;
+    }
 }
 
 .blueBackdropWide{
@@ -343,52 +351,77 @@
 
 .images{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.blueBackdropR{
-    transform: translate(-28%, -108%);
-    justify-self: right;
-    width: 558px;
-    height: 428px;
-    background-color: var(--oui_darkblue);
 }
 
 .blueBackdropL{
     grid-column: 2/9;
     grid-row: 2;
     justify-self: left;
-    width: 580px;
+    width: 100%;
     height: 370px;
     background-color: var(--oui_darkblue);
 }
 
+.right{
+    grid-column: 10/19;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left{
+    grid-column: 1/9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+}
+.blueBackdropR{
+    width: 100%;
+    height: 40vw;
+    align-self: center;
+    background-color: var(--oui_darkblue);
+}
+
+/*
 .cafebw{
     transform: translate(-20%, -200%);
     justify-self: right;
     width: 558px;
     height: 428px;
-}
-
-.readMore{
-    /*box*/
-    background-color: var(--oui_darkblue);
-    position: relative;
-    border-radius: 3ch;
-    padding-inline: 2rem;
-    padding-block: 1.25rem;
-    top: 5%;
-    left: 4rem;
-    /*text*/
-    color: white;
-    text-align: center;
-    font-size: 20px;
-}
+}*/
 
 .browse{
     grid-column: 10/19;
     display: flex;
     padding-top: 2rem;
+}
+
+.coffeeIllustration{
+    height: 69px;
+}
+
+/* ------------------- Link Buttons ------------------- */
+
+.veganLink{
+    grid-column: 10/18;
+    grid-row: 1;
+    display: flex;
+    a{
+    /*box*/
+    background-color: var(--oui_beige);
+    border-radius: 3ch;
+    padding-inline: 5rem;
+    /*text*/
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Circular-Book";
+    }
 }
 
 .browseLink{
@@ -400,11 +433,8 @@
     /*text*/
     color: white;
     text-align: center;
+    text-decoration: none;
     font-size: 20px;
-}
-
-.coffeeIllustration{
-    height: 69px;
 }
 
 .menuLink{
@@ -426,9 +456,22 @@
     align-content: center;
 }
 
+.readMore{
+    /*box*/
+    background-color: var(--oui_darkblue);
+    position: relative;
+    border-radius: 3ch;
+    padding-inline: 2rem;
+    padding-block: 1.25rem;
+    left: 1rem;
+    /*text*/
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
 /* ------------------- Text(s) ------------------- */
 
-.bounce {
+/*.bounce {
     color: white;
     font-weight: 100;
     animation: myAnimation 2s infinite alternate;
@@ -441,6 +484,30 @@
 @keyframes myAnimation {
     0%  {left:50%; top:700px;}
     50% {left:50%; top: 710px;;}
+}*/
+
+.bounce{
+    color: #FFFFFF;
+    font-family: "Circular-Light";
+    font-size: 1rem;
+    font-weight: lighter;
+    position: absolute;
+    justify-self: center;
+    bottom: 2vh;
+    animation: bounce 1.5s ease-in-out infinite;
+    padding-bottom: 3vh;
+}
+
+@keyframes bounce
+{
+    0%, 100%
+    {
+        transform: translateY(0);
+    }    
+    50%
+    {
+        transform: translateY(-30px);
+    }
 }
 
 .content >h3{
@@ -456,8 +523,8 @@
 }
 
 .history{
-    padding-block: 2rem;
-    padding-inline: 5rem;
+    /*padding-block: 2rem;
+    padding-inline: 5rem;*/
     font-family: cursive;
     font-size: 50px;
 }
@@ -489,7 +556,7 @@
     font-family: "Circular-Light";
 }
 
-.text{
+.textPopular{
     justify-items: center;
 }
 
@@ -517,6 +584,31 @@
     margin-block: 0.75rem;
 }
 
+.doubleHl1, .doubleHl2{
+    transform: translate(10%, 250px);
+    width: 400px;
+    position: absolute;
+    height: 7px;
+    background-color: var(--oui_darkblue);
+    justify-self: center;
+    margin-block: 0.75rem;
+}
+
+.doubleHl2{
+        transform: translate(10%, 260px);
+}
+
+.veganLinkHl{
+    align-self: center;
+    width: 310px;
+    height: 1px;
+    background-color: var(--oui_darkblue);
+    margin-right: 2rem;
+}
+
+.vegan1 > img{
+    width:100%;
+}
 /*.hl{
     padding-left: 3rem;
     position:absolute;
