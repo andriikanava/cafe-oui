@@ -324,12 +324,27 @@ h1 {
   grid-column: 15/21;
 }
 
-.footer-line {
+.vertical-line {
   border: none;
   height: 1.5px;
   background-color: #458d9d; 
   margin: 40px;
   grid-column: 6/15;
+}
+
+.playlist {
+  width: 100%;
+  height: auto;
+  background-color: #00657C;
+  grid-column: 1/19;
+}
+
+.full-vertical-line {
+  border: none;
+  height: 1.5px;
+  background-color: #458d9d; 
+  grid-column: 1/19;
+  margin-top: 1svh;
 }
 
 footer {
@@ -515,4 +530,8 @@ footer {
   .languagebutton:hover::after {
     border-top: 0.6svh solid #EDE5BB;
   }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
