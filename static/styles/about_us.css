@@ -675,6 +675,8 @@ footer
   font-family: "Circular-Light";
   color:#ffffff ;
   font-size: 2vh;
+
+  white-space: nowrap;
 }
 
 .footerbox1 
@@ -690,7 +692,7 @@ footer
 {
   font-family: "Circular-Medium";
   color:#EDE5BB ;
-  font-size: 8vh;
+  font-size: 6.5vh;
 }
 
 .footerline1 
@@ -963,6 +965,16 @@ footer
   {
     font-size: 1.5vh;
   }
+
+  .footerbox2
+  {
+    grid-area: 13/6/18/14;
+  }
+
+  .footerlogo
+  {
+    font-size: 5.5vh;
+  }
 }
 
 
@@ -1004,4 +1016,33 @@ footer
     width: 70vw; 
   }
 
+   .footertext
+  {
+    font-size: 1.5vh;
+  }
+ 
 }
+
+@media (max-width: 375px) 
+{
+ 
+  .footerillustrationbox
+  {
+    grid-area: 9/3/12/17;
+  }
+  .footerbox2
+  {
+    grid-area: 13/6/18/14;
+  }
+  footer 
+  {
+    height: 50vh;
+  }
+  .footerlogo
+  {
+    font-size: 4.5vh;
+  }
+
+
+}
+
