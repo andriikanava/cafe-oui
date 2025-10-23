@@ -1,3 +1,14 @@
+<?php  
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+    $fname = filter_input(INPUT_POST, "fname");
+    $lname = filter_input(INPUT_POST, "lname"); 
+    $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL); 
+    $review = filter_input(INPUT_POST, "textarea");
+    var_dump($_POST);  
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -72,34 +83,91 @@
                 <img src="static/images/instagram.png" alt="instagramImage">
                 
             </div>
-
             <div class="contactFormWrapper">
                 <div class="filler formTop">
                     <p>If you have any inquiries or just want to say hi, please use the contact form!</p>
                 </div>
                 <div class="filler formLeft"></div>
-                <form>
+                <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
                     <div class="formContent">
-                        <label for="firstName" class="firstName">First Name</label>
-                        <label for="lastName" class="lastName">Last Name</label>
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname">
 
-                        <input type="text" class="firstName">
-                        <input type="text" class="lastName">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname">
 
-                        <label for="email">Email*</label>
-                        <input type="email" id="email" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="myname@example.com">
 
-                        <label for="textArea">Message</label>
-                        <textarea id="textArea"></textarea>
+                        <label for="textarea">Message:</label>
+                        <textarea id="textarea" name="textarea" style="resize: none;"></textarea> 
                     </div>
                     <button type="submit" id="submit">Say Bonjour!</button>
                 </form>
                 <div class="filler formRight"></div>
                 <div class="filler formCorner"></div>
                 <div class="filler formBottom"></div>
-            </div>
+                
+            </div>          
         </div>
         
+        
+        <?php
+            $errors = [];
+        
+            if ($_SERVER["REQUEST_METHOD"] == "POST") 
+            {
+                if (empty($fname)) 
+                {
+                    $errors[] = "First name cannot be empty.";
+                } elseif (strlen($fname) < 3) 
+                {
+                    $errors[] = "First name must be at least 3 letters long.";
+                }
+        
+                if (empty($lname))
+                {
+                   $errors[] = "Last name cannot be empty.";
+                } elseif (!preg_match("/^[A-Z]/", $lname)) 
+                {
+                    $errors[] = "Last name must start with a capital letter.";
+                }
+        
+                if (empty($_POST["email"])) 
+                {
+                    $errors[] = "Email cannot be empty.";
+                } elseif (!$email) 
+                {
+                    $errors[] = "Please enter a valid email address.";
+                }
+
+                if (empty($review)) 
+                {
+                    $errors[] = "Comments cannot be empty.";
+                } else 
+                {
+                    $wordCount = str_word_count(trim($review));
+                    if ($wordCount < 3) 
+                    {
+                        $errors[] = "Comments must contain at least 3 words.";
+                    }
+                }        
+                if (!empty($errors)) 
+                {
+                echo "<ul style='color: red;'>";
+                foreach ($errors as $error) 
+                {
+                 echo "<li>$error</li>";
+                }
+                echo "</ul>";
+                } else 
+                {
+                    echo "<p style='color: green;'>Form Submitted Successfully!</p>";
+                }
+
+            }
+        ?>
+
         <!-- Footer -->
         <footer>
             <div class="footerbox1">
