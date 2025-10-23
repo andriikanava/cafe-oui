@@ -88,19 +88,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 </div>
                 <div class="filler formLeft"></div>
                 <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
+
                     <div class="formContent">
-                        <label for="fname">First Name:</label>
-                        <input type="text" name="fname" id="fname">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">First Name</label>
+                                <input type="text" name="fname" id="fname" class="form-input">
+                            </div>
 
-                        <label for="lname">Last Name:</label>
-                        <input type="text" name="lname" id="lname">
+                            <div class="form-group">
+                                <label for="lname">Last Name</label>
+                                <input type="text" name="lname" id="lname" class="form-input">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" placeholder="myname@example.com" class="form-input">
+                        </div>
 
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="myname@example.com">
-
-                        <label for="textarea">Message:</label>
-                        <textarea id="textarea" name="textarea" placeholder="Best cafe in the world!" style="resize: none; "></textarea> 
+                        <div class="form-group">
+                            <label for="textarea">Message</label>
+                            <textarea id="textarea" name="textarea" placeholder="The Best Cafe Ever!" class="form-input"></textarea>
+                        </div>
                     </div>
+
                     <button type="submit" id="submit">Say Bonjour!</button>
                 </form>
                 <div class="filler formRight"></div>
