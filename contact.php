@@ -5,7 +5,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $lname = filter_input(INPUT_POST, "lname"); 
     $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL); 
     $review = filter_input(INPUT_POST, "textarea");
-    var_dump($_POST);  
 }
 ?>
 
@@ -100,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                         <input type="email" name="email" id="email" placeholder="myname@example.com">
 
                         <label for="textarea">Message:</label>
-                        <textarea id="textarea" name="textarea" style="resize: none;"></textarea> 
+                        <textarea id="textarea" name="textarea" placeholder="Best cafe in the world!" style="resize: none; "></textarea> 
                     </div>
                     <button type="submit" id="submit">Say Bonjour!</button>
                 </form>
@@ -110,7 +109,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 
             </div>          
         </div>
-        
         
         <?php
             $errors = [];
@@ -127,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         
                 if (empty($lname))
                 {
-                   $errors[] = "Last name cannot be empty.";
+                $errors[] = "Last name cannot be empty.";
                 } elseif (!preg_match("/^[A-Z]/", $lname)) 
                 {
                     $errors[] = "Last name must start with a capital letter.";
@@ -151,22 +149,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                     {
                         $errors[] = "Comments must contain at least 3 words.";
                     }
-                }        
+                } 
+                
+                
                 if (!empty($errors)) 
                 {
-                echo "<ul style='color: red;'>";
-                foreach ($errors as $error) 
-                {
-                 echo "<li>$error</li>";
-                }
-                echo "</ul>";
+                    echo "<div class='message-section-red'>";
+                    echo "<ul style='color: red;'>";
+                    foreach ($errors as $error) 
+                    {
+                        echo "<li>$error</li>";
+                    }
+                    echo "</ul>";
+                    echo "</div>";
                 } else 
                 {
-                    echo "<p style='color: green;'>Form Submitted Successfully!</p>";
+                    echo "<div class='message-section-green'><p style='color: green;'>Form Submitted Successfully!</p></div>";
                 }
 
             }
         ?>
+
 
         <!-- Footer -->
         <footer>

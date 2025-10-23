@@ -452,7 +452,39 @@ form
     margin: 2vh;
 }
 
+.message-section-green,
+.message-section-red
+{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    grid-column: 8/17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    
+    border-radius: 10px;
+    
+    padding: 1rem 2rem;
+    text-align: center;
+}
 
+.message-section-red
+{
+    border: 1px solid #ffb3b3;
+    background-color: #fff5f5;
+}
+
+.message-section-green{
+    border: 1px solid #41ad45;
+    background-color: #daefd2;
+}
+
+textarea
+{
+    font-family: inherit;
+    text-align: center;
+}
 
 
 
