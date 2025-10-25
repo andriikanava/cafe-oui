@@ -1,22 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Circular";
     color: var(--oui_darkblue);
 }
 
 /* ------------------- Fonts ------------------- */
-@font-face {
-    font-family: "Circular";
-    src: url("fonts/CircularStd-Book.otf") format("opentype");
-  }
-
-/* ------------------- Fonts ------------------- */
-@font-face {
-    font-family: "Circular";
-    src: url("../fonts/CircularStd-Book.otf") format("opentype");
-  }
-
 @font-face {
   font-family: "Circular-Black";
   src: url("../fonts/CircularStd-Black.otf") format("opentype");
@@ -47,7 +35,7 @@
 
 @font-face {
   font-family: "Circular-Book";
-  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  src: url("/static/fonts/CircularStd-Book.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -128,9 +116,9 @@
 
 .header > a{
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 2.5vw;
     font-weight: 100;
-    font-family: "Circular";
+    font-family: "Circular-Book";
     text-decoration: none;
     align-self: flex-start;
     transition: all 0.5s ease;
@@ -220,15 +208,16 @@
 
 .carousel{
     display: flex;
-    width: 39vw;
+    max-width: 39vw;
     overflow-x: auto;
     position: absolute;
-    margin-left: 3rem;
-    margin-top: 3rem;
+    margin-left: 8vw;
+    margin-top: 13vw;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     anchor-name: --carousel;
     img{
+        max-width: 100%;
         scroll-snap-align: start;
     }
 }
@@ -237,13 +226,13 @@
     content: "→";
     justify-items: center;
     font-family: "Circular";
-    font-size: 20px;
+    font-size: 2vw;
     background-color: var(--oui_beige);
     color: var(--oui_darkblue);
     border: none;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 4vw;
+    width: 4vw;
     position: fixed;
     position-anchor: --carousel;
     position-area: right center;
@@ -268,17 +257,18 @@
 /* ------------------- Content Sections ------------------- */
 .r1{
     grid-column: 1/19;
-    height: 582px;
+    height: 60vw;
     grid-template-columns: repeat(19, 1fr);
     display: grid;
     width: 100%;
     background-color: var(--offwhite);
     margin-block: 1rem;
     h3{
-        font-weight: lighter;
-        line-height: 2rem;
+        font-family: "Circular-Book";
+        line-height: 4vw;
         padding-inline: 1rem;
         width: 100%;
+        font-size: 1.5vw;
         text-align: left;
     }
 }
@@ -291,7 +281,7 @@
     padding-bottom: 5rem;
     .hl{
         align-self: center;
-        width: 200px;
+        width: 20vw;
         height: 1px;
         background-color: var(--oui_darkblue);
     }
@@ -303,6 +293,7 @@
     display: grid;
     background-color: var(--offwhite);
     padding-block: 4rem;
+    margin-top: 2rem;
 }
 
 .r4{
@@ -318,7 +309,7 @@
     grid-column: 1/9;
     grid-row: 2;
     z-index: 2;
-    height: 350px;
+    height: 35vw;
     img{
         width: 100%;
     }
@@ -352,28 +343,25 @@
 .images{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .imgHover:hover{
-    width: 21vw;
+    width: 105%;
 }
 
 .blueBackdropL{
     grid-column: 2/9;
-    grid-row: 2;
+    /*grid-row: 2;
     justify-self: left;
-    width: 100%;
-    height: 370px;
+    width: 100%;*/
+    height: 26vw;
     background-color: var(--oui_darkblue);
 }
 
 .right{
-    grid-column: 10/19;
+    grid-column: 11/19;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .left{
@@ -383,9 +371,10 @@
     justify-items: center;
     align-items: center;
 }
+
 .blueBackdropR{
     width: 100%;
-    height: 40vw;
+    height: 35vw;
     align-self: center;
     background-color: var(--oui_darkblue);
 }
@@ -405,7 +394,7 @@
 }
 
 .coffeeIllustration{
-    height: 69px;
+    height: 8vw;
 }
 
 /* ------------------- Link Buttons ------------------- */
@@ -423,7 +412,7 @@
     color: black;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.5vw;
     font-family: "Circular-Book";
     }
 }
@@ -432,13 +421,15 @@
     /*box*/
     background-color: var(--oui_darkblue);
     border-radius: 3ch;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     padding-block: 1rem;
+    align-self: center;
     /*text*/
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2vw;
+    font-family: "Circular-Book";
 }
 
 .menuLink{
@@ -455,40 +446,28 @@
     color: black;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2vw;
     justify-self: center;
     align-content: center;
+    font-family: "Circular-Book";
 }
 
 .readMore{
     /*box*/
     background-color: var(--oui_darkblue);
     position: relative;
-    border-radius: 3ch;
-    padding-inline: 2rem;
-    padding-block: 1.25rem;
+    border-radius: 3vw;
+    padding-inline: 2vw;
+    padding-block: 2vw;
     left: 1rem;
     /*text*/
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5vw;
+    font-family: "Circular-Book";
+
 }
 /* ------------------- Text(s) ------------------- */
-
-/*.bounce {
-    color: white;
-    font-weight: 100;
-    animation: myAnimation 2s infinite alternate;
-    position:absolute;
-    top: 700px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@keyframes myAnimation {
-    0%  {left:50%; top:700px;}
-    50% {left:50%; top: 710px;;}
-}*/
 
 .bounce{
     color: #FFFFFF;
@@ -530,28 +509,31 @@
     /*padding-block: 2rem;
     padding-inline: 5rem;*/
     font-family: cursive;
-    font-size: 50px;
+    font-size: 4.5vw;
+    padding-left: 1rem;
 }
 
 .popular{
     padding-block: 2rem;
     padding-inline: 5rem;
     font-family: "Circular-Book";
-    font-size: 32px;
+    font-size: 3.2vw;
 }
 
-.textc1{
+.textc1, .textc2{
     justify-items: center;
-    padding-block: 1rem;
     grid-column: 8 / 12;
-    text-align: center;
 }
 
 .textc2{
-    justify-items: center;
-    padding-block: 1rem;
     grid-column: 2/17;
+}
+
+.c{
+    font-family: "Circular-Light";
+    padding-block: 1rem;
     text-align: center;
+    font-size: 2vw;
 }
 
 .choicesText{
@@ -566,11 +548,11 @@
 
 /* ------------------- Vertical Lines ------------------- */
 .vl1{
-    height: 30px;
+    height: 3vw;
 }
 
 .vl2{
-    height: 76px;
+    height: 7.6vw;
 }
 
 .vl1, .vl2{
@@ -581,14 +563,14 @@
 }
 
 .hl2{
-    width: 200px;
+    width: 20vw;
     height: 2px;
     background-color: var(--oui_darkblue);
     justify-self: center;
     margin-block: 0.75rem;
 }
 
-.doubleHl1, .doubleHl2{
+/*.doubleHl1, .doubleHl2{
     transform: translate(10%, 250px);
     width: 400px;
     position: absolute;
@@ -600,11 +582,11 @@
 
 .doubleHl2{
         transform: translate(10%, 260px);
-}
+}*/
 
 .veganLinkHl{
     align-self: center;
-    width: 310px;
+    width: 35vw;
     height: 1px;
     background-color: var(--oui_darkblue);
     margin-right: 2rem;
@@ -613,6 +595,7 @@
 .vegan1 > img{
     width:100%;
 }
+
 /*.hl{
     padding-left: 3rem;
     position:absolute;
