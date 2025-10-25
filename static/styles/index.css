@@ -305,6 +305,20 @@
     padding-block: 3rem;
 }
 
+.r5{
+    grid-column: 1/19;
+}
+
+.croissant{
+    width: 100%;
+}
+
+.horizontalLineDBlue{
+    background-color: var(--oui_darkblue);
+    height: 2vw;
+    width: 100%;
+}
+
 .vegan1{
     grid-column: 1/9;
     grid-row: 2;
