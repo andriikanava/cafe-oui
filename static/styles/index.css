@@ -301,8 +301,13 @@
     grid-template-columns: repeat(18, 1fr);
     display: grid;
     background-color: var(--offwhite);
-    margin-block: 1rem;
-    padding-block: 3rem;
+    margin-top: 1rem;
+    padding-top: 3rem;
+}
+
+.veganOptions{
+    grid-column: 1/19;
+    width: 100%;
 }
 
 .r5{
