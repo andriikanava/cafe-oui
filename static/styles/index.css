@@ -141,7 +141,7 @@
     position: absolute;
     justify-self: anchor-center;
     align-self: anchor-center;
-    width: 20vw;
+    width: 15vw;
 }
 
 .smallCircle{
@@ -257,20 +257,32 @@
 /* ------------------- Content Sections ------------------- */
 .r1{
     grid-column: 1/19;
-    height: 60vw;
     grid-template-columns: repeat(19, 1fr);
     display: grid;
     width: 100%;
     background-color: var(--offwhite);
     margin-block: 1rem;
     h3{
-        font-family: "Circular-Book";
-        line-height: 4vw;
+        font-family: "Circular-Light";
+        line-height: 3vw;
         padding-inline: 1rem;
         width: 100%;
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         text-align: left;
     }
+}
+
+.historyUnderline{
+    width: 50%;
+    height: 1px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    background-color: var(--oui_darkblue);
+}
+
+.todayText{
+    padding-block: 2rem;
 }
 
 .r2{
@@ -380,15 +392,19 @@
 
 .right{
     grid-column: 11/19;
-    display: flex;
+}
+
+.bold{
+    font-weight:800;
 }
 
 .left{
-    grid-column: 1/9;
+    grid-column: 1/10;
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
+    padding-left: 3rem;
 }
 
 .blueBackdropR{
@@ -409,7 +425,8 @@
 .browse{
     grid-column: 10/19;
     display: flex;
-    padding-top: 2rem;
+    margin-left: 45rem;
+    position: absolute;
 }
 
 .coffeeIllustration{
@@ -420,19 +437,21 @@
 
 .veganLink{
     grid-column: 10/18;
-    grid-row: 1;
+    position: absolute;
+    margin-left: 43%;
     display: flex;
     a{
     /*box*/
     background-color: var(--oui_beige);
     border-radius: 3ch;
-    padding-inline: 5rem;
+    padding-inline: 3rem;
+    padding-block: 1rem;
     /*text*/
     color: black;
     text-align: center;
     text-decoration: none;
     font-size: 1.5vw;
-    font-family: "Circular-Book";
+    font-family: "Circular-Light";
     }
 }
 
@@ -465,10 +484,10 @@
     color: black;
     text-align: center;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     justify-self: center;
     align-content: center;
-    font-family: "Circular-Book";
+    font-family: "Circular-Light";
 }
 
 .readMore{
@@ -477,22 +496,21 @@
     position: relative;
     border-radius: 3vw;
     padding-inline: 2vw;
-    padding-block: 2vw;
+    padding-block: 1vw;
     left: 1rem;
+    margin-bottom: 2rem;
     /*text*/
     color: white;
     text-align: center;
     font-size: 1.5vw;
-    font-family: "Circular-Book";
-
+    font-family: "Circular-Light";
 }
 /* ------------------- Text(s) ------------------- */
 
 .bounce{
     color: #FFFFFF;
     font-family: "Circular-Light";
-    font-size: 1rem;
-    font-weight: lighter;
+    font-size: 1.3vw;
     position: absolute;
     justify-self: center;
     bottom: 2vh;
@@ -520,23 +538,20 @@
     padding-inline: 13rem;
 }
 
-.bold{
-    font-weight: bolder;
-}
-
 .history{
     /*padding-block: 2rem;
     padding-inline: 5rem;*/
     font-family: cursive;
-    font-size: 4.5vw;
+    font-size: 3vw;
     padding-left: 1rem;
+    padding-top: 5rem;
 }
 
 .popular{
     padding-block: 2rem;
     padding-inline: 5rem;
-    font-family: "Circular-Book";
-    font-size: 3.2vw;
+    font-family: "Circular-Light";
+    font-size: 2vw;
 }
 
 .textc1, .textc2{
@@ -545,14 +560,14 @@
 }
 
 .textc2{
-    grid-column: 2/17;
+    grid-column: 3/16;
 }
 
 .c{
     font-family: "Circular-Light";
     padding-block: 1rem;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.4vw;
 }
 
 .choicesText{
@@ -605,7 +620,7 @@
 
 .veganLinkHl{
     align-self: center;
-    width: 35vw;
+    width: 25vw;
     height: 1px;
     background-color: var(--oui_darkblue);
     margin-right: 2rem;
