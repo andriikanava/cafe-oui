@@ -432,11 +432,10 @@
     padding-left: 3rem;
 }
 
-.blueBackdropR{
+.cafebw{
     width: 100%;
     height: 35vw;
     align-self: center;
-    background-color: var(--oui_darkblue);
 }
 
 .browse{
