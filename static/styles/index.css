@@ -212,7 +212,7 @@
     overflow-x: auto;
     position: absolute;
     margin-left: 8vw;
-    margin-top: 13vw;
+    margin-top: 2vw;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     anchor-name: --carousel;
@@ -223,10 +223,10 @@
 }
 
 .carousel::scroll-button(right), .carousel::scroll-button(left){
-    content: "→";
+    content: "\25BB";
     justify-items: center;
-    font-family: "Circular";
-    font-size: 2vw;
+    font-family: "Circular-Light";
+    font-size: 1.5vw;
     background-color: var(--oui_beige);
     color: var(--oui_darkblue);
     border: none;
@@ -241,7 +241,7 @@
 }
 
 .carousel::scroll-button(left){
-    content: "←";
+    content: "\25C5";
     position-area: left center;
     translate: 110%;
 }
