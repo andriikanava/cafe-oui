@@ -89,50 +89,76 @@
     grid-template-columns: repeat(18, 1fr);
 }
 
-/* ------------------- Home Bar ------------------- */
-.header{
-    grid-column: 1/5;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 2vw;
-    height: 8vh;
-    border-bottom: 2px solid white;
+/* ------------------- Header ------------------- */
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8vh;
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  height: 8vh;
 
-    transition: all 0.5s ease;
-    z-index: 90; /*arranges element to the front of all other elements*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 100;
 }
 
-.header:hover{
-    background-color: white;
+.header:hover {
+  background-color: white;
 }
 
-.header > a{
-    color: #FFFFFF;
-    font-size: 2.5vw;
-    font-weight: 100;
-    font-family: "Circular-Book";
-    text-decoration: none;
-    align-self: flex-start;
-    transition: all 0.5s ease;
+/* --- navigation --- */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
 
-.header:hover a{
-    color: black
+/* --- remove bullet points --- */
+.nav-list {
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.header >a.language-change{
-    position: absolute;
-    right: 2vw;
-    top: 2vh;
-    font-size: 1rem;
+/* --- links --- */
+.nav-list a {
+  color: white;
+  font-size: 2rem;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.header:hover .nav-list a {
+  color: black;
+}
+
+/* --- language top right --- */
+.language-change {
+  position: absolute;
+  right: 2vw;
+  top: 0.5vh;
+  font-size: 2rem;
+  color: white;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.header:hover .language-change {
+  color: black;
 }
 
 /* ------------------- Logo ------------------- */
