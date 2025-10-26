@@ -376,8 +376,9 @@
     justify-content: space-around;
 }
 
-.imgHover:hover{
-    scale: 1.05;
+.imgHover:hover, .veganLink:hover, .menuLink:hover, .browseLink:hover, .readMore:hover{
+    scale: 1.02;
+    transition: 0.3s ease-in-out;
 }
 
 .blueBackdropL{
@@ -432,7 +433,7 @@
 
 /* ------------------- Link Buttons ------------------- */
 
-.veganLink{
+.veganLinkContent{
     grid-column: 10/18;
     position: absolute;
     margin-left: 43%;
