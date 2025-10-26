@@ -75,6 +75,38 @@
   font-style: italic;
 }
 
+@font-face 
+{
+  font-family: "Caveat-Bold";
+  src: url("../fonts/Caveat-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-Medium";
+  src: url("../fonts/Caveat-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-Regular";
+  src: url("../fonts/Caveat-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-SemiBold";
+  src: url("../fonts/Caveat-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* ------------------- Colours ------------------- */
 :root{
     --oui_darkblue: #00657C;
@@ -282,7 +314,7 @@
 /* ------------------- Content Sections ------------------- */
 .r1{
     grid-column: 1/19;
-    grid-template-columns: repeat(19, 1fr);
+    grid-template-columns: repeat(18, 1fr);
     display: grid;
     width: 100%;
     background-color: var(--offwhite);
@@ -417,6 +449,7 @@
 
 .right{
     grid-column: 11/19;
+    padding-top: 3rem;
 }
 
 .bold{
@@ -434,8 +467,6 @@
 
 .cafebw{
     width: 100%;
-    height: 35vw;
-    align-self: center;
 }
 
 .browse{
@@ -555,9 +586,7 @@
 }
 
 .history{
-    /*padding-block: 2rem;
-    padding-inline: 5rem;*/
-    font-family: cursive;
+    font-family: "Caveat-Regular";
     font-size: 3vw;
     padding-left: 1rem;
     padding-top: 5rem;
