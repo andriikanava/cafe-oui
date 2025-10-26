@@ -377,7 +377,7 @@
 }
 
 .imgHover:hover{
-    width: 105%;
+    scale: 1.05;
 }
 
 .blueBackdropL{
