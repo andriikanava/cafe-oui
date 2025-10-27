@@ -113,83 +113,74 @@ a {
     font-size: xx-large;
 }
 
-header a {
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-header a::after {
-    content: "";
-    position: absolute;
+/* ------------------- Header ------------------- */
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    height: 8vh;
+  
+    position: fixed;
+    top: 0;
     left: 0;
-    bottom: -2px;
-    width: 0%;
-    height: 2px;
-    background-color: #ffffff;
-    transition: width 0.4s ease-in-out;
-}
-
-header a:hover::after {
     width: 100%;
-}
-
-.language {
-    position: absolute;
+    transition: all 0.5s ease;
+    z-index: 100;
+  }
+  
+  .header:hover {
+    background-color: white;
+  }
+  
+  /* --- навигация --- */
+  .nav {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    right: 5.5svh;
-}
-
-.languagebutton {
-    background: none;
-    border: none;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* --- список без маркеров --- */
+  .nav-list {
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list a {
+    color: white;
+    font-size: 2rem;
+    font-family: "Circular-Light";
+    font-weight: 100;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  
+  .header:hover .nav-list a {
+    color: black;
+  }
+  
+  .language-change {
+    position: absolute;
+    right: 2vw;
+    top: 0.5vh;
+    font-size: 2rem;
     color: white;
     font-family: "Circular-Light";
-    font-weight: 400;
-    font-size: 2.2svh;
-    cursor: pointer;
-    padding-right: 2.8svh;
-}
-
-.languagebutton::after {
-    content: "";
-    position: absolute;
-    right: 0.6svh;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 0.6svh solid transparent;
-    border-right: 0.6svh solid transparent;
-    border-top: 0.9svh solid white;
-}
-
-.languagebutton:hover::after {
-    border-top: 0.9svh solid #EDE5BB;
-}
-
-header button {
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-header button::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0%;
-    height: 2px;
-    background-color: #EDE5BB;
-    transition: width 0.4s ease-in-out;
-}
-
-header button:hover {
-    color: #EDE5BB;
-}
-
-header button:hover::before {
-    width: 100%;
-}
+    font-weight: 100;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  
+  .header:hover .language-change {
+    color: black;
+  }
 
 hr
 {

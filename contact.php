@@ -17,17 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <title>Contact</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Aboutus.html">About Us</a></li>
-                    <li><a href="Menu.html">Menu</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Impressions.html">Impressions</a></li>
-                </ul>
+        <header class="header">
+            <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Impressions</a></li>
+                <li><a href="" class="language-change">NL</a></li>
+            </ul>
             </nav>
-            <button class="language languagebutton">NL</button>
         </header>
         
         <div class="leftSpacing location">
