@@ -146,5 +146,22 @@
             </div>
         </footer>
     </div>
+
+<?php
+$show_popup = !isset($_GET['close']);
+?>
+
+<?php if ($show_popup): ?>
+<div class="popup">
+  <a href="?close=1" class="close-btn">×</a>
+  <img src="static/images/popup.png" alt="">
+  <strong>Discover our extended menu - plenty to enjoy!</strong>
+  <a href="menu.html" class="discover_btn">Discover</a>
+</div>
+<?php endif; ?>
+
+</body>
+</html>
+
 </body>
 </html>
