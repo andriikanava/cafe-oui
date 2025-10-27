@@ -797,7 +797,7 @@ section {
 .vegan-content-box img {
   width: 100%;
   height: auto;
-  z-index: 100;
+  z-index: 90;
 }
 #vegan-croisant-img {
   grid-area: 1/2/6/9;
