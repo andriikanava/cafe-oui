@@ -590,7 +590,7 @@ section {
 .cold-drinks {
   grid-column: 1 / -1;
   background-color: #00657C;
-  background-image: url("/static/illustrations/eb484a1d8bcb3d8f5d5365420a64dba1560b0391.png");
+  background-image: url("../illustrations/eb484a1d8bcb3d8f5d5365420a64dba1560b0391.png");
   background-repeat: repeat;
   background-size: 15%;
 
