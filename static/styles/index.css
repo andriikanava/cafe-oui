@@ -804,3 +804,57 @@ font-family: "Circular-Light";
 color:#ffffff ;
 font-size: 2vh;
 }
+
+/* ------------------- Popup ------------------- */
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 12vw;
+  height: 12vw;
+  background: #FDF5ED;
+  border-radius: 10px;
+  border: #00657CB2 solid 3px;
+  padding: 16px;
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:1vh;
+}
+.popup img {
+  width: 80%;
+  height: auto;
+}
+.popup strong {
+  text-align: center;
+  font-size: 0.8vw;
+}
+.popup .discover_btn {
+  background-color: #00657C;
+  text-decoration: none;
+  color: white;
+  padding-inline: 1vw;
+  padding-block: 0.3vw;
+}
+
+.popup .discover_btn:hover {
+  color: black;
+  background: #EDE5BB;
+}
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: #00657CB2;
+  text-decoration: none;
+}
+.close-btn:hover {
+  color: #000;
+}
