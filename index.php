@@ -162,6 +162,3 @@ $show_popup = !isset($_GET['close']);
 
 </body>
 </html>
-
-</body>
-</html>
