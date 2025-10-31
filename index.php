@@ -20,8 +20,8 @@
         </ul>
         </nav>
         </header>
-        <div class="top">
-            <div class="inTop">
+        <div class="mainImg">
+            <div class="logoBackdrop">
                 <span class="smallCircle"></span>
                 <span class="mediumCircle"></span>
                 <span class="largeCircle"></span>
@@ -33,33 +33,33 @@
         </div>
         <div class="content">
             <div class="textc1">
-                <h3 class="c">A French Cafe in Emmen</h3>
+                <h3>A French Cafe in Emmen</h3>
             </div>
             <div class="vl1"></div>
             <div class="textc2">
-                <h3 class="c">OUI is a French café built on simplicity, elegance, and the joy of saying “yes”. We serve coffee, tea, croissants, and light treats in a calm, refined atmosphere—an invitation to pause and savor the moment.</h3>
+                <h3>OUI is a French café built on simplicity, elegance, and the joy of saying “yes”. We serve coffee, tea, croissants, and light treats in a calm, refined atmosphere—an invitation to pause and savor the moment.</h3>
             </div>    
             <div class="vl2"></div> <!--Vertical Line-->
-            <div class="r1">
+            <div class="rectangle1">
                 <div class="left">
                     <div class="textl">
                         <h2 class="history">A brief Cafe's History</h2>
                         <div class="historyUnderline"></div>
                     </div>   
                     <div class="textl">
-                        <h3>
+                        <h3 class="briefIntroText">
                             <p>In 2015, OUI opened with a simple promise: to create a place where people could pause and enjoy life's small moments. By 2017, it had become a daily ritual for many — a meeting point filled with the scent of croissants and the warmth of conversation. In 2020, OUI embraced a renewed elegance, refining its space into an atmosphere of calm simplicity.</p> 
                             <p class="todayText">Today, it remains a place to <span class="bold">say yes to the moment</b> — one cup at a time.</p>
                         </h3>
                     </div>
-                    <a class="readMore">Read More</a>
+                    <a href="" class="readMore">Read More</a>
                 </div>
                 <div class="right">
-                    <img class="cafebw" src="/static/images/cafebw.svg" alt="black and white">
+                    <img class="cafebw" src="static/images/cafebw.svg" alt="black and white">
                 </div>
             </div>
             <div class="vl2"></div>  <!--Vertical Line-->
-            <div class="r2">
+            <div class="rectangle2">
                 <div class="browse">
                     <a class="browseLink" href="">Browse Through Our Gallery</a>
                     <span class="hl"></span>
@@ -67,14 +67,14 @@
                 </div>
                 <div class="blueBackdropL"></div>
                 <div class="carousel">
-                    <img src="static/images/scroll1.png" alt="">
-                    <img src="static/images/scroll2.png" alt="">
-                    <img src="static/images/scroll3.png" alt="">
-                    <img src="static/images/scroll4.png" alt="">
-                    <img src="static/images/scroll5.png" alt="">
+                    <img class="carouselImg" src="static/images/scroll1.png" alt="">
+                    <img class="carouselImg" src="static/images/scroll2.png" alt="">
+                    <img class="carouselImg" src="static/images/scroll3.png" alt="">
+                    <img class="carouselImg" src="static/images/scroll4.png" alt="">
+                    <img class="carouselImg" src="static/images/scroll5.png" alt="">
                 </div>
             </div>
-            <div class="r3">
+            <div class="rectangle3">
                 <div class="blueBackdropWide">
                     <div class="whiteBackdropWide">
                         <div class="textPopular">
@@ -106,16 +106,16 @@
                 </div>
                 <a class="menuLink" href="">Check Out The Menu</a>
             </div>
-            <div class="r4">
-                <img class="veganOptions" src="/static/images/veganOptions.svg" alt="">
+            <div class="rectangle4">
+                <img class="veganOptions" src="static/images/veganOptions.svg" alt="">
                 <div class="veganLinkContent">
                     <a class="veganLink" href="">Browse through our vegan options</a>
                     <div class="veganLinkHl"></div>
                 </div>
             </div>
-            <div class="r5">
+            <div class="rectangle5">
                 <div class="horizontalLineDBlue"></div>
-                <img class="croissant" src="/static/images/bottomCroissant.svg" alt="">
+                <img class="croissant" src="static/images/bottomCroissant.svg" alt="">
             </div>
         </div>
         <footer>
@@ -153,8 +153,17 @@ $show_popup = !isset($_GET['close']);
 
 <?php if ($show_popup): ?>
 <div class="popup">
-  <a href="?close=1" class="close-btn">×</a>
-  <img src="static/images/popup.png" alt="">
+    <a href="?close=1" class="close-btn">×</a>
+    <img src="static/images/popup.png" alt="">
+        <?php 
+        $hour=date('H');
+        if ($hour>=18):?>
+        <h6>Bonsoir</h6>
+        <?php elseif($hour>=12):?>
+        <h6>Bon Apres-Midi</h6>
+        <?php else:?>
+        <h6>Bonjour</h6>
+        <?php endif;?>
   <strong>Discover our extended menu - plenty to enjoy!</strong>
   <a href="menu.html" class="discover_btn">Discover</a>
 </div>

@@ -235,7 +235,7 @@ header:hover .language-change {
     border-radius: 50%;
 }
 
-/* ------------------- Divs ------------------- */
+/* ------------------- Content Sections ------------------- */
 
 .content{
     grid-template-columns: repeat(18, 1fr);
@@ -243,7 +243,7 @@ header:hover .language-change {
     grid-column: 1/19;
 }
 
-.top{
+.mainImg{
     grid-column: 1/19;
     background-image: url("../images/headerimage-homepage.jpg");
     background-repeat: no-repeat;
@@ -253,12 +253,47 @@ header:hover .language-change {
     height: 95vh;
 }
 
-.inTop{
+.logoBackdrop{
     display: flex;
 }
 
-.headerImage{
+.rectangle1{
+    grid-column: 1/19;
+    grid-template-columns: repeat(18, 1fr);
+    display: grid;
     width: 100%;
+    background-color: var(--offwhite);
+    margin-block: 1rem;
+}
+
+.rectangle2{
+    grid-column: 1/19;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    margin-block: 1rem;
+    padding-bottom: 5rem;
+}
+
+.rectangle3{
+    grid-column: 1/19;
+    grid-template-columns: repeat(18, 1fr);
+    display: grid;
+    background-color: var(--offwhite);
+    padding-block: 4rem;
+    margin-top: 2rem;
+}
+
+.rectangle4{
+    grid-column: 1/19;
+    grid-template-columns: repeat(18, 1fr);
+    display: grid;
+    background-color: var(--offwhite);
+    margin-top: 1rem;
+    padding-top: 3rem;
+}
+
+.rectangle5{
+    grid-column: 1/19;
 }
 
 /* ------------------- Carousel ------------------- */
@@ -272,11 +307,12 @@ header:hover .language-change {
     margin-left: 3vw;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    anchor-name: --carousel;
-    img{
-        max-width: 100%;
-        scroll-snap-align: start;
-    }
+    anchor-name: --carousel;  
+}
+
+.carouselImg{
+    max-width: 100%;
+    scroll-snap-align: start;
 }
 
 .carousel::scroll-button(right), .carousel::scroll-button(left){
@@ -311,23 +347,7 @@ header:hover .language-change {
     display: none;
 }
 
-/* ------------------- Content Sections ------------------- */
-.r1{
-    grid-column: 1/19;
-    grid-template-columns: repeat(18, 1fr);
-    display: grid;
-    width: 100%;
-    background-color: var(--offwhite);
-    margin-block: 1rem;
-    h3{
-        font-family: "Circular-Light";
-        line-height: 3vw;
-        padding-inline: 1rem;
-        width: 100%;
-        font-size: 1.3vw;
-        text-align: left;
-    }
-}
+/* ------------------- Images and Elements ------------------- */
 
 .historyUnderline{
     width: 50%;
@@ -338,49 +358,16 @@ header:hover .language-change {
     background-color: var(--oui_darkblue);
 }
 
-.todayText{
-    padding-block: 2rem;
-}
-
-.r2{
-    grid-column: 1/19;
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
-    margin-block: 1rem;
-    padding-bottom: 5rem;
-    .hl{
-        align-self: center;
-        width: 20vw;
-        height: 1px;
-        background-color: var(--oui_darkblue);
-    }
-}
-
-.r3{
-    grid-column: 1/19;
-    grid-template-columns: repeat(18, 1fr);
-    display: grid;
-    background-color: var(--offwhite);
-    padding-block: 4rem;
-    margin-top: 2rem;
-}
-
-.r4{
-    grid-column: 1/19;
-    grid-template-columns: repeat(18, 1fr);
-    display: grid;
-    background-color: var(--offwhite);
-    margin-top: 1rem;
-    padding-top: 3rem;
+.hl{
+    align-self: center;
+    width: 20vw;
+    height: 1px;
+    background-color: var(--oui_darkblue);
 }
 
 .veganOptions{
     grid-column: 1/19;
     width: 100%;
-}
-
-.r5{
-    grid-column: 1/19;
 }
 
 .croissant{
@@ -391,27 +378,6 @@ header:hover .language-change {
     background-color: var(--oui_darkblue);
     height: 2vw;
     width: 100%;
-}
-
-.vegan1{
-    grid-column: 1/9;
-    grid-row: 2;
-    z-index: 2;
-    height: 35vw;
-    img{
-        width: 100%;
-    }
-}
-
-.vegan2{
-    grid-column: 12/19;
-    grid-row: 2;
-    padding-top: 10rem;
-    padding-left: 4rem;
-    z-index: 2;
-    img{
-        width: 100%;
-    }
 }
 
 .blueBackdropWide{
@@ -431,8 +397,12 @@ header:hover .language-change {
 .images{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-inline: 5rem;
+}
+
+.imgHover{
+  max-width: 100%;
 }
 
 .imgHover:hover, .veganLink:hover, .menuLink:hover, .browseLink:hover, .readMore:hover{
@@ -450,6 +420,7 @@ header:hover .language-change {
 .right{
     grid-column: 11/19;
     padding-top: 3rem;
+    display: flex;
 }
 
 .bold{
@@ -466,7 +437,7 @@ header:hover .language-change {
 }
 
 .cafebw{
-    width: 100%;
+  justify-content: center;
 }
 
 .browse{
@@ -480,6 +451,42 @@ header:hover .language-change {
     height: 8vw;
 }
 
+/* ------------------- Vertical Lines ------------------- */
+.vl1{
+    height: 2vw;
+}
+
+.vl2{
+    height: 5vw;
+}
+
+.vl1, .vl2{
+    grid-column: 10;
+    justify-items: center;
+    background-color: var(--oui_darkblue);
+    width: 1px;
+}
+
+.hl2{
+    width: 15vw;
+    height: 1px;
+    background-color: var(--oui_darkblue);
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+.veganLinkHl{
+    align-self: center;
+    width: 25vw;
+    height: 1px;
+    background-color: var(--oui_darkblue);
+    margin-right: 2rem;
+}
+
+.vegan1 > img{
+    width:100%;
+}
+
 /* ------------------- Link Buttons ------------------- */
 
 .veganLinkContent{
@@ -487,32 +494,27 @@ header:hover .language-change {
     position: absolute;
     margin-left: 43%;
     display: flex;
-    a{
+}
+
+.veganLink{
     /*box*/
     background-color: var(--oui_beige);
-    border-radius: 3ch;
     padding-inline: 3rem;
     padding-block: 1rem;
     /*text*/
     color: black;
-    text-align: center;
-    text-decoration: none;
     font-size: 1.5vw;
     font-family: "Circular-Light";
-    }
 }
 
 .browseLink{
     /*box*/
     background-color: var(--oui_darkblue);
-    border-radius: 3ch;
     padding-inline: 1rem;
     padding-block: 1rem;
     align-self: center;
     /*text*/
     color: white;
-    text-align: center;
-    text-decoration: none;
     font-size: 1.2vw;
     font-family: "Circular-Book";
 }
@@ -524,13 +526,10 @@ header:hover .language-change {
     overflow-x: auto;
     /*box*/
     background-color: var(--oui_beige);
-    border-radius: 3ch;
     padding-inline: 2rem;
     padding-block: 1rem;
     /*text*/
     color: black;
-    text-align: center;
-    text-decoration: none;
     font-size: 1.5vw;
     justify-self: center;
     align-content: center;
@@ -541,17 +540,22 @@ header:hover .language-change {
     /*box*/
     background-color: var(--oui_darkblue);
     position: relative;
-    border-radius: 3vw;
     padding-inline: 2vw;
     padding-block: 1vw;
     left: 1rem;
     margin-bottom: 2rem;
     /*text*/
     color: white;
-    text-align: center;
     font-size: 1.5vw;
     font-family: "Circular-Light";
 }
+
+a{
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3vw;
+}
+
 /* ------------------- Text(s) ------------------- */
 
 .bounce{
@@ -592,6 +596,19 @@ header:hover .language-change {
     padding-top: 5rem;
 }
 
+.briefIntroText{
+    font-family: "Circular-Light";
+    line-height: 3vw;
+    padding-inline: 1rem;
+    width: 100%;
+    font-size: 1.3vw;
+    text-align: left;
+}
+
+.todayText{
+    padding-block: 2rem;
+}
+
 .popular{
     padding-block: 2rem;
     padding-inline: 5rem;
@@ -602,17 +619,14 @@ header:hover .language-change {
 .textc1, .textc2{
     justify-items: center;
     grid-column: 8 / 12;
-}
-
-.textc2{
-    grid-column: 3/16;
-}
-
-.c{
     font-family: "Circular-Light";
     padding-block: 1rem;
     text-align: center;
     font-size: 1.4vw;
+}
+
+.textc2{
+    grid-column: 3/16;
 }
 
 .choicesText{
@@ -624,42 +638,6 @@ header:hover .language-change {
 
 .textPopular{
     justify-items: center;
-}
-
-/* ------------------- Vertical Lines ------------------- */
-.vl1{
-    height: 2vw;
-}
-
-.vl2{
-    height: 5vw;
-}
-
-.vl1, .vl2{
-    grid-column: 10;
-    justify-items: center;
-    background-color: var(--oui_darkblue);
-    width: 1px;
-}
-
-.hl2{
-    width: 15vw;
-    height: 1px;
-    background-color: var(--oui_darkblue);
-    justify-self: center;
-    margin-bottom: 2rem;
-}
-
-.veganLinkHl{
-    align-self: center;
-    width: 25vw;
-    height: 1px;
-    background-color: var(--oui_darkblue);
-    margin-right: 2rem;
-}
-
-.vegan1 > img{
-    width:100%;
 }
 
 /* ------------------- Footer ------------------- */
@@ -828,4 +806,36 @@ footer {
 }
 .close-btn:hover {
   color: #000;
+}
+
+/*-------Responsiveness-------*/
+
+/*@media (max-width: 320px) {   /*Mobile S
+  .r
+}*/
+
+@media (max-width: 768px) {
+  
+
+
+  .header {
+    height: 10vh;
+    gap: 4vw;
+    background-color: white;
+  }
+
+  .nav-list {
+    gap: 3vw;
+  }
+
+  .nav-list a {
+    font-size: 1.4rem;
+    color: black;
+  }
+
+  .language-change {
+    font-size: 1.4rem;
+    right: 4vw;
+    top: 2.5vh;
+  }
 }
