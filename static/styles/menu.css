@@ -75,6 +75,18 @@
   box-sizing: border-box;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+section,
+footer,
+header,
+div {
+  max-width: 100%;
+}
+
 /* ------------------- GRID SYSTEM ------------------- */
 body {
   display: grid;
@@ -1011,6 +1023,7 @@ footer
 
   .header {
     height: 10vh;
+    width: 100%;
     gap: 4vw;
     background-color: white;
   }
