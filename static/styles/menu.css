@@ -862,6 +862,40 @@ section {
 }
 
 
+
+.download-button {
+  grid-area: 11/1/11/6;
+  max-width: 100%;
+  max-height: 100%;
+
+  background-image: url("../images/1b27290b037cdc2f492e3b753f5634193b4407e6(40).png");
+  background-size: 25%;
+  background-repeat: repeat;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.download-button a {
+  background-color: white;
+  color: #00657C;
+  font-size: 2vw;
+  font-family: "Circular-Light";
+  font-weight: 300;
+
+  padding-block: 0.3vw;
+  padding-left: 5vw;
+  padding-right: 2vw;
+
+  border-radius: 0px 20px 20px 0;
+
+  opacity: 1;
+}
+
+
+
+
 /* Footer */
 footer 
 {
