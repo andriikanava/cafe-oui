@@ -250,7 +250,7 @@ header:hover .language-change {
     background-size: cover;
     background-position: center;
     background-attachment: local;
-    height: 95vh;
+    height: 52vw;
 }
 
 .logoBackdrop{
@@ -298,16 +298,15 @@ header:hover .language-change {
 
 /* ------------------- Carousel ------------------- */
 
-
 .carousel{
     display: flex;
-    max-width: 39vw;
+    max-width: 38.75vw;
     overflow-x: auto;
     position: absolute;
     margin-left: 3vw;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    anchor-name: --carousel;  
+    anchor-name: --carousel;
 }
 
 .carouselImg{
@@ -433,11 +432,12 @@ header:hover .language-change {
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 .cafebw{
   justify-content: center;
+  width: 100%;
 }
 
 .browse{
@@ -516,7 +516,7 @@ header:hover .language-change {
     /*text*/
     color: white;
     font-size: 1.2vw;
-    font-family: "Circular-Book";
+    font-family: "Circular-Light";
 }
 
 .menuLink{
@@ -622,7 +622,7 @@ a{
     font-family: "Circular-Light";
     padding-block: 1rem;
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 
 .textc2{
@@ -632,7 +632,7 @@ a{
 .choicesText{
     text-align: center; 
     color: black;
-    font-family: "Circular-Book";
+    font-family: "Circular-Light";
     font-size: 1.4vw;
 }
 
@@ -810,32 +810,195 @@ footer {
 
 /*-------Responsiveness-------*/
 
-/*@media (max-width: 320px) {   /*Mobile S
-  .r
-}*/
+@media (max-width: 320px) {
+  .nav-list a{
+    font-size: 4vw;
+  }
+  .browseLink{
+    padding-inline: 2vw;
+    padding-block: 1vw;
+  }
+  .footertext{
+    font-size: 3vw;
+  }
+  .footerline1{
+    margin-top: 1vw;
+  }
+  .footerbuttons{
+    padding-top: 0;
+  }
+  .footerlogo{
+    font-size: 8vw;
+  }
+}
 
-@media (max-width: 768px) {
-  
+@media (max-width: 1000px)
+{
+footer
+{
+  height: 60vh;
+}
+.footerbox1 
+{
+  grid-area: 1/4/8/16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerbox2 
+  {
+    grid-area: 13/8/18/12;
+    text-align: center;
+  }
+
+.footerline2 
+{
+  grid-area: auto;
+  margin: 2vh auto 0 auto;
+  background-color: #00657C;
+  min-height: 1px;
+  width: 20vw;
+}
+}
 
 
+
+/* ------------------- MOBILE RESPONSIVENESS -------------------*/
+
+@media (max-width: 480px) {
   .header {
-    height: 10vh;
-    gap: 4vw;
-    background-color: white;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav {
+    flex-direction: column;
   }
 
   .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 3vw;
   }
 
   .nav-list a {
-    font-size: 1.4rem;
-    color: black;
+    font-size: 1rem;
   }
 
   .language-change {
-    font-size: 1.4rem;
-    right: 4vw;
-    top: 2.5vh;
+    position: static;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  .footerbox2
+  {
+    grid-area: 13/6/18/14;
+  }
+
+  .footerlogo
+  {
+    font-size: 5.5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-change 
+  {
+    position: static;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  .HeroImage
+  {
+    object-fit: cover;
+    width: 70vw; 
+  }
+
+   .footertext
+  {
+    font-size: 1.5vh;
+  }
+}
+
+@media (max-width: 375px) 
+{
+  .footerillustrationbox
+  {
+    grid-area: 9/3/12/17;
+  }
+  .footerbox2
+  {
+    grid-area: 13/6/18/14;
+  }
+  footer 
+  {
+    height: 50vh;
+  }
+  .footerlogo
+  {
+    font-size: 4.5vh;
+  }
+}
+
+@media (max-width: 1024px){ /*logo for tablet*/
+  .smallCircle, .mediumCircle, .largeCircle, .ouiLogo{
+    top: -20%;
+  }
+}
+
+@media (max-width: 768px){ /*logo for tablet*/
+  .menuLink{
+    transform: translateY(15px)
+  }
+  .smallCircle, .mediumCircle, .largeCircle, .ouiLogo{
+    top: -40%;
+  }
+}
+
+@media (max-width: 480px){ /*logo for medium*/
+  .smallCircle, .mediumCircle, .largeCircle, .ouiLogo{
+    top: -65%;
+  }
+}
+
+
+@media (max-width: 375px){
+  .smallCircle, .mediumCircle, .largeCircle, .ouiLogo{
+    top: -70%;
+  }
+}
+
+@media (max-width: 375px), (max-width: 480px), (max-width: 768px){ /*small medium and tablet*/
+  .blueBackdropL{
+    margin-top: 1rem;
+
+  }
+  .rectangle2{
+    padding-bottom: 0;
+  }
+  .browseLink, .menuLink, .veganLink{
+    padding-inline: 2vw;
+    padding-block: 1vw;
+  }
+  .menuLink{
+    transform: translateY(10px);
+  }
+  .rectangle3{
+    padding-block: 2rem;
+  }
+  .left{
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  .history{
+    padding-top: 1rem;
+  }
+  .historyUnderline, .readMore{
+    margin-bottom: 1rem;
+  }
+  .todayText{
+    padding-block: 1rem;
   }
 }

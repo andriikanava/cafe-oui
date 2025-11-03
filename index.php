@@ -47,10 +47,10 @@
                         <div class="historyUnderline"></div>
                     </div>   
                     <div class="textl">
-                        <h3 class="briefIntroText">
+                        <div class="briefIntroText">
                             <p>In 2015, OUI opened with a simple promise: to create a place where people could pause and enjoy life's small moments. By 2017, it had become a daily ritual for many — a meeting point filled with the scent of croissants and the warmth of conversation. In 2020, OUI embraced a renewed elegance, refining its space into an atmosphere of calm simplicity.</p> 
-                            <p class="todayText">Today, it remains a place to <span class="bold">say yes to the moment</b> — one cup at a time.</p>
-                        </h3>
+                            <p class="todayText">Today, it remains a place to <span class="bold">say yes to the moment</span> — one cup at a time.</p>
+                        </div>
                     </div>
                     <a href="" class="readMore">Read More</a>
                 </div>
@@ -63,7 +63,7 @@
                 <div class="browse">
                     <a class="browseLink" href="">Browse Through Our Gallery</a>
                     <span class="hl"></span>
-                    <img class="coffeeIllustration" src="static/images/illustrations_blue green_coffee.svg" alt="">
+                    <img class="coffeeIllustration" src="static/images/illustrations_blueGreen_coffee.svg" alt="">
                 </div>
                 <div class="blueBackdropL"></div>
                 <div class="carousel">
@@ -82,22 +82,22 @@
                         </div>
                         <div class="images">
                             <div>
-                                <a href=""><img class="imgHover" src="static/images/Choices_Image 1.png" alt=""></a>
+                                <a href=""><img class="imgHover" src="static/images/Choices_Image1.png" alt=""></a>
                                 <h4 class="choicesText">Fresh Coffee</h4>
                                 <div class="hl2"></div>
                             </div>
                             <div>
-                                <a href=""><img class="imgHover" src="static/images/Choices_Image 2.png" alt=""></a>
+                                <a href=""><img class="imgHover" src="static/images/Choices_Image2.png" alt=""></a>
                                 <h4 class="choicesText">Tasty Croissant</h4>
                                 <div class="hl2"></div>
                             </div>
                             <div>
-                                <a href=""><img class="imgHover" src="static/images/Choices_Image 3.png" alt=""></a>
+                                <a href=""><img class="imgHover" src="static/images/Choices_Image3.png" alt=""></a>
                                 <h4 class="choicesText">Natural Tea</h4>
                                 <div class="hl2"></div>
                             </div>
                             <div>
-                                <a href=""><img class="imgHover" src="static/images/Choices_Image 4.png" alt=""></a>
+                                <a href=""><img class="imgHover" src="static/images/Choices_Image4.png" alt=""></a>
                                 <h4 class="choicesText">Colorful Merengue</h4>
                                 <div class="hl2"></div>
                             </div>
@@ -118,6 +118,7 @@
                 <img class="croissant" src="static/images/bottomCroissant.svg" alt="">
             </div>
         </div>
+        <!-- Footer -->
         <footer>
             <div class="footerbox1">
                 <p class="footerlogo">OUI Café</p>
@@ -139,10 +140,7 @@
                 <p class="footertext">claire@oui-cafe.fr</p>
                 <p class="footertext">+31 6 31782094</p>
                 <div class="footerline2"></div>
-                <p class="copyright">COPYRIGHT @ 2025 GROUP 1B</p>
-            </div>
-            <div class="languagebox">
-                <p class="footerlanguage">Fr/En</p>
+                <p class="copyright">COPYRIGHT &copy; 2025 GROUP 1B</p>
             </div>
         </footer>
     </div>
