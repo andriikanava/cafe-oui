@@ -806,7 +806,6 @@ footer {
 }
 .close-btn:hover {
   color: #000;
-<<<<<<< HEAD
 }
 
 /*-------Responsiveness-------*/
@@ -921,6 +920,11 @@ footer
   {
     font-size: 1.5vh;
   }
+
+  .bounce{
+    bottom: 76vh;
+    padding-bottom: 0vw;
+  }
 }
 
 @media (max-width: 375px) 
@@ -1002,6 +1006,4 @@ footer
   .todayText{
     padding-block: 1rem;
   }
-=======
->>>>>>> cb42dc110289f4a5f20d77efc9037b9700ced73a
 }
