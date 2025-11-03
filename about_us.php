@@ -56,35 +56,53 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
     </section>
 
     <!-- Timelines section -->
-    <section class="timeline">
+    <section class="grid-timeline">
         <div class="timeline-text-box">
             <p class="timeline-header-text">Timeline</p>
             <p class="our-story-text">Our Story</p>
-            <div class="timeline-line-box">
-              <img src="static/images/line_fortimeline_img.svg" alt="timeline">
+        </div>
+        <div class="timeline-line"></div>
+        <div class="timeline-box" id="timeline-right1">
+            <div class="dot"></div>
+            <div class="timeline-text">
+                <p class="timeline-intext-heading">The birth - 2013</p>
+                <p class="timeline-intext-main">The idea of “OUI” was born</p>
             </div>
         </div>
-        <div class="timeline-right-box1">
-            <p class="timeline-intext-heading">The birth - 2013</p>
-            <p class="timeline-intext-main">The idea of “OUI” was born</p>
-        </div>   
-        <div class="timeline-right-box2">
-            <p class="timeline-intext-heading">A Gathering Place - 2017</p>
-            <p class="timeline-intext-main">It became a daily ritual for many — a meeting point filled with the scent of croissants</p>
-        </div>  
-        <div class="timeline-right-box3">
-            <p class="timeline-intext-heading">Today</p>
-            <p class="timeline-intext-main">OUI continues to be a space where guests are welcomed with French warmth - a place to say yes to the moment, one cup at a time.</p>
-        </div>  
-        <div class="timeline-left-box1">
-            <p class="timeline-intext-heading">The beginning - 2015</p>
-            <p class="timeline-intext-main">OUI opened its doors with a simple promise: to bring a corner of France closer to home.</p>
-        </div>  
-        <div class="timeline-left-box2">
-            <p class="timeline-intext-heading">Renewed Elegance - 2020 </p>
-            <p class="timeline-intext-main">With a refreshed space and atmosphere, OUI embraced calm simplicity and introduced vegan pastries to make our French delights accessible to more guests.</p>
-        </div>  
-        <div class="timeline-bottom-line"></div>
+
+        <div class="timeline-box timeline-left" id="timeline-left1">
+            <div class="timeline-text">
+                <p class="timeline-intext-heading">The beginning - 2015</p>
+                <p class="timeline-intext-main">OUI opened its doors with a simple promise: to bring a corner of France closer to home.</p>
+            </div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="timeline-box" id="timeline-right2">
+            <div class="dot"></div>
+            <div class="timeline-text">
+                <p class="timeline-intext-heading">The birth - 2013</p>
+                <p class="timeline-intext-main">The idea of “OUI” was born</p>
+            </div>
+        </div>
+
+        <div class="timeline-box timeline-left" id="timeline-left2">
+            <div class="timeline-text">
+                <p class="timeline-intext-heading">Renewed Elegance - 2020 </p>
+                <p class="timeline-intext-main">With a refreshed space and atmosphere, OUI embraced calm simplicity and introduced vegan pastries to make our French delights accessible to more guests.</p>
+            </div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="timeline-box" id="timeline-right3">
+            <div class="dot"></div>
+            <div class="timeline-text">
+                <p class="timeline-intext-heading">Today</p>
+                <p class="timeline-intext-main">OUI continues to be a space where guests are welcomed with French warmth - a place to say yes to the moment, one cup at a time.</p>
+            </div>
+        </div>
+
+        
     </section>
 
     <!-- OUI Philosophy section -->
@@ -108,7 +126,7 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
         </div>
         <div class="Our-Philosophy-box-right">
             <p class="Our-Philosophy-header-text">Presence</p>
-            <p class="Our-Philosophy-main-text">A cup of coffee is more than a drink — it’s a pause. We invite our guests to slow down, breathe, and enjoy the moment, one sip at a time.</p>
+            <p class="Our-Philosophy-main-text">A cup of coffee is more than a drink — it's a pause. We invite our guests to slow down, breathe, and enjoy the moment, one sip at a time.</p>
         </div>
         <div class="Our-Philosophy-box-middle2">
             <p class="Our-Philosophy-header-text">Inclusivity</p>
@@ -121,7 +139,7 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
     <!-- OUI Philosophy section closing part -->
     <section class="OUI-Philosophy-section-box">
         <div class="quote-box">
-            <p class="quote-text">OUI isn’t just about coffee, it’s about people. Our guests bring the café to life, making it a warm and vibrant meeting place.</p>
+            <p class="quote-text">OUI isn't just about coffee, it's about people. Our guests bring the café to life, making it a warm and vibrant meeting place.</p>
         </div>
         <div class="Image-Philosophy-box">
             <img src="static/images/phislosphy image.svg" alt="Family-Philosophy-image">

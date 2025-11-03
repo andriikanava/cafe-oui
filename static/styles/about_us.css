@@ -241,7 +241,7 @@ padding-bottom: 2.5vh;
   background-color: #FFFFFF;
   display: grid;
   grid-template-columns: repeat(18,1fr);
-  grid-template-rows: repeat(18, 1fr);
+  grid-template-rows: repeat(21, 1fr);
 }
 
 .about-oui-slogan
@@ -268,7 +268,7 @@ padding-bottom: 2.5vh;
 {
   font-family: "Circular-Book";
   color: #00657C;
-  font-size: 2.5vh;
+  font-size: 1.5vw;
   text-align: left;
   padding-top: 1vh;
 }
@@ -276,7 +276,7 @@ padding-bottom: 2.5vh;
 .about-oui-info-box
 {
   grid-area: 4/1/17/19;
-  background-color: rgba(217, 217, 217, 0.2);
+  background-color: rgba(217, 217, 217, 0.5);
 }
 
 .about-us-image-history
@@ -316,7 +316,7 @@ padding-bottom: 2.5vh;
   grid-area: 2/7/5/7;
   width: 15vw;
   height: 1px;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .about-oui-decoration-line2
@@ -340,7 +340,7 @@ padding-bottom: 2.5vh;
 
 .timeline-text-box
 {
-  grid-area: 2/14/30/20;
+  grid-area: 1/14/2/20;
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -389,7 +389,7 @@ padding-bottom: 2.5vh;
 
 .timeline-right-box1
 {
-  grid-area: 9/18/12/31;
+  grid-area: 7/18/12/31;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -398,7 +398,7 @@ padding-bottom: 2.5vh;
 
 .timeline-right-box2
 {
-  grid-area: 17/18/21/31;
+  grid-area: 12/18/21/31;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -407,7 +407,7 @@ padding-bottom: 2.5vh;
 
 .timeline-right-box3
 {
-  grid-area: 25/18/29/31;
+  grid-area: 17/18/29/31;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -416,7 +416,7 @@ padding-bottom: 2.5vh;
 
 .timeline-left-box1
 {
-  grid-area: 13/2/16/16;
+  grid-area: 10/2/16/16;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -426,7 +426,7 @@ padding-bottom: 2.5vh;
 
 .timeline-left-box2
 {
-  grid-area: 21/2/24/16;
+  grid-area: 14/2/24/16;
   display: flex;
   flex-direction: column;
   align-items: right;
@@ -456,6 +456,109 @@ padding-bottom: 2.5vh;
   width: 100%;
   height: 1px;
 }
+
+
+
+.grid-timeline 
+{
+  display: grid;
+  grid-template-columns: repeat(32,1fr);
+  grid-template-rows: repeat(32,1fr);
+  width: 100%;
+  height: 100vh;
+}
+
+.timeline-line 
+{
+  background-color: #00657C;
+  justify-self: center;
+  width: 5px;
+  grid-area: 3/16/32/18;
+}
+
+.timeline-box 
+{
+  display: flex;
+  align-items: center; 
+  gap: 1rem; 
+  position: relative;
+  margin: 2vh 0;
+}
+
+.timeline-text
+{
+  margin-inline: 3vw;
+  max-width: 80%; 
+}
+
+.dot 
+{
+  position: absolute;
+  top: 25%;
+  justify-self: start;  
+  align-self: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00657C;
+  transform: translate(-50%, -50%);
+  z-index: 5;          
+}
+
+
+#timeline-right1 
+{
+  grid-area: 7/17/9/30;
+}
+
+#timeline-left1 
+{
+  grid-area: 12/17/14/2;
+  justify-content: flex-end;
+}
+
+#timeline-left1 .dot 
+{
+  transform: translate(50%, -50%); 
+}
+
+#timeline-left1 p 
+{
+  text-align: right;
+}
+
+
+#timeline-right2 
+{
+  grid-area: 16/17/20/30;
+}
+
+#timeline-left2 
+{
+  grid-area: 21/17/25/2;
+  justify-content: flex-end;
+}
+
+#timeline-left2 p 
+{
+  text-align: right;
+}
+
+#timeline-left2 .dot 
+{
+  transform: translate(50%, -50%); 
+}
+
+#timeline-right2 
+{
+  grid-area: 16/17/20/30;
+}
+
+#timeline-right3 
+{
+  grid-area: 26/17/29/30;
+}
+
 
 /* OUI Philosophy section */
 .Our-Philosophy-box
@@ -837,11 +940,6 @@ footer
     top: 2.5vh;
   }
 
-  .about-oui-slogan p
-  {
-    font-size: 2.5vw;
-    padding-bottom: 1vw;
-  }
 
   .about-oui-slogan 
   {
@@ -857,20 +955,20 @@ footer
   {
     display: grid;
     grid-template-columns: repeat(32,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(13,1fr);
   }
   .philosophy-section-line
   {
-    grid-area: 14/17/15/17;
+    grid-area: 10/17/11/17;
   }
 
   .Image-Philosophy-box
   {
-    grid-area: 5/7/19/27;
+    grid-area: 5/7/10/27;
   }
   .about-us-history-textbox
   {
-    grid-area: 5/1/19/9;
+    grid-area: 4/1/19/9;
     flex-direction: column;
     align-items: center;
   }
@@ -878,14 +976,14 @@ footer
   .about-oui-text
   {
     margin-left: 1vw;
-    font-size: 2vh;
+    font-size: 2.5vw;
     text-align: left;
   }
 
   .about-oui-text-header
   {
     margin-left: 1vw;
-    font-size: 5vw;
+    font-size: 8vw;
   }
   .quote-text
   {
@@ -909,7 +1007,6 @@ footer
 
   .Image-Philosophy-box img
   {
-    grid-area: 2/2/27/31;
     width: 100%;
     height: 100%;
   }
@@ -918,21 +1015,12 @@ footer
   {
     width: 100%;
     height: auto;
+    grid-area: 4 / 1 / 17 / 20;
   }
 
   .about-oui-line
   {
    height: 2vh;
-  }
-
-  .about-oui-slogan p 
-  {
-    font-size: 1.5vw;
-  }
-
-  .about-us-history-textbox
-  {
-    grid-area: 6/1/19/9;
   }
 
   .about-us-image-history 
@@ -944,14 +1032,14 @@ footer
   .oui-story p
   {
     margin-left: 3vw;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     text-align: left;
-    padding-top: 2vh;
+    padding-top: 0.5vh;
   }
 
   .catch-phrase-philosophy-box
   {
-    grid-area: 16/7/17/27;
+    grid-area: 11/7/13/27;
   }
 
   .catch-phrase-philosophy-text
@@ -977,6 +1065,51 @@ footer
   .footerlogo
   {
     font-size: 5.5vh;
+  }
+
+
+  .timeline-right-box1
+  {
+    grid-area: 8/18/10/31;
+  }
+
+  .timeline-right-box2
+  {
+    grid-area: 14/18/19/31;
+  }
+
+  .timeline-right-box3
+  {
+  grid-area: 22 / 18 / 25 / 31;
+  }
+
+  .timeline-left-box1 {
+        grid-area: 11 / 2 / 13 / 16;
+  }
+
+  .timeline-left-box2 {
+        grid-area: 18 / 2 / 22 / 16;
+  }
+
+  .timeline-intext-heading {
+    font-size: 4vw;
+  }
+
+  .timeline-intext-main {
+    font-size: 3vw;
+  }
+
+
+  .Our-Philosophy-square
+  {
+    grid-area: 1/4/2/16;
+  }
+  .Our-Philosophy-text {
+    font-size: 4vw;
+  }
+
+  .quote-box {
+    grid-area: 1 / 5 / 5 / 30;
   }
 }
 
@@ -1058,4 +1191,3 @@ footer
 
 
 }
-
