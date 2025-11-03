@@ -8,6 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 }
 ?>
 
+<?php
+$navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
+$navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,11 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <header class="header">
             <nav class="nav">
             <ul class="nav-list">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Impressions</a></li>
+                <?php
+                for ($i=0; $i<count($navigation); $i++)
+                {
+                    echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
+                }
+                ?>
                 <li><a href="" class="language-change">NL</a></li>
             </ul>
             </nav>
@@ -191,11 +198,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 <p class="footertext">7811 ED Emmen, The Netherlands</p>
                 <div class="footerline1"></div>
                 <ul class="footerbuttons">
-                    <li><a href="#" class="footertext"><b>Home</b></a></li>
-                    <li><a href="#" class="footertext"><b>About Us</b></a></li>
-                    <li><a href="#" class="footertext"><b>Menu</b></a></li>
-                    <li><a href="#" class="footertext"><b>Contact</b></a></li>
-                    <li><a href="#" class="footertext"><b>Impressions</b></a></li>
+                    <?php
+                    for ($i=0; $i<count($navigation); $i++)
+                    {
+                        echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
+                    }
+                    ?>
                 </ul>               
             </div>
             <div class="footerillustrationbox">
