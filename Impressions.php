@@ -59,12 +59,16 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
         <hr class="vertical-line">
         <div class="playlist">
             <hr class="full-vertical-line" id="playlist-line1">
-            <h1 class="playlist-text">Explore Our Cafe’s Playlists!</h1>
-            <img src="static/images/Record.svg" alt="Record">
-        </div>
-        <hr class="vertical-line">
+            <div class="playlist-text-box">
+                <h1 class="playlist-text">Explore Our Cafe’s Playlists!</h1>
+            </div>
+            <hr class="full-vertical-line" id="playlist-line2">
+            <div class="record-block">
+                <div class="record-block-left"></div>
+                <div class="record-block-right"></div>
+            </div>
+            <img src="static/images/Record.svg" alt="Record" class="Record">
 
-        <section class="spotify">
             <div class="spotify-container">
                 <iframe src="https://open.spotify.com/embed/playlist/1AqAA0ODbJBbJnvceA5SW0?utm_source=generator&theme=0" loading="lazy"></iframe>
                 <iframe src="https://open.spotify.com/embed/playlist/0QYcdurtk1zrZBZcGKeyWx?utm_source=generator&theme=0" loading="lazy"></iframe>
@@ -72,10 +76,9 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
                 <iframe src="https://open.spotify.com/embed/playlist/06JgdikHP2djuAwaSeIbAa?utm_source=generator&theme=0" loading="lazy"></iframe>
                 <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbehaqJzJXqw?utm_source=generator&theme=0" loading="lazy"></iframe>
             </div>
-            <div class="spotify-bottom"><div class="spotify-line"></div></div>
-        </section>
+        </div>
 
-
+        <hr class="vertical-line">
 
         <footer>
             <div class="footerbox1">
