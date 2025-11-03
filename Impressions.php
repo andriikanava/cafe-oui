@@ -1,6 +1,6 @@
 <?php
-$navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
-$navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+    $navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
+    $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +16,9 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
             <nav class="nav">
             <ul class="nav-list">
                 <?php
-                for ($i=0; $i<count($navigation); $i++)
-                {
-                    echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
-                }
+                    for ($i=0; $i<count($navigation); $i++) {
+                        echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></li>';
+                    }
                 ?>
                 <li><a href="" class="language-change">NL</a></li>
             </ul>
@@ -67,7 +66,7 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
                 <div class="record-block-left"></div>
                 <div class="record-block-right"></div>
             </div>
-            <img src="static/images/Record.svg" alt="Record" class="Record">
+            <img src="static/images/Record.gif" alt="Record" class="record">
 
             <div class="spotify-container">
                 <iframe src="https://open.spotify.com/embed/playlist/1AqAA0ODbJBbJnvceA5SW0?utm_source=generator&theme=0" loading="lazy"></iframe>
@@ -81,32 +80,29 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
         <hr class="vertical-line">
 
         <footer>
-            <div class="footerbox1">
-                <p class="footerlogo">OUI Café</p>
-                <p class="footertext">Hoofdstraat 75</p>
-                <p class="footertext">7811 ED Emmen, The Netherlands</p>
-                <div class="footerline1"></div>
-                <ul class="footerbuttons">
-                    <?php
-                    for ($i=0; $i<count($navigation); $i++)
-                    {
+        <div class="footerbox1">
+            <p class="footerlogo">OUI Café</p>
+            <p class="footertext">Hoofdstraat 75</p>
+            <p class="footertext">7811 ED Emmen, The Netherlands</p>
+            <div class="footerline1"></div>
+            <ul class="footerbuttons">
+                <?php
+                    for ($i=0; $i<count($navigation); $i++) {
                         echo '<li class="footertext"><a href="'.$navigationLink[$i].'"><b>'.$navigation[$i].'</b></a></li>';
                     }
-                    ?>
-                </ul>               
-            </div>
-            <div class="footerillustrationbox">
-                <img src="static/images/footerimg.svg" alt="macaron illustration" class="imgfooter">
-            </div>
-            <div class="footerbox2">
-                <p class="footertext">claire@oui-cafe.fr</p>
-                <p class="footertext">+31 6 31782094</p>
-                <div class="footerline2"></div>
-                <p class="copyright">COPYRIGHT @ 2025 GROUP 1B</p>
-            </div>
-            <div class="languagebox">
-                <p class="footerlanguage">Fr/En</p>
-            </div>
-        </footer>
+                ?>
+            </ul>               
+        </div>
+        <div class="footerillustrationbox">
+            <img src="static/images/footerimg.svg" alt="macaron illustration" class="imgfooter">
+        </div>
+        <div class="footerbox2">
+            <p class="footertext">claire@oui-cafe.fr</p>
+            <p class="footertext">+31 6 31782094</p>
+            <div class="footerline2"></div>
+            <p class="copyright">COPYRIGHT &copy; 2025 GROUP 1B</p>
+        </div>
+       
+    </footer>
     </body>
 </html>
