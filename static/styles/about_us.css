@@ -621,7 +621,6 @@ padding-bottom: 2.5vh;
 {
   font-family: "Circular-LightItalic";
   font-size: 1.5vw;
-  line-height: 2vw;
   color: #00657C;
   text-align: center;
 }
@@ -655,6 +654,7 @@ padding-bottom: 2.5vh;
 {
   font-family: "Circular-LightItalic";
   font-size: 1.5vw;
+  text-align: center;
   color: #00657C;
 }
 
@@ -850,9 +850,24 @@ footer
 
   .Hero 
   {
-    background-image: url("/static/images/hero_mobile_img.svg");
+    background-image: url("../images/hero_mobile_img.svg");
   }
 
+  .OUI-Philosophy-section-box
+  {
+    display: grid;
+    grid-template-columns: repeat(32,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
+  .philosophy-section-line
+  {
+    grid-area: 14/17/15/17;
+  }
+
+  .Image-Philosophy-box
+  {
+    grid-area: 5/7/19/27;
+  }
   .about-us-history-textbox
   {
     grid-area: 5/1/19/9;
@@ -871,6 +886,10 @@ footer
   {
     margin-left: 1vw;
     font-size: 5vw;
+  }
+  .quote-text
+  {
+    font-size: 2vh;
   }
 
   .aboutoui
@@ -893,7 +912,6 @@ footer
     grid-area: 2/2/27/31;
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 
   .about-oui-info-box 
@@ -910,7 +928,6 @@ footer
   .about-oui-slogan p 
   {
     font-size: 1.5vw;
-    padding-bottom:0;
   }
 
   .about-us-history-textbox
@@ -923,30 +940,6 @@ footer
     grid-area: 6/10/16/18;
   }
 
-  .philosophy-section-line 
-  {
-    margin-top: 1.5vh;
-  }
-
-  .timeline-right-box3
-  {
-    grid-area: 27/18/29/31;
-  }
-
-    .timeline-right-box2
-  {
-    grid-area: 18/18/29/31;
-  }
-
-  .timeline-left-box1
-  {
-   grid-area: 14/2/18/16;
-  }
-
-  .timeline-left-box2
-  {
-    grid-area: 23/2/28/16;
-  }
   
   .oui-story p
   {
@@ -954,6 +947,16 @@ footer
     font-size: 1.5vw;
     text-align: left;
     padding-top: 2vh;
+  }
+
+  .catch-phrase-philosophy-box
+  {
+    grid-area: 16/7/17/27;
+  }
+
+  .catch-phrase-philosophy-text
+  {
+    font-size: 2vh;
   }
 
   .Our-Philosophy-header-text
@@ -1041,6 +1044,16 @@ footer
   .footerlogo
   {
     font-size: 4.5vh;
+  }
+
+  .timeline-intext-heading
+  {
+    font-size: 2vh;
+  }
+
+  .timeline-intext-main
+  {
+    font-size: 1.5vh;
   }
 
 
