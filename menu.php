@@ -1,9 +1,6 @@
 <?php
-$navigationHeader=array("Home", "About Us", "Menu", "Contact", "Impressions");
-$navigationLinkHeader=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
-
-$navigationFooter=array("Home", "About Us", "Menu", "Contact", "Impressions");
-$navigationLinkFooter=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+$navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
+$navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +17,9 @@ $navigationLinkFooter=array("index.php", "about_us.php", "menu.php", "contact.ph
         <nav class="nav">
         <ul class="nav-list">
             <?php
-            for ($i=0; $i<count($navigationHeader); $i++)
+            for ($i=0; $i<count($navigation); $i++)
             {
-                echo '<li><a href="'.$navigationLinkHeader[$i]. '">'. $navigationHeader[$i]. '</a></i>';
+                echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
             }
             ?>
              <li><a href="" class="language-change">NL</a></li>
@@ -261,9 +258,9 @@ $navigationLinkFooter=array("index.php", "about_us.php", "menu.php", "contact.ph
             <div class="footerline1"></div>
             <ul class="footerbuttons">
                 <?php
-                for ($i=0; $i<count($navigationHeader); $i++)
+                for ($i=0; $i<count($navigation); $i++)
                 {
-                    echo '<li class="footertext"><a href="'.$navigationLinkHeader[$i].'"><b>'.$navigationHeader[$i].'</b></a></li>';
+                    echo '<li class="footertext"><a href="'.$navigationLink[$i].'"><b>'.$navigation[$i].'</b></a></li>';
                 }
                 ?>
             </ul>               
