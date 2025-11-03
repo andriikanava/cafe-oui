@@ -1,3 +1,11 @@
+<?php
+$navigationHeader=array("Home", "About Us", "Menu", "Contact", "Impressions");
+$navigationLinkHeader=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+
+$navigationFooter=array("Home", "About Us", "Menu", "Contact", "Impressions");
+$navigationLinkFooter=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +21,13 @@
     <header class="header">
         <nav class="nav">
         <ul class="nav-list">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Impressions</a></li>
-            <li><a href="" class="language-change">NL</a></li>
+            <?php
+            for ($i=0; $i<count($navigationHeader); $i++)
+            {
+                echo '<li><a href="'.$navigationLinkHeader[$i]. '">'. $navigationHeader[$i]. '</a></i>';
+            }
+            ?>
+             <li><a href="" class="language-change">NL</a></li>
         </ul>
         </nav>
     </header>
@@ -135,11 +144,12 @@
             <p class="footertext">7811 ED Emmen, The Netherlands</p>
             <div class="footerline1"></div>
             <ul class="footerbuttons">
-                <li><a href="#" class="footertext"><b>Home</b></a></li>
-                <li><a href="#" class="footertext"><b>About Us</b></a></li>
-                <li><a href="#" class="footertext"><b>Menu</b></a></li>
-                <li><a href="#" class="footertext"><b>Contact</b></a></li>
-                <li><a href="#" class="footertext"><b>Impressions</b></a></li>
+            <?php
+            for ($i=0; $i<count($navigationHeader); $i++)
+            {
+                echo '<li class="footertext"><a href="'.$navigationLinkHeader[$i].'"><b>'.$navigationHeader[$i].'</b></a></li>';
+            }
+            ?>
             </ul>               
         </div>
         <div class="footerillustrationbox">
