@@ -9,14 +9,14 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, 1.0">
     <title>oui Home Page</title>
-    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="stylesheet" href="static/styles/index dark.css">
 </head>
 <body>
     <div class="mainGrid">
         <header>
         <nav class="nav">
         <ul class="nav-list">
-            <li><a href="index dark.php" class="darkmode-change">Dark</a></li>
+            <li><a href="index.php" class="darkmode-change">Light</a></li>
             <?php
             for ($i=0; $i<count($navigation); $i++)
             {
@@ -152,7 +152,6 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
             </div>
         </footer>
     </div>
-
 <?php
 $show_popup = !isset($_GET['close']);
 ?>
@@ -174,6 +173,5 @@ $show_popup = !isset($_GET['close']);
   <a href="menu.html" class="discover_btn">Discover</a>
 </div>
 <?php endif; ?>
-
 </body>
 </html>
