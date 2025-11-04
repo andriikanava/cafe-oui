@@ -80,7 +80,8 @@ body
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     font-family: "Circular-Light";
-    color: #00657C;
+    color: white;
+    background-color: #0A303F;
 }
 
 header {
@@ -277,7 +278,7 @@ hr
     justify-self: center;
     display: block;
     width: 1px;
-    background-color: #00657C;
+    background-color: white;
 }
 
 .span-50
@@ -340,7 +341,7 @@ hr
 .headingLine
 {
     grid-column: 1/14;
-    border-top: 1px solid #4a6a74;
+    border-top: 1px solid white;
     margin-bottom: 1vh;
 }
 
@@ -357,6 +358,7 @@ hr
 {
     grid-column: 2/18;
     grid-row: 3/18;
+    background-color: rgba(165, 115, 115, 20%);
 }
 
 label
@@ -368,14 +370,14 @@ label
 .formNote
 {
     grid-column: 1/15;
-    background-color: #00657C;
+    background-color: rgba(137, 136, 157, 20%);
     color: #ffffff;
     font-size: 0.8rem;
 }
 
 .filler
 {
-    background-color: #00657C;
+    background-color: rgba(137, 136, 157, 20%);
 }
 
 /* form */
@@ -448,13 +450,18 @@ label
 {
     padding: 1vh;
     padding-left: 2vw;
-    border: 1px solid #00657C;
+    border: 1px solid white;
     border-radius: 25px;
     background: transparent;
     font-family: "Circular-Light";
-    color: #00657C;
+    color: white;
     width: 100%;
     box-sizing: border-box;
+}
+
+.form-input::placeholder {
+    color: lightgray;
+    opacity: 1;
 }
 
 textarea.form-input 
@@ -484,7 +491,7 @@ textarea.form-input
 
 label 
 {
-    color: #00657C;
+    color: white;
     font-family: "Circular-Medium";
 }
 
