@@ -9,14 +9,14 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles/menu.css">
+    <link rel="stylesheet" href="static/styles/menu dark.css">
     <title>Menu</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
         <ul class="nav-list">
-            <li><a href="menu dark.php" class="darkmode-change">Dark</a></li>
+            <li><a href="menu.php" class="darkmode-change">Light</a></li>
             <?php
             for ($i=0; $i<count($navigation); $i++)
             {
@@ -145,7 +145,7 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
             <h3><b>Coffee & Tea</b></h3>
         </div>
         <div class="coffe-menu">
-            <img src="static/images/coffee.png" alt="coffe">
+            <img src="static/images/coffeedark.png" alt="coffe">
             <div class="dish-name-box">
                 <h3>Cappuccino</h3>
                 <h3>Latte</h3>
@@ -162,7 +162,7 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
                 <h3>Herbal</h3>
                 <h3>Jasmine</h3>
             </div>
-            <img src="static/images/Tea.png" alt="">
+            <img src="static/images/Teadark.png" alt="">
         </div>
 
         <div class="background-illustrations" id="bottom-background"></div>

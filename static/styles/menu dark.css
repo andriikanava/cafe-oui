@@ -217,7 +217,7 @@ section {
 .main-dishes {
   grid-column: 1 / -1;
   height: fit-content;
-  background-color: #00657C;
+  background-color: #052B33;
 
   display: grid;
   grid-template-columns: repeat(18, 1fr);
@@ -543,7 +543,7 @@ section {
 
 
 .coffe-menu img {
-  max-width: 100%;
+  min-width: 100%;
   z-index: 2;
 }
 
@@ -557,7 +557,7 @@ section {
 }
 
 .tea-menu img {
-  max-width: 100%;
+  min-width: 100%;
   z-index: 2;
 }
 
@@ -614,7 +614,7 @@ section {
 /* ------------------- COLD REFRESHMENTS ------------------- */
 .cold-drinks {
   grid-column: 1 / -1;
-  background-color: #00657C;
+  background-color: #052B33;
   background-image: url("../illustrations/eb484a1d8bcb3d8f5d5365420a64dba1560b0391.png");
   background-repeat: repeat;
   background-size: 15%;
@@ -769,7 +769,7 @@ section {
 /* ------------------- VEGAN DISHES ------------------- */
 .vegan-dishes {
   grid-column: 1 / -1;
-  background-color: #00657C;
+  background-color: #052B33;
   
   width: 100vw;
   display: grid;
