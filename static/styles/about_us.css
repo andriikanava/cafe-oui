@@ -1,0 +1,1193 @@
+/* Fonts */
+@font-face 
+{
+  font-family: "Circular-Black";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Circular-BlackItalic";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face 
+{
+  font-family: "Circular-Bold";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Circular-BoldItalic";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face 
+{
+  font-family: "Circular-Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Circular-BookItalic";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face 
+{
+  font-family: "Circular-Light";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Circular-LightItalic";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face 
+{
+  font-family: "Circular-Medium";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Circular-MediumItalic";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face 
+{
+  font-family: "Caveat-Bold";
+  src: url("../fonts/Caveat-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-Medium";
+  src: url("../fonts/Caveat-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-Regular";
+  src: url("../fonts/Caveat-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-SemiBold";
+  src: url("../fonts/Caveat-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+*
+{
+    margin: 0;
+}
+
+/* Header */
+.header 
+{
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.header:hover 
+{
+  background-color:#EDE5BB;
+}
+
+.nav 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.nav-list 
+{
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a 
+{
+  color: white;
+  font-size: 2rem;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.header:hover .nav-list a 
+{
+  color: black;
+}
+
+.language-change
+ {
+  position: absolute;
+  right: 2vw;
+  top: 0.5vh;
+  font-size: 2rem;
+  color: white;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.header:hover .language-change
+ {
+  color: black;
+}
+
+/* Hero section */
+.Hero 
+{
+    height: 95vh;
+    width: 100%;
+    background-image: url("../images/AboutUsHeroSection.svg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.DiscoverText
+{
+color: #FFFFFF;
+font-family: "Circular-Light";
+font-size: 1rem;
+font-weight: lighter;
+position: absolute;
+bottom: 2vh;
+animation: DiscoverText 1.5s ease-in-out infinite;
+padding-bottom: 2.5vh;
+}
+
+@keyframes DiscoverText
+{
+    0%, 100%
+    {
+        transform: translateY(0);
+    }    
+    50%
+    {
+        transform: translateY(-50px);
+    }
+}
+
+.HeroImage
+{
+    object-fit: cover;
+    width: 30vw;
+}
+
+ /* About OUI Hisotry section  */
+.aboutoui
+{
+  height: 90vh;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(21, 1fr);
+}
+
+.about-oui-slogan
+{
+  grid-area: 1/4/3/16;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.about-oui-line
+{
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  background-color:#00657C;
+  grid-area: 1/10/2/10;
+  width: 1px;
+  height: 100%;
+}
+
+.about-oui-text
+{
+  font-family: "Circular-Book";
+  color: #00657C;
+  font-size: 1.5vw;
+  text-align: left;
+  padding-top: 1vh;
+}
+
+.about-oui-info-box
+{
+  grid-area: 4/1/17/19;
+  background-color: rgba(217, 217, 217, 0.5);
+}
+
+.about-us-image-history
+{
+  grid-area: 5/10/16/18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-image-history img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us-history-textbox
+{
+  grid-area: 6/2/16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: flex-start;
+}
+
+.about-oui-text-header
+{
+  font-family: "Caveat-SemiBold";
+  color: #00657C;
+  font-size: 4vw;
+}
+
+.about-oui-decoration-line
+{
+  background-color:#00657C;
+  grid-area: 2/7/5/7;
+  width: 15vw;
+  height: 1px;
+  margin-bottom: 2vh;
+}
+
+.about-oui-decoration-line2
+{
+  margin-top: 2vh;
+  background-color:#00657C;
+  grid-area: 17/10/18/10;
+  width: 1px;
+  height: 100%;
+}
+
+/* Timelines section */
+.timeline
+{
+  display: grid;
+  grid-template-columns: repeat(32,1fr);
+  grid-template-rows: repeat(32,1fr);
+  width: 100%;
+  height: 100vh;
+}
+
+.timeline-text-box
+{
+  grid-area: 1/14/2/20;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+} 
+.about-oui-timeline-line
+{
+  margin: 0;
+  background-color:#00657C;
+  grid-area: 1/10/2/10;
+  width: 1px;
+  height: 5vh;
+}
+
+.timeline-header-text
+{
+  font-family: "Circular-Bold";
+  font-size: 2vh;
+  color: #00657C;
+  font-size: 4vh;
+}
+
+.our-story-text
+{
+  padding-top: 1vh;
+  font-family: "Circular-Book";
+  font-size: 2.5vh;
+  color: #00657C;
+}
+
+.timeline-line-box 
+{
+  padding-top: 2.5vh;
+  grid-area: 4/9/30/11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-line-box img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.timeline-right-box1
+{
+  grid-area: 7/18/12/31;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.timeline-right-box2
+{
+  grid-area: 12/18/21/31;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.timeline-right-box3
+{
+  grid-area: 17/18/29/31;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.timeline-left-box1
+{
+  grid-area: 10/2/16/16;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+  text-align: right;
+}
+
+.timeline-left-box2
+{
+  grid-area: 14/2/24/16;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.timeline-intext-heading
+{
+  font-family: "Circular-Bold";
+  font-size: 2.5vh;
+  color: #00657C;
+  padding-bottom: 1vh;
+}
+
+.timeline-intext-main
+{
+  font-family: "Circular-Book";
+  font-size: 2vh;
+  color: #00657C;
+}
+
+.timeline-bottom-line
+{
+  grid-area: 33/-24/33/-10;
+  background-color:  #00657C;
+  width: 100%;
+  height: 1px;
+}
+
+
+
+.grid-timeline 
+{
+  display: grid;
+  grid-template-columns: repeat(32,1fr);
+  grid-template-rows: repeat(32,1fr);
+  width: 100%;
+  height: 100vh;
+}
+
+.timeline-line 
+{
+  background-color: #00657C;
+  justify-self: center;
+  width: 5px;
+  grid-area: 3/16/32/18;
+}
+
+.timeline-box 
+{
+  display: flex;
+  align-items: center; 
+  gap: 1rem; 
+  position: relative;
+  margin: 2vh 0;
+}
+
+.timeline-text
+{
+  margin-inline: 3vw;
+  max-width: 80%; 
+}
+
+.dot 
+{
+  position: absolute;
+  top: 25%;
+  justify-self: start;  
+  align-self: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00657C;
+  transform: translate(-50%, -50%);
+  z-index: 5;          
+}
+
+
+#timeline-right1 
+{
+  grid-area: 7/17/9/30;
+}
+
+#timeline-left1 
+{
+  grid-area: 12/17/14/2;
+  justify-content: flex-end;
+}
+
+#timeline-left1 .dot 
+{
+  transform: translate(50%, -50%); 
+}
+
+#timeline-left1 p 
+{
+  text-align: right;
+}
+
+
+#timeline-right2 
+{
+  grid-area: 16/17/20/30;
+}
+
+#timeline-left2 
+{
+  grid-area: 21/17/25/2;
+  justify-content: flex-end;
+}
+
+#timeline-left2 p 
+{
+  text-align: right;
+}
+
+#timeline-left2 .dot 
+{
+  transform: translate(50%, -50%); 
+}
+
+#timeline-right2 
+{
+  grid-area: 16/17/20/30;
+}
+
+#timeline-right3 
+{
+  grid-area: 26/17/29/30;
+}
+
+
+/* OUI Philosophy section */
+.Our-Philosophy-box
+{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18,1fr);
+  width: 100%;
+  height: auto;
+  padding-top: 1.5vh;
+}
+
+.Our-Philosophy-square
+{
+  grid-area: 1/7/3/13;
+  background-color: #00657C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Our-Philosophy-text
+{
+  font-family: "Circular-Book";
+  font-size: 2vw;
+  color:#FFFFFF;
+}
+
+.Our-Philosophy-illustartion
+{
+  grid-area: 4/1/16/19;
+  z-index: 0;
+  background-image: url("/static/images/our_philosophy_illustration.svg");
+}
+
+.line-our-philosophy1
+{
+  z-index: 1;
+  grid-area: 4/3/4/17;
+  background-color: #00657C;
+  width: 100%;
+  height: 3px;
+}
+
+.line-our-philosophy2
+{
+  grid-area: 4/5/6/5;
+  background-color: #00657C;
+  width: 3px;
+  height: 100%;
+}
+
+.line-our-philosophy3
+{
+  grid-area: 4/10/6/10;
+  background-color: #00657C;
+  width: 3px;
+  height: 100%;
+}
+
+.line-our-philosophy4
+{
+  grid-area: 4/15/6/15;
+  background-color: #00657C;
+  width: 3px;
+  height: 70%;
+}
+
+.line-our-philosophy5
+{
+  grid-area: 10/10/12/10;
+  background-color: #00657C;
+  width: 3px;
+  height: 70%;
+}
+
+.Our-Philosophy-box-left
+{
+  grid-area: 6/3/12/7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.Our-Philosophy-header-text
+{
+  font-family: "Circular-Light";
+  font-size: 2vw;
+  color: #00657C;
+}
+
+.Our-Philosophy-main-text
+{
+  font-family: "Circular-Book";
+  font-size: 1vw;
+  color: #00657C;
+  text-align: center;
+  margin-top: 1vw;
+}
+
+.Our-Philosophy-box-middle1
+{
+  grid-area: 6/8/12/12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.Our-Philosophy-box-middle2
+{
+  grid-area: 12/8/16/12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.Our-Philosophy-box-right
+{
+  grid-area: 6/13/9/17;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.line-our-philosophy-bottom
+{
+  grid-area: 16/6/16/14;
+  height: 1px;
+  width: 100%;
+  background-color:#00657C;
+}
+
+.line-our-philosophy-bottomvertical
+{
+  grid-area: 17/10/18/10;
+  width: 1px;
+  height: 100%;
+  background-color:#00657C;
+}
+
+/* OUI Philosophy section closing part */
+.OUI-Philosophy-section-box
+{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(32,1fr);
+}
+.quote-box
+{
+  grid-area: 1/10/5/24 ;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 2vh;
+}
+
+.quote-text
+{
+  font-family: "Circular-LightItalic";
+  font-size: 1.5vw;
+  color: #00657C;
+  text-align: center;
+}
+
+.Image-Philosophy-box
+{
+  grid-area:5/7/27/27 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.philosophy-section-line
+{
+  margin-top: 1vh;
+  grid-area: 27/17/29/17;
+  width: 1px;
+  height: 100%;
+  background-color:#00657C;
+}
+
+.catch-phrase-philosophy-box
+{
+  grid-area: 29/7/32/27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catch-phrase-philosophy-text
+{
+  font-family: "Circular-LightItalic";
+  font-size: 1.5vw;
+  text-align: center;
+  color: #00657C;
+}
+
+/* Footer */
+footer 
+{
+  background-color: rgba(0, 101, 124, 0.7);
+  width: 100%;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18,1fr);
+  grid-column: 1/19;
+}
+
+.footertext 
+{
+  font-family: "Circular-Light";
+  color:#ffffff ;
+  font-size: 2vh;
+
+  white-space: nowrap;
+}
+
+.footerbox1 
+{
+  padding-left: 2vh;
+  grid-area: 1/1/15/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footerlogo 
+{
+  font-family: "Circular-Medium";
+  color:#EDE5BB ;
+  font-size: 6.5vh;
+}
+
+.footerline1 
+{
+  margin-top: 2vh;
+  background-color:#00657C;
+  width: 100%;
+  min-height: 1px;
+}
+
+.footerline2 
+{
+  grid-area: -8/14/-8/18;
+  margin-top: 2vh;
+  background-color:#00657C;
+  min-height: 1px;
+  width: 20vw;
+}
+
+.footerbuttons 
+{
+  padding-left: 0;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2vh;
+  list-style-type: none;
+} 
+
+ .footerbuttons a 
+ {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footerbuttons a::after 
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #EDE5BB;
+  transition: width 0.4s ease-in-out;
+}
+
+.footerbuttons a:hover 
+{
+  color: #EDE5BB;
+}
+
+.footerbuttons a:hover::after 
+{
+  width: 100%;
+}
+
+.footerillustrationbox 
+{
+  grid-area: 1/8/19/12;
+  display: flex;
+}
+
+.imgfooter 
+{
+  width: 100%;
+  height: 100%;
+}
+
+.footerbox2 
+{
+  grid-area: 7/14/19/19;
+}
+
+.copyright 
+{
+  margin-top: 2vh;
+  font-family: "Circular-Light";
+  color:#ffffff ;
+  font-size: 1.5vh;
+}
+
+
+@media (max-width: 1000px)
+{
+footer
+{
+  height: 60vh;
+}
+.footerbox1 
+{
+  grid-area: 1/4/8/16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerbox2 
+  {
+    grid-area: 13/8/18/12;
+    text-align: center;
+  }
+
+.footerline2 
+{
+  grid-area: auto;
+  margin: 2vh auto 0 auto;
+  background-color: #00657C;
+  min-height: 1px;
+  width: 20vw;
+}
+}
+
+
+/* Tablet responsiveness */
+@media (max-width: 768px)
+{
+ .header
+  {
+    height: 10vh;
+    gap: 4vw;
+    background-color:#EDE5BB;
+  }
+
+  .nav-list 
+  {
+    gap: 3vw;
+  }
+
+  .nav-list a 
+  {
+    font-size: 1.4rem;
+    color: black;
+  }
+
+  .language-change 
+  {
+    font-size: 1.4rem;
+    right: 4vw;
+    top: 2.5vh;
+  }
+
+
+  .about-oui-slogan 
+  {
+    grid-area: 1/4/4/16;
+  }
+
+  .Hero 
+  {
+    background-image: url("../images/hero_mobile_img.svg");
+  }
+
+  .OUI-Philosophy-section-box
+  {
+    display: grid;
+    grid-template-columns: repeat(32,1fr);
+    grid-template-rows: repeat(13,1fr);
+  }
+  .philosophy-section-line
+  {
+    grid-area: 10/17/11/17;
+  }
+
+  .Image-Philosophy-box
+  {
+    grid-area: 5/7/10/27;
+  }
+  .about-us-history-textbox
+  {
+    grid-area: 4/1/19/9;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-oui-text
+  {
+    margin-left: 1vw;
+    font-size: 2.5vw;
+    text-align: left;
+  }
+
+  .about-oui-text-header
+  {
+    margin-left: 1vw;
+    font-size: 8vw;
+  }
+  .quote-text
+  {
+    font-size: 2vh;
+  }
+
+  .aboutoui
+  {
+    height: auto;
+  }
+
+  .about-oui-decoration-line
+  {
+    margin-left: 1vw;
+  }
+ 
+ .about-oui-decoration-line
+  {
+    margin-bottom: 1vh;
+  }
+
+  .Image-Philosophy-box img
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-oui-info-box 
+  {
+    width: 100%;
+    height: auto;
+    grid-area: 4 / 1 / 17 / 20;
+  }
+
+  .about-oui-line
+  {
+   height: 2vh;
+  }
+
+  .about-us-image-history 
+  {
+    grid-area: 6/10/16/18;
+  }
+
+  
+  .oui-story p
+  {
+    margin-left: 3vw;
+    font-size: 2.5vw;
+    text-align: left;
+    padding-top: 0.5vh;
+  }
+
+  .catch-phrase-philosophy-box
+  {
+    grid-area: 11/7/13/27;
+  }
+
+  .catch-phrase-philosophy-text
+  {
+    font-size: 2vh;
+  }
+
+  .Our-Philosophy-header-text
+  {
+    font-size: 2.5vh;
+  }
+  
+  .Our-Philosophy-main-text
+  {
+    font-size: 1.5vh;
+  }
+
+  .footerbox2
+  {
+    grid-area: 13/6/18/14;
+  }
+
+  .footerlogo
+  {
+    font-size: 5.5vh;
+  }
+
+
+  .timeline-right-box1
+  {
+    grid-area: 8/18/10/31;
+  }
+
+  .timeline-right-box2
+  {
+    grid-area: 14/18/19/31;
+  }
+
+  .timeline-right-box3
+  {
+  grid-area: 22 / 18 / 25 / 31;
+  }
+
+  .timeline-left-box1 {
+        grid-area: 11 / 2 / 13 / 16;
+  }
+
+  .timeline-left-box2 {
+        grid-area: 18 / 2 / 22 / 16;
+  }
+
+  .timeline-intext-heading {
+    font-size: 4vw;
+  }
+
+  .timeline-intext-main {
+    font-size: 3vw;
+  }
+
+
+  .Our-Philosophy-square
+  {
+    grid-area: 1/4/2/16;
+  }
+  .Our-Philosophy-text {
+    font-size: 4vw;
+  }
+
+  .quote-box {
+    grid-area: 1 / 5 / 5 / 30;
+  }
+}
+
+
+@media (max-width: 480px) 
+{
+  .header 
+  {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav 
+  {
+    flex-direction: column;
+  }
+
+  .nav-list 
+  {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .nav-list a 
+  {
+    font-size: 1rem;
+  }
+
+  .language-change 
+  {
+    position: static;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  .HeroImage
+  {
+    object-fit: cover;
+    width: 70vw; 
+  }
+
+   .footertext
+  {
+    font-size: 1.5vh;
+  }
+ 
+}
+
+@media (max-width: 375px) 
+{
+ 
+  .footerillustrationbox
+  {
+    grid-area: 9/3/12/17;
+  }
+  .footerbox2
+  {
+    grid-area: 13/6/18/14;
+  }
+  footer 
+  {
+    height: 50vh;
+  }
+  .footerlogo
+  {
+    font-size: 4.5vh;
+  }
+
+  .timeline-intext-heading
+  {
+    font-size: 2vh;
+  }
+
+  .timeline-intext-main
+  {
+    font-size: 1.5vh;
+  }
+
+
+}
