@@ -1,7 +1,8 @@
 <?php
     $navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
-    $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+    $navigationLink=array("index dark.php", "about_us dark.php", "menu dark.php", "contact dark.php", "impressions dark.php");
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,13 +10,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Impressions</title>
-        <link rel="stylesheet" href="static/styles/Impressions.css">
+        <link rel="stylesheet" href="static/styles/Impressions dark.css">
     </head>
     <body>
         <header class="header">
             <nav class="nav">
             <ul class="nav-list">
-                <li><a href="Impressions dark.php" class="darkmode-change">Dark</a></li>
+                <li><a href="Impressions.php" class="darkmode-change">Light</a></li>
                 <?php
                     for ($i=0; $i<count($navigation); $i++) {
                         echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></li>';
@@ -92,7 +93,7 @@
                         echo '<li class="footertext"><a href="'.$navigationLink[$i].'"><b>'.$navigation[$i].'</b></a></li>';
                     }
                 ?>
-            </ul>               
+            </ul>
         </div>
         <div class="footerillustrationbox">
             <img src="static/images/footerimg.svg" alt="macaron illustration" class="imgfooter">
