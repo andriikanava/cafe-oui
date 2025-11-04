@@ -144,6 +144,23 @@ header:hover {
   background-color: white;
 }
 
+/* --- dark mode top --- */
+.darkmode-change {
+  position: absolute;
+  left: 2vw;
+  top: 0.5vh;
+  font-size: 2rem;
+  color: white;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+header:hover .darkmode-change {
+  color: black;
+}
+
 /* --- navigation --- */
 .nav {
   display: flex;
