@@ -1,6 +1,6 @@
 <?php
 $navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
-$navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+$navigationLink=array("index dark.php", "about_us dark.php", "menu dark.php", "contact dark.php", "impressions dark.php");
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles/about_us.css">
+    <link rel="stylesheet" href="static/styles/about_us dark.css">
     <title>Document</title>
 
 </head>
@@ -18,7 +18,7 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
     <header class="header">
         <nav class="nav">
         <ul class="nav-list">
-            <li><a href="about_us dark.php" class="darkmode-change">Dark</a></li>
+            <li><a href="about_us.php" class="darkmode-change">Light</a></li>
             <?php
             for ($i=0; $i<count($navigation); $i++)
             {
