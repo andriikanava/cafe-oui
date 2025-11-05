@@ -92,7 +92,6 @@ body {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   width: 100vw;
-  /* overflow-x: hidden; */
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -123,7 +122,7 @@ section {
   background-color: white;
 }
 
-/* --- навигация --- */
+
 .nav {
   display: flex;
   justify-content: center;
@@ -132,7 +131,7 @@ section {
   position: relative;
 }
 
-/* --- список без маркеров --- */
+
 .nav-list {
   display: flex;
   gap: 2vw;
@@ -141,7 +140,7 @@ section {
   padding: 0;
 }
 
-/* --- ссылки --- */
+
 .nav-list a {
   color: white;
   font-size: 2rem;
@@ -155,7 +154,7 @@ section {
   color: black;
 }
 
-/* --- язык справа --- */
+
 .language-change {
   position: absolute;
   right: 2vw;
@@ -207,7 +206,7 @@ section {
 }
 
 .hero-title {
-  grid-column: 1 / -1; /* По центру, на всю ширину */
+  grid-column: 1 / -1;
   color: white;
   font-size: 5rem;
   font-family: "Circular-Book";
@@ -592,27 +591,27 @@ section {
   background-size: 6%;
   background-position: center;
 
-  z-index: 0; /* под контентом */
-  opacity: 0.15; /* можешь убрать, если не нужна прозрачность */
+  z-index: 0;
+  opacity: 0.15;
 }
 .hot-drinks #upper-background {
-  top: 5vw; /* по центру секции */
+  top: 5vw;
 }
 
 .hot-drinks #bottom-background {
-  bottom:0vw; /* по центру секции */
+  bottom:0vw;
 }
 
 .white-decoration-line {
   position: absolute;
-  top: 40vw; /* по центру секции */
+  top: 40vw;
   left: 0;
-  transform: translateY(-50%); /* чтобы центрировать по вертикали */
+  transform: translateY(-50%);
   width: 100%;
   height: 3vh;
 
   background-color: white;
-  z-index: 0; /* под контентом */
+  z-index: 0;
 }
 
 /* ------------------- COLD REFRESHMENTS ------------------- */
@@ -626,9 +625,8 @@ section {
   width: 100vw;
 
   display: grid;
-  width: 100vw;              /* точно не больше ширины экрана */
-  grid-template-columns: repeat(18, minmax(0, 1fr)); /* чтобы колонки сжимались */
-  /* justify-content: center; */
+  width: 100vw;
+  grid-template-columns: repeat(18, minmax(0, 1fr));
   align-content: start;
   padding-bottom: 5vh;
   gap: 5vh;
@@ -665,10 +663,9 @@ section {
 .cold-drinks .lemonade-box {
   grid-column: 2/19;
   display: grid;
-  width: 100vw;              /* точно не больше ширины экрана */
-  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
+  width: 100vw;
+  grid-template-columns: repeat(17, minmax(0, 1fr));
   grid-template-rows: repeat(10, 1fr);
-  /* justify-content: center; */
   align-content: start;
 }
 
@@ -698,10 +695,9 @@ section {
 .cold-drinks .ice-tea-box {
   grid-column: 1/18;
   display: grid;
-  width: 100vw;              /* точно не больше ширины экрана */
-  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
+  width: 100vw;
+  grid-template-columns: repeat(17, minmax(0, 1fr));
   grid-template-rows: repeat(10, 1fr);
-  /* justify-content: center; */
   align-content: start;
 }
 
@@ -727,8 +723,8 @@ section {
 .cold-drinks .juice-box {
   grid-column: 2/19;
   display: grid;
-  width: 100vw;              /* точно не больше ширины экрана */
-  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
+  width: 100vw;
+  grid-template-columns: repeat(17, minmax(0, 1fr));
   grid-template-rows: repeat(10, 1fr);
   justify-content: center;
   align-content: start;
@@ -777,8 +773,7 @@ section {
   
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(18, minmax(0, 1fr)); /* чтобы колонки сжимались */
-  /* justify-content: center; */
+  grid-template-columns: repeat(18, minmax(0, 1fr));
   align-content: start;
   padding-bottom: 5vh;
   gap: 5vh;
@@ -1127,8 +1122,8 @@ footer
     flex-direction: column;
     align-items: center;
     gap: 4vh; 
-    max-width: 90%;          /* чтобы не растягивалось на всю ширину */
-    margin: 0 auto;          /* центрируем весь блок */
+    max-width: 90%;
+    margin: 0 auto;
     padding-bottom: 3vh;
   }
 
@@ -1137,8 +1132,8 @@ footer
     flex-direction: column;
     align-items: center;
     gap: 4vh; 
-    max-width: 90%;          /* чтобы не растягивалось на всю ширину */
-    margin: 0 auto;          /* центрируем весь блок */
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .ecleir-box img,
@@ -1251,7 +1246,7 @@ footer
     background-color: transparent;
   }
   .cold-drinks {
-    grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
+    grid-template-columns: repeat(18, minmax(0, 3vw));
     gap: 2vh;
   }
 
@@ -1283,7 +1278,7 @@ footer
   }
 
   .vegan-dishes {
-    grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
+    grid-template-columns: repeat(18, minmax(0, 3vw));
     gap: 2vh;
   }
 
