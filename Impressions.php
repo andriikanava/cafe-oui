@@ -75,6 +75,11 @@
                 <iframe src="https://open.spotify.com/embed/playlist/3hBYNl6WZRpAZy0kqZUj0n?utm_source=generator&theme=0" loading="lazy"></iframe>
                 <iframe src="https://open.spotify.com/embed/playlist/06JgdikHP2djuAwaSeIbAa?utm_source=generator&theme=0" loading="lazy"></iframe>
                 <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbehaqJzJXqw?utm_source=generator&theme=0" loading="lazy"></iframe>
+                <iframe src="https://open.spotify.com/embed/playlist/1AqAA0ODbJBbJnvceA5SW0?utm_source=generator&theme=0" loading="lazy"></iframe>
+                <iframe src="https://open.spotify.com/embed/playlist/0QYcdurtk1zrZBZcGKeyWx?utm_source=generator&theme=0" loading="lazy"></iframe>
+                <iframe src="https://open.spotify.com/embed/playlist/3hBYNl6WZRpAZy0kqZUj0n?utm_source=generator&theme=0" loading="lazy"></iframe>
+                <iframe src="https://open.spotify.com/embed/playlist/06JgdikHP2djuAwaSeIbAa?utm_source=generator&theme=0" loading="lazy"></iframe>
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbehaqJzJXqw?utm_source=generator&theme=0" loading="lazy"></iframe>
             </div>
         </div>
 
