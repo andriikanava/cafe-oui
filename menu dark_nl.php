@@ -1,22 +1,29 @@
+<?php
+$navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
+$navigationLink=array("index dark.php", "about_us dark.php", "menu dark.php", "contact dark.php", "impressions dark.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles/menu.css">
+    <link rel="stylesheet" href="static/styles/menu dark.css">
     <title>Menu</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
         <ul class="nav-list">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Impressions</a></li>
-            <li><a href="" class="language-change">NL</a></li>
+            <li><a href="menu.php" class="darkmode-change">Light</a></li>
+            <?php
+            for ($i=0; $i<count($navigation); $i++)
+            {
+                echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
+            }
+            ?>
+             <li><a href="menu dark.php" class="language-change">EN</a></li>
         </ul>
         </nav>
     </header>
@@ -26,7 +33,7 @@
     <section class="main-dishes">
         <div class="menu-title">
             <div class="horizontal-line"></div>
-            <h2>FOOD</h2>
+            <h2>ETEN</h2>
             <div class="horizontal-line"></div>
         </div>
         <div class="food-menu-box">
@@ -39,15 +46,15 @@
                     <img src="static/images/croisant.png" alt="Croissant">
                     <div class="dish-name-box">
                         <h3>Choices:</h3>
-                        <h3>Plain</h3>
-                        <h3>With Butter</h3>
-                        <h3>Herb butter</h3>
+                        <h3>Normaal</h3>
+                        <h3>Boter</h3>
+                        <h3>Kruiden Boter</h3>
                         <h3>Jam or Nutella</h3>
-                        <h3>Brie or cmembert</h3>
-                        <h3>Cheese with walnuts</h3>
-                        <h3>Cream cheese</h3>
-                        <h3>Soft goat cheese</h3>
-                        <h3>Smoked salmon</h3>
+                        <h3>Brie of Camembert</h3>
+                        <h3>Kaas met Walnoten</h3>
+                        <h3>Roomkaas</h3>
+                        <h3>Zachte Geiten Kaas</h3>
+                        <h3>Gerookte Zalm</h3>
                     </div>
                 </div>
             </div>
@@ -55,22 +62,22 @@
             <div class="dish-box" id="salad-dish-box">
                 <div class="dish-title">
                     <div class="vertical-line"></div>
-                    <h3><b>Salad</b></h3>
+                    <h3><b>Salade</b></h3>
                 </div>
                 <div class="salad-box">
                     <img src="static/images/right-dishes.png" alt="Edd and tuna salads">
                     <div class="dish-name-box" id="egg-text">
-                        <h3>Egg and hummus</h3>
+                        <h3>Ei en hummus</h3>
                     </div>
                         <div class="dish-name-box" id="tuna-text">
-                            <h3>Tuna</h3>
+                            <h3>Tonijn</h3>
                         </div>
                     </div>
                 </div>
         </div>
         <div class="menu-title">
             <div class="horizontal-line"></div>
-            <h2>SWEETS</h2>
+            <h2>ZOETE HAPJES</h2>
             <div class="horizontal-line"></div>
         </div>
         <div class="menu-box">
@@ -91,7 +98,7 @@
             <div class="creampuffs-box">
                 <div class="dish-title">
                     <div class="vertical-line"></div>
-                    <h3><b>Cream Puffs</b></h3>
+                    <h3><b>Slagroomsoesjes</b></h3>
                 </div>
                 <img src="static/images/cupcakes.png" alt="millefeuille">
             </div>
@@ -99,12 +106,12 @@
                 <div class="macaroons-content">
                     <img src="static/images/macaroons-menu.png" alt="Croissant">
                     <div class="dish-name-box">
-                        <h3>Flavors:</h3>
-                        <h3>Vanilla</h3>
-                        <h3>Lemon</h3>
-                        <h3>Raspberry</h3>
-                        <h3>Chocolate</h3>
-                        <h3>Coffee</h3>
+                        <h3>Smaken:</h3>
+                        <h3>Vanille</h3>
+                        <h3>Limoen</h3>
+                        <h3>Framboos</h3>
+                        <h3>Pistache</h3>
+                        <h3>Chocolade</h3>
                     </div>
                 </div>
                 <div class="dish-title"> 
@@ -129,16 +136,16 @@
     <section class="hot-drinks">
         <div class="menu-title">
             <div class="horizontal-line"></div>
-            <h2>DRINKS</h2>
+            <h2>DRANKEN</h2>
             <div class="horizontal-line"></div>
         </div>
         <div class="background-illustrations" id="upper-background"></div>
         <div class="dish-title">
             <div class="vertical-line"></div>
-            <h3><b>Coffee & Tea</b></h3>
+            <h3><b>Koffie & Thee</b></h3>
         </div>
         <div class="coffe-menu">
-            <img src="static/images/coffee.png" alt="coffe">
+            <img src="static/images/coffeedark.png" alt="coffe">
             <div class="dish-name-box">
                 <h3>Cappuccino</h3>
                 <h3>Latte</h3>
@@ -150,12 +157,12 @@
         <div class="white-decoration-line"></div>
         <div class="tea-menu">
             <div class="dish-name-box">
-                <h3>Black</h3>
-                <h3>Green</h3>
-                <h3>Herbal</h3>
-                <h3>Jasmine</h3>
+                <h3>Zwart</h3>
+                <h3>Groen</h3>
+                <h3>Kruiden</h3>
+                <h3>Jasmijn</h3>
             </div>
-            <img src="static/images/Tea.png" alt="">
+            <img src="static/images/Teadark.png" alt="">
         </div>
 
         <div class="background-illustrations" id="bottom-background"></div>
@@ -164,24 +171,24 @@
         <!-- <div class="menu-title-cover"> -->
         <div class="menu-title">
             <div class="horizontal-line"></div>
-            <h2>COLD REFRESHMENTS</h2>
+            <h2>Koude Dranken</h2>
             <div class="horizontal-line"></div>            
         </div>
         <!-- </div> -->
         <div class="lemonade-box">
             <img src="static/images/lemonade.png" alt="lemonade">
             <div class="yellow-decoration-line"></div>
-            <h2>Home Made Lemonade</h2>
+            <h2>Huisgemaakte Limonade</h2>
         </div>
         <div class="ice-tea-box">
             <img src="static/images/cola.png" alt="ice tea">
             <div class="yellow-decoration-line"></div>
-            <h2>Home Made Ice Tea</h2>
+            <h2>Huisgemaakte Ice Tea</h2>
         </div>
         <div class="juice-box">
             <img src="static/images/juice.png" alt="orange juice">
             <div class="yellow-decoration-line"></div>
-            <h2>Orange Juice</h2>
+            <h2>Sinaasappel Sap</h2>
         </div>
     </section>
     <section class="divider">
@@ -201,36 +208,36 @@
             <img src="static/images/vegan-croisant.png" alt="vegan croisant" id="vegan-croisant-img">
             <div class="vegan-background" id="croisant-background"></div>
             <div class="horizontal-line" id="croisant-line"></div>
-            <h2 id="croisant-text">A classic French croissant, reimagined with plant-based butter — golden, flaky, and indulgent.</h2>
+            <h2 id="croisant-text">Een klassieke Franse croissant, opnieuw uitgevonde met plantaardig boter — gouden, schilferig en toegeeflijk.</h2>
        
             <img src="static/images/vegan-pommes.png" alt="vegan croisant" id="vegan-pommes-img">
             <div class="vegan-background" id="pommes-background"></div>
             <div class="horizontal-line" id="pommes-line"></div>
-            <h2 id="pommes-text">A classic French croissant, reimagined with plant-based butter — golden, flaky, and indulgent.</h2>
+            <h2 id="pommes-text">Goudkleurig roostergebakje gevuld met zachte gekarameliseerde appels - knapperig, licht en delicaat zoet.</h2>
         </div>
         <div class="vegan-content-box">
             
             <img src="static/images/pistache.png" alt="vegan croisant" id="vegan-croisant-img">
             <div class="vegan-background" id="croisant-background"></div>
             <div class="horizontal-line" id="croisant-line"></div>
-            <h2 id="croisant-text">Flaky pastry layered with pistachio cream and topped with a drizzle of icing and crunchy nuts.</h2>
+            <h2 id="croisant-text">Bladerdeeg met een laagje pistachecrème, besprenkeld met glazuur en knapperige nootjes.</h2>
        
             <img src="static/images/bretzel.png" alt="vegan croisant" id="vegan-pommes-img">
             <div class="vegan-background" id="pommes-background"></div>
             <div class="horizontal-line" id="pommes-line"></div>
-            <h2 id="pommes-text">A tender, golden pretzel-style pastry sprinkled with sesame - simple, rustic, and satisfying.</h2>
+            <h2 id="pommes-text">Een zacht, goudbruin gebakje in pretzelstijl, bestrooid met sesamzaadjes: eenvoudig, rustiek en bevredigend.</h2>
         </div>
         <div class="vegan-content-box">
             
             <img src="static/images/tartine.png" alt="vegan croisant" id="vegan-croisant-img">
             <div class="vegan-background" id="croisant-background"></div>
             <div class="horizontal-line" id="croisant-line"></div>
-            <h2 id="croisant-text">Artisanal bread topped with creamy plant-based cheese and herbs - simple, fresh, and flavorful.</h2>
+            <h2 id="croisant-text">Ambachtelijk brood belegd met romige plantaardige kaas en kruiden - eenvoudig, vers en smaakvol.</h2>
        
             <img src="static/images/noi.png" alt="vegan croisant" id="vegan-pommes-img">
             <div class="vegan-background" id="pommes-background"></div>
             <div class="horizontal-line" id="pommes-line"></div>
-            <h2 id="pommes-text">A classic French croissant, reimagined with plant-based butter — golden, flaky, and indulgent.</h2>
+            <h2 id="pommes-text">Bladerdeeg gevuld met een subtiele zoetheid en gegarneerd met geroosterde hazelnoten - knapperig, nootachtig en verfijnd.</h2>
             <div class="download-button">
                 <a href="Menu.pdf">Download the MENU</a>
             </div>
@@ -251,11 +258,12 @@
             <p class="footertext">7811 ED Emmen, The Netherlands</p>
             <div class="footerline1"></div>
             <ul class="footerbuttons">
-                <li><a href="#" class="footertext"><b>Home</b></a></li>
-                <li><a href="#" class="footertext"><b>About Us</b></a></li>
-                <li><a href="#" class="footertext"><b>Menu</b></a></li>
-                <li><a href="#" class="footertext"><b>Contact</b></a></li>
-                <li><a href="#" class="footertext"><b>Impressions</b></a></li>
+                <?php
+                for ($i=0; $i<count($navigation); $i++)
+                {
+                    echo '<li class="footertext"><a href="'.$navigationLink[$i].'"><b>'.$navigation[$i].'</b></a></li>';
+                }
+                ?>
             </ul>               
         </div>
         <div class="footerillustrationbox">
