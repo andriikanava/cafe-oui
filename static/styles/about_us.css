@@ -387,6 +387,7 @@ padding-bottom: 2.5vh;
   font-family: "Circular-Book";
   font-size: 2.5vh;
   color: #00657C;
+  wrap:no-wrap;
 }
 
 .timeline-line-box 
@@ -642,7 +643,7 @@ padding-bottom: 2.5vh;
   grid-area: 4/15/6/15;
   background-color: #00657C;
   width: 3px;
-  height: 70%;
+  height: 100%;
 }
 
 .line-our-philosophy5
@@ -927,6 +928,10 @@ footer
   min-height: 1px;
   width: 20vw;
 }
+.oui-story p
+  {
+    font-size: 2vw;
+  }
 }
 
 
@@ -1050,7 +1055,7 @@ footer
   .oui-story p
   {
     margin-left: 3vw;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: left;
     padding-top: 0.5vh;
   }
@@ -1173,6 +1178,13 @@ footer
    .footertext
   {
     font-size: 1.5vh;
+  }
+  .oui-story p
+  {
+    margin-left: 3vw;
+    font-size: 2.5vw;
+    text-align: left;
+    padding-top: 0.5vh;
   }
  
 }
