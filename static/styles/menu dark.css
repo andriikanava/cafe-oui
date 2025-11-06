@@ -1,68 +1,78 @@
 /* ------------------- Fonts ------------------- */
-@font-face {
+@font-face 
+{
   font-family: "Circular-Black";
   src: url("../fonts/CircularStd-Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-BlackItalic";
   src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
   font-weight: 900;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-Bold";
   src: url("../fonts/CircularStd-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-BoldItalic";
   src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-Book";
   src: url("../fonts/CircularStd-Book.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-BookItalic";
   src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-Light";
   src: url("../fonts/CircularStd-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-LightItalic";
   src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-Medium";
   src: url("../fonts/CircularStd-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "Circular-MediumItalic";
   src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
   font-weight: 500;
@@ -70,12 +80,14 @@
 }
 
 
-* {
+* 
+{
   margin: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html, body 
+{
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -83,12 +95,14 @@ html, body {
 section,
 footer,
 header,
-div {
+div 
+{
   max-width: 100%;
 }
 
 /* ------------------- GRID SYSTEM ------------------- */
-body {
+body 
+{
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   width: 100vw;
@@ -97,12 +111,14 @@ body {
   overflow-x: hidden;
 }
 
-section {
+section 
+{
   grid-column: 1 / -1;
 }
 
 /* ------------------- Header ------------------- */
-.header {
+.header 
+{
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
@@ -119,12 +135,14 @@ section {
   z-index: 100;
 }
 
-.header:hover {
+.header:hover 
+{
   background-color: white;
 }
 
 /* --- навигация --- */
-.nav {
+.nav 
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +151,8 @@ section {
 }
 
 /* --- список без маркеров --- */
-.nav-list {
+.nav-list 
+{
   display: flex;
   gap: 2vw;
   list-style: none;
@@ -142,7 +161,8 @@ section {
 }
 
 /* --- ссылки --- */
-.nav-list a {
+.nav-list a 
+{
   color: white;
   font-size: 2rem;
   font-family: "Circular-Light";
@@ -151,12 +171,14 @@ section {
   transition: all 0.5s ease;
 }
 
-.header:hover .nav-list a {
+.header:hover .nav-list a 
+{
   color: black;
 }
 
 /* --- язык справа --- */
-.language-change {
+.language-change 
+{
   position: absolute;
   right: 2vw;
   top: 0.5vh;
@@ -168,15 +190,23 @@ section {
   transition: all 0.5s ease;
 }
 
-.header:hover .language-change {
+.header:hover .language-change 
+{
   color: black;
 }
 
 /* --- Dark mode switcher --- */
-.darkmode-change {
+.darkmodeimg 
+{
+  width: 20svh;
+  height: auto;
+}
+
+.darkmode-change 
+{
   position: absolute;
-  left: 2vw;
-  top: 0.5vh;
+  left: 1vw;
+  top: -0.5vh;
   font-size: 2rem;
   color: white;
   font-family: "Circular-Light";
@@ -185,13 +215,15 @@ section {
   transition: all 0.5s ease;
 }
 
-.header:hover .darkmode-change {
+.header:hover .darkmode-change 
+{
   color: black;
 }
 
 
 /* ------------------- Hero ------------------- */
-.hero-section {
+.hero-section 
+{
   grid-column: 1 / -1;
   height: 100vh;
   width: 100%;
@@ -206,7 +238,8 @@ section {
   justify-items: center;
 }
 
-.hero-title {
+.hero-title 
+{
   grid-column: 1 / -1; /* По центру, на всю ширину */
   color: white;
   font-size: 5rem;
@@ -218,7 +251,8 @@ section {
 
 
 /* ------------------- Main Dishes ------------------- */
-.main-dishes {
+.main-dishes 
+{
   grid-column: 1 / -1;
   height: fit-content;
   background-color: #052B33;
@@ -229,7 +263,8 @@ section {
   align-content: start;
 }
 
-.main-dishes .menu-title {
+.main-dishes .menu-title 
+{
   grid-column: 2 / 18;
   display: flex;
   justify-content: space-between;
@@ -238,7 +273,8 @@ section {
   padding-top: 1rem;
 }
 
-.main-dishes .menu-title h2 {
+.main-dishes .menu-title h2 
+{
   color: white;
   font-size: 3vw;
   font-family: "Circular-Book";
@@ -246,14 +282,16 @@ section {
   font-weight: 500;
 }
 
-.main-dishes .menu-title .horizontal-line {
+.main-dishes .menu-title .horizontal-line 
+{
   width: 100%;
   height: 1px;
   background-color: white;
 }
 
 /* ------------------- Dishes Layout ------------------- */
-.menu-box {
+.menu-box 
+{
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
@@ -263,7 +301,8 @@ section {
   gap: 1vh;
 }
 
-.food-menu-box {
+.food-menu-box 
+{
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
@@ -272,20 +311,23 @@ section {
   gap: 1vh;
 }
 
-.dish-title {
+.dish-title 
+{
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
 }
 
-.dish-title .vertical-line {
+.dish-title .vertical-line 
+{
   width: 1px;
   height: 3rem;
   background-color: white;
 }
 
-.dish-title h3 {
+.dish-title h3 
+{
   color: white;
   font-size: 2vw;
   font-family: "Circular-Light";
@@ -294,7 +336,8 @@ section {
 }
 
 /* ------------------- Pain Box ------------------- */
-.pain-box {
+.pain-box 
+{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -303,35 +346,41 @@ section {
   max-width: 100%;
 }
 
-#pain-dish-box {
+#pain-dish-box 
+{
   grid-column: 2/11;
 }
 
-#salad-dish-box {
+#salad-dish-box 
+{
   grid-column: 12/18;
 }
 
-.pain-box img {
+.pain-box img 
+{
   object-fit: cover;
   max-width: 35vw;
   padding: 0;
 }
 
-.dish-name-box {
+.dish-name-box 
+{
   background-color: #EDE5BB;
   width: fit-content;
   height: fit-content;
   padding-inline: 1vw;
 }
 
-.pain-box .dish-name-box {
+.pain-box .dish-name-box 
+{
   padding-left: 4vw;
   padding-right: 2vw;
   padding-block: 1vw;
   margin-left: -2vw;
 }
 
-.dish-name-box h3 {
+.dish-name-box h3 
+{
   font-family: "Circular-Light";
   color: #074C5C;
   line-height: 2vw;
@@ -340,26 +389,30 @@ section {
 }
 
 /* ------------------- Salad Box ------------------- */
-.salad-box {
+.salad-box 
+{
   padding-top: 3vh;
   display: grid;
   grid-template-columns: repeat(5, 6vw);
   grid-template-rows: repeat(5, 6vw);
 }
 
-.salad-box img {
+.salad-box img 
+{
   object-fit: cover;
   max-width: 30vw;
 }
 
-#egg-text {
+#egg-text 
+{
   grid-row: 5;
   grid-column: 1 / 3;
   align-self: end;
   justify-self: start;
 }
 
-#tuna-text {
+#tuna-text 
+{
   grid-row: 3;
   grid-column: 4;
   align-self: end;
@@ -369,7 +422,8 @@ section {
 /* ------------------- Pastry Boxes ------------------- */
 
 
-.ecleir-box {
+.ecleir-box 
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -377,13 +431,15 @@ section {
   grid-column: 2 / 6;
 }
 
-.ecleir-box img {
+.ecleir-box img 
+{
   object-fit: cover;
   max-width: 100%;
   padding-top: 2rem;
 }
 
-.millefeuille-box {
+.millefeuille-box 
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,13 +447,15 @@ section {
   grid-column: 7 / 13;
 }
 
-.millefeuille-box img {
+.millefeuille-box img 
+{
   object-fit: cover;
   max-width: 100%;
   padding-top: 2rem;
 }
 
-.creampuffs-box {
+.creampuffs-box 
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,13 +463,15 @@ section {
   grid-column: 14 / 18;
 }
 
-.creampuffs-box img {
+.creampuffs-box img 
+{
   object-fit: cover;
   max-width: 100%;
   padding-top: 2rem;
 }
 
-.brest-box {
+.brest-box 
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,13 +479,15 @@ section {
   grid-column: 14 / 18;
 }
 
-.brest-box img {
+.brest-box img 
+{
   object-fit: cover;
   max-width: 100%;
   padding-top: 2rem;
 }
 
-.pastry-box {
+.pastry-box 
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,12 +495,14 @@ section {
   grid-column: 8 / 14;
 }
 
-.pastry-box img {
+.pastry-box img 
+{
   object-fit: cover;
   max-width: 100%;
 }
 
-.macaroons-box {
+.macaroons-box 
+{
   grid-column: 2 / 7;
   grid-row: 2;
   display: flex;
@@ -447,7 +511,8 @@ section {
   align-items: center;
 }
 
-.macaroons-content {
+.macaroons-content 
+{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -455,13 +520,15 @@ section {
   padding-bottom: 1vh;
 }
 
-.macaroons-box img {
+.macaroons-box img 
+{
   max-width: 100%;
   padding: 0;
 }
 
 
-.macaroons-box .dish-name-box {
+.macaroons-box .dish-name-box 
+{
   padding-left: 1vw;
   padding-right: 1vw;
   padding-block: 1vw;
@@ -470,7 +537,8 @@ section {
 
 
 /* ------------------- Hot Drinks ------------------- */
-.hot-drinks {
+.hot-drinks 
+{
   grid-column: 1 / -1;
   padding-bottom: 5vh;
   background-color: #EDE5BB;
@@ -483,7 +551,8 @@ section {
   position: relative;
 }
 
-.hot-drinks .menu-title {
+.hot-drinks .menu-title 
+{
   grid-column: 2 / 18;
   display: flex;
   justify-content: space-between;
@@ -492,7 +561,8 @@ section {
   padding-top: 3rem;
 }
 
-.hot-drinks .menu-title h2 {
+.hot-drinks .menu-title h2 
+{
   color: #074C5C;
   font-size: 3vw;
   font-family: "Circular-Book";
@@ -500,27 +570,32 @@ section {
   font-weight: 500;
 }
 
-.hot-drinks .menu-title .horizontal-line {
+.hot-drinks .menu-title .horizontal-line 
+{
   width: 100%;
   height: 1px;
   background-color: #074C5C;
 }
 
-.hot-drinks .dish-title {
+.hot-drinks .dish-title 
+{
   grid-column: 8/12;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.hot-drinks .dish-title h3 {
+.hot-drinks .dish-title h3 
+{
   color: #074C5C;
 }
 
-.hot-drinks .dish-title .vertical-line {
+.hot-drinks .dish-title .vertical-line 
+{
   background-color: #074C5C;
 }
 
-.coffe-menu {
+.coffe-menu 
+{
   grid-column: 2/9;
   max-width: 100%;
 
@@ -529,7 +604,8 @@ section {
   align-items: end;
 }
 
-.coffe-menu .dish-name-box {
+.coffe-menu .dish-name-box 
+{
   padding-left: 2vw;
   padding-right: 1vw;
   padding-block: 1vw;
@@ -540,18 +616,21 @@ section {
   z-index: 3; 
 }
 
-.coffe-menu .dish-name-box h3 {
+.coffe-menu .dish-name-box h3 
+{
   color: white;
 }
 
 
 
-.coffe-menu img {
+.coffe-menu img 
+{
   min-width: 100%;
   z-index: 2;
 }
 
-.tea-menu {
+.tea-menu 
+{
   grid-column: 10/17;
   max-width: 100%;
   display: flex;
@@ -560,12 +639,14 @@ section {
   z-index: 3;
 }
 
-.tea-menu img {
+.tea-menu img 
+{
   min-width: 100%;
   z-index: 2;
 }
 
-.tea-menu .dish-name-box {
+.tea-menu .dish-name-box 
+{
   padding-left: 2vw;
   margin-top: 4vh;
   padding-right: 1vw;
@@ -576,11 +657,13 @@ section {
   z-index: 3;
 }
 
-.tea-menu .dish-name-box h3 {
+.tea-menu .dish-name-box h3 
+{
   color: white;
 }
 
-.background-illustrations {
+.background-illustrations 
+{
   position: absolute;
   left: 0;
 
@@ -595,15 +678,18 @@ section {
   z-index: 0; /* под контентом */
   opacity: 0.15; /* можешь убрать, если не нужна прозрачность */
 }
-.hot-drinks #upper-background {
+.hot-drinks #upper-background 
+{
   top: 5vw; /* по центру секции */
 }
 
-.hot-drinks #bottom-background {
+.hot-drinks #bottom-background 
+{
   bottom:0vw; /* по центру секции */
 }
 
-.white-decoration-line {
+.white-decoration-line 
+{
   position: absolute;
   top: 40vw; /* по центру секции */
   left: 0;
@@ -616,7 +702,8 @@ section {
 }
 
 /* ------------------- COLD REFRESHMENTS ------------------- */
-.cold-drinks {
+.cold-drinks 
+{
   grid-column: 1 / -1;
   background-color: #052B33;
   background-image: url("../illustrations/eb484a1d8bcb3d8f5d5365420a64dba1560b0391.png");
@@ -634,7 +721,8 @@ section {
   gap: 5vh;
 }
 
-.cold-drinks .menu-title {
+.cold-drinks .menu-title 
+{
   grid-column: 2 / 18;
   display: flex;
   justify-content: space-between;
@@ -644,7 +732,8 @@ section {
   text-wrap: nowrap;
 }
 
-.cold-drinks .menu-title h2 {
+.cold-drinks .menu-title h2 
+{
   color: white;
   font-size: 3vw;
   font-family: "Circular-Book";
@@ -652,17 +741,20 @@ section {
   font-weight: 500;
 }
 
-.cold-drinks .menu-title .horizontal-line {
+.cold-drinks .menu-title .horizontal-line 
+{
   width: 100%;
   height: 1px;
   background-color: white;
 }
 
-.cold-drinks img {
+.cold-drinks img 
+{
   max-width: 100%;
 }
 
-.cold-drinks .lemonade-box {
+.cold-drinks .lemonade-box 
+{
   grid-column: 2/19;
   display: grid;
   width: 100vw;              /* точно не больше ширины экрана */
@@ -672,12 +764,14 @@ section {
   align-content: start;
 }
 
-.cold-drinks .lemonade-box img {
+.cold-drinks .lemonade-box img 
+{
   grid-area: 1/1/13/10;
   max-width: 100%;
 }
 
-.cold-drinks .lemonade-box h2 {
+.cold-drinks .lemonade-box h2 
+{
   grid-area: 4/11/4/16;
   max-width: 100%;
   color: white;
@@ -687,15 +781,18 @@ section {
   font-weight: 100;
 }
 
-.yellow-decoration-line {
+.yellow-decoration-line 
+{
   background-color: #EDE5BB;
 }
 
-.cold-drinks .lemonade-box .yellow-decoration-line {
+.cold-drinks .lemonade-box .yellow-decoration-line 
+{
   grid-area: 5/10/5/17;
 }
 
-.cold-drinks .ice-tea-box {
+.cold-drinks .ice-tea-box 
+{
   grid-column: 1/18;
   display: grid;
   width: 100vw;              /* точно не больше ширины экрана */
@@ -705,12 +802,14 @@ section {
   align-content: start;
 }
 
-.cold-drinks .ice-tea-box img {
+.cold-drinks .ice-tea-box img 
+{
   grid-area: 13/17/1/12;
   max-width: 100%;
 }
 
-.cold-drinks .ice-tea-box h2 {
+.cold-drinks .ice-tea-box h2 
+{
   grid-area: 5/8/5/12;
   max-width: 100%;
   color: white;
@@ -720,11 +819,13 @@ section {
   font-weight: 100;
 }
 
-.cold-drinks .ice-tea-box .yellow-decoration-line {
+.cold-drinks .ice-tea-box .yellow-decoration-line 
+{
   grid-area: 6/12/6/7;
 }
 
-.cold-drinks .juice-box {
+.cold-drinks .juice-box 
+{
   grid-column: 2/19;
   display: grid;
   width: 100vw;              /* точно не больше ширины экрана */
@@ -734,12 +835,14 @@ section {
   align-content: start;
 }
 
-.cold-drinks .juice-box img {
+.cold-drinks .juice-box img 
+{
   grid-area: 1/1/13/7;
   max-width: 100%;
 }
 
-.cold-drinks .juice-box h2 {
+.cold-drinks .juice-box h2 
+{
   grid-area: 6/8/6/12;
   max-width: 100%;
   color: white;
@@ -749,12 +852,14 @@ section {
   font-weight: 100;
 }
 
-.cold-drinks .juice-box .yellow-decoration-line {
+.cold-drinks .juice-box .yellow-decoration-line 
+{
   grid-area: 7/7/7/12;
 }
 
 /* ------------------- DIVIDER ------------------- */
-.divider {
+.divider 
+{
   height: 7vh;
   width: 100vw;
   background-color: white;
@@ -763,7 +868,8 @@ section {
   align-items: center;
 }
 
-.divider .horizontal-line {
+.divider .horizontal-line 
+{
   width: 70%;
   height: 1px;
   background-color: black;
@@ -771,7 +877,8 @@ section {
 }
 
 /* ------------------- VEGAN DISHES ------------------- */
-.vegan-dishes {
+.vegan-dishes 
+{
   grid-column: 1 / -1;
   background-color: #052B33;
   
@@ -784,7 +891,8 @@ section {
   gap: 5vh;
 }
 
-.vegan-dishes .menu-title {
+.vegan-dishes .menu-title 
+{
   grid-column: 2 / 18;
   display: flex;
   justify-content: space-between;
@@ -794,7 +902,8 @@ section {
   text-wrap: nowrap;
 }
 
-.vegan-dishes .menu-title h2 {
+.vegan-dishes .menu-title h2 
+{
   color: white;
   font-size: 3vw;
   font-family: "Circular-Book";
@@ -802,19 +911,22 @@ section {
   font-weight: 500;
 }
 
-.vegan-dishes .menu-title .horizontal-line {
+.vegan-dishes .menu-title .horizontal-line 
+{
   width: 100%;
   height: 1px;
   background-color: white;
 }
 
-.vegan-dishes .menu-title img {
+.vegan-dishes .menu-title img 
+{
   width: 6vw;
   height: auto;
   margin-left: -2vw;
 }
 
-.vegan-content-box {
+.vegan-content-box 
+{
   height: 100%;
   width: 100vw;
   display: grid;
@@ -823,46 +935,56 @@ section {
   grid-column: 1 / 19;
 }
 
-.vegan-content-box img {
+.vegan-content-box img 
+{
   width: 100%;
   height: auto;
   z-index: 90;
 }
-#vegan-croisant-img {
+#vegan-croisant-img 
+{
   grid-area: 1/2/6/9;
 }
 
-#vegan-pommes-img {
+#vegan-pommes-img 
+{
   grid-area: 6/10/11/18;
 }
 
-.vegan-content-box .vegan-background {
+.vegan-content-box .vegan-background 
+{
   background-image: url("../images/1b27290b037cdc2f492e3b753f5634193b4407e6.png");
   background-size: 15%;
   background-repeat: repeat;
   opacity: 0.4;
 }
-#croisant-background {
+#croisant-background 
+{
   grid-area: 3/8/7/15;
 }
-#pommes-background {
+#pommes-background 
+{
   grid-area: 7/10/12/19;
 }
 
-.vegan-content-box .horizontal-line {
+.vegan-content-box .horizontal-line 
+{
   height: 1px;
   background-color: white;
 }
-#croisant-line {
+#croisant-line 
+{
   grid-column: 9/17;
   grid-row: 2;
 }
-#pommes-line {
+#pommes-line 
+{
   grid-column: 4/10;
   grid-row: 7;
 }
 
-.vegan-content-box h2 {
+.vegan-content-box h2 
+{
   grid-area: 5/8/5/12;
   max-width: 100%;
   color: white;
@@ -871,16 +993,19 @@ section {
   font-weight: 100;
 }
 
-#croisant-text {
+#croisant-text 
+{
   grid-area: 3/10/6/18;
 }
-#pommes-text {
+#pommes-text 
+{
   grid-area: 8/2/10/9;
 }
 
 
 
-.download-button {
+.download-button 
+{
   grid-area: 11/1/11/6;
   max-width: 100%;
   max-height: 100%;
@@ -894,7 +1019,8 @@ section {
   align-items: center;
 }
 
-.download-button a {
+.download-button a 
+{
   background-color: white;
   color: #00657C;
   font-size: 2vw;
@@ -979,7 +1105,7 @@ footer
 } 
 
  .footerbuttons a 
- {
+{
   color: #ffffff;
   text-decoration: none;
   position: relative;
@@ -1036,93 +1162,106 @@ footer
 
 @media (max-width: 1000px)
 {
-footer
-{
-  height: 60vh;
-}
-.footerbox1 
-{
-  grid-area: 1/4/8/16;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footerbox2 
+  footer
+  {
+    height: 60vh;
+  }
+  .footerbox1 
+  {
+    grid-area: 1/4/8/16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerbox2 
   {
     grid-area: 13/8/18/12;
     text-align: center;
   }
 
-.footerline2 
-{
-  grid-area: auto;
-  margin: 2vh auto 0 auto;
-  background-color: #00657C;
-  min-height: 1px;
-  width: 20vw;
-}
+  .footerline2 
+  {
+    grid-area: auto;
+    margin: 2vh auto 0 auto;
+    background-color: #00657C;
+    min-height: 1px;
+    width: 20vw;
+  }
 }
 
 
 
 /* ------------------- MOBILE RESPONSIVENESS ------------------- */
-@media (max-width: 768px) {
-  body {
+@media (max-width: 768px) 
+{
+  body 
+  {
     grid-template-columns: repeat(6, 1fr);
   }
 
 
-  .header {
+  .header 
+  {
     height: 10vh;
     width: 100%;
     gap: 4vw;
     background-color: white;
   }
 
-  .nav-list {
+  .nav-list 
+  {
     gap: 3vw;
   }
 
-  .nav-list a {
+  .nav-list a 
+  {
     font-size: 1.4rem;
     color: black;
   }
 
-  .language-change {
+  .language-change 
+  {
     font-size: 1.4rem;
     right: 4vw;
     top: 2.5vh;
   }
 }
 
-@media (max-width: 480px) {
-  .header {
+@media (max-width: 480px) 
+{
+  .header 
+  {
     height: auto;
     padding: 10px 0;
   }
 
-  .nav {
+  .nav 
+  {
     flex-direction: column;
   }
 
-  .nav-list {
+  .nav-list 
+  {
     flex-wrap: wrap;
     justify-content: center;
     gap: 3vw;
   }
 
-  .nav-list a {
+  .nav-list a 
+  {
     font-size: 1rem;
   }
 
-  .language-change {
+  .language-change 
+  {
     position: static;
     margin-top: 8px;
     font-size: 1rem;
   }
 
   .pain-box,
-  .menu-box {
+  .menu-box 
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1132,7 +1271,8 @@ footer
     padding-bottom: 3vh;
   }
 
-  .food-menu-box {
+  .food-menu-box 
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1143,151 +1283,186 @@ footer
 
   .ecleir-box img,
   .millefeuille-box img,
-  .creampuffs-box img {
+  .creampuffs-box img 
+  {
     max-width: 80%;
   }
 
-  .macaroons-box img {
+  .macaroons-box img 
+  {
     max-width: 70%;
   }
   
-  .macaroons-content {
+  .macaroons-content 
+  {
     justify-content: center;
   }
 
-  .main-dishes {
+  .main-dishes 
+  {
     height: fit-content;
   }
 
-  .main-dishes .menu-title h2 {
+  .main-dishes .menu-title h2 
+  {
     font-size: 6vw;
   }
 
-  .dish-title .vertical-line {
+  .dish-title .vertical-line 
+  {
     height: 2rem;
   }
 
-  .dish-title h3 {
+  .dish-title h3 
+  {
     font-size: 6vw;
   }
 
 
-  .dish-box img {
+  .dish-box img 
+  {
     max-width: 80vw;
     padding-top: 1rem;
   }
 
-  .pain-box {
+  .pain-box 
+  {
     padding-top: 1rem;
   }
 
-  .dish-name-box h3 {
+  .dish-name-box h3 
+  {
     line-height: 7vw;
     font-size: 4vw;
   }
 
-  .dish-name-box {
+  .dish-name-box 
+  {
     margin-top: 2vh;
   }
 
-  .salad-box {
+  .salad-box 
+  {
     padding-top: 3vh;
     display: grid;
     grid-template-columns: repeat(5, 18vw);
     grid-template-rows: repeat(5, 18vw);
   }
 
-  #egg-text {
+  #egg-text 
+  {
     align-self: end;
   }
 
-  #tuna-text {
+  #tuna-text 
+  {
     align-self: end;
   }
 
-  .salad-box img {
+  .salad-box img 
+  {
     max-width: 90vw;
     padding-top: 0;
   }
 
-  .hot-drinks .menu-title h2{
+  .hot-drinks .menu-title h2
+  {
     font-size: 6vw;
   }
-  .hot-drinks .dish-title h2{
+  .hot-drinks .dish-title h2
+  {
     font-size: 4vw;
   }
-  .hot-drinks .dish-title{
+  .hot-drinks .dish-title
+  {
     grid-column: 6/14;
   }
-  .coffe-menu {
+  .coffe-menu 
+  {
     max-width: 100%;
     grid-column: 3 / 17;
   }
-  .coffe-menu img {
+  .coffe-menu img 
+  {
     width: 70%;
   }
 
-  .tea-menu {
+  .tea-menu 
+  {
     padding-top: 3rem;
     max-width: 100%;
     grid-column: 3 / 17;
   }
-  .tea-menu img {
+  .tea-menu img 
+  {
     width: 70%;
   }
 
-  #upper-background {
+  #upper-background 
+  {
     height: 15vh;
     background-size: 15%;
     /* top: 25vh; */
   }
 
-  #bottom-background {
+  #bottom-background 
+  {
     height: 15vh;
     background-size: 15%;
   }
 
-  .white-decoration-line {
+  .white-decoration-line 
+  {
     background-color: transparent;
   }
-  .cold-drinks {
+  .cold-drinks 
+  {
     grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
     gap: 2vh;
   }
 
-  .cold-drinks .menu-title h2 {
+  .cold-drinks .menu-title h2 
+  {
     font-size: 6vw;
   }
-  .cold-drinks .lemonade-box h2 {
+  .cold-drinks .lemonade-box h2 
+  {
     font-size: 3vw;
     grid-area: 4/10/4/18;
   }
-  .cold-drinks .ice-tea-box h2 {
+  .cold-drinks .ice-tea-box h2 
+  {
     font-size: 3vw;
     grid-area: 5/7/5/12;
   }
-  .cold-drinks .juice-box h2 {
+  .cold-drinks .juice-box h2 
+  {
     font-size: 3vw;
     grid-area: 6/7/6/12;
   }
 
-  .divider {
+  .divider 
+  {
     height: 3vh;
   }
 
-  .vegan-dishes .menu-title h2 {
+  .vegan-dishes .menu-title h2 
+  {
     font-size: 6vw;
   }
-  .vegan-dishes .menu-title img {
+  .vegan-dishes .menu-title img 
+  {
     width: 8vw;
   }
 
-  .vegan-dishes {
+  .vegan-dishes 
+  {
     grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
     gap: 2vh;
   }
 
-  .vegan-content-box h2 {
+  .vegan-content-box h2 
+  {
     font-size: 3vw;
   }
 
@@ -1302,7 +1477,8 @@ footer
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) 
+{
   .language-change 
   {
     position: static;

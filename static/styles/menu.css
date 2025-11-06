@@ -195,11 +195,17 @@ section
 }
 
 /* --- Dark mode switcher --- */
+.darkmodeimg 
+{
+  width: 21svh;
+  height: auto;
+}
+
 .darkmode-change 
 {
   position: absolute;
-  left: 2vw;
-  top: 0.5vh;
+  left: 0.8vw;
+  top: -0.4vw;
   font-size: 2rem;
   color: white;
   font-family: "Circular-Light";
@@ -283,7 +289,8 @@ section
 }
 
 /* ------------------- Dishes Layout ------------------- */
-.menu-box {
+.menu-box 
+{
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
@@ -1093,7 +1100,7 @@ footer
 } 
 
  .footerbuttons a 
- {
+{
   color: #ffffff;
   text-decoration: none;
   position: relative;
@@ -1150,31 +1157,33 @@ footer
 
 @media (max-width: 1000px)
 {
-footer
-{
-  height: 60vh;
-}
-.footerbox1 
-{
+  footer
+  {
+    height: 60vh;
+  }
+  
+  .footerbox1 
+  {
   grid-area: 1/4/8/16;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footerbox2 
+  }
+
+  .footerbox2 
   {
     grid-area: 13/8/18/12;
     text-align: center;
   }
 
-.footerline2 
-{
+  .footerline2 
+  {
   grid-area: auto;
   margin: 2vh auto 0 auto;
   background-color: #00657C;
   min-height: 1px;
   width: 20vw;
-}
+  }
 }
 
 
@@ -1182,7 +1191,8 @@ footer
 /* ------------------- MOBILE RESPONSIVENESS ------------------- */
 @media (max-width: 768px) 
 {
-  body {
+  body 
+  {
     grid-template-columns: repeat(6, 1fr);
   }
 
@@ -1191,26 +1201,31 @@ footer
   {
     height: 10vh;
     width: 100%;
-    gap: 4vw;
+    gap: 2vw;
     background-color: white;
   }
 
   .nav-list 
   {
-    gap: 3vw;
+    gap: 2vw;
   }
 
   .nav-list a 
   {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: black;
   }
 
   .language-change 
   {
-    font-size: 1.4rem;
+    font-size: 1rem;
     right: 4vw;
     top: 2.5vh;
+  }
+
+  .darkmode-change 
+  {
+    position: static;
   }
 }
 
