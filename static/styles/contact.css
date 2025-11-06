@@ -743,6 +743,26 @@ footer
   {
     position: static;
   }
+  
+  .leftSpacing
+  {
+    grid-column: 2/4;
+  }
+
+  .rightSpacing
+  {
+    grid-column: 4/6;
+  }
+
+  .centerSpacing
+  {
+    grid-column: 2/6;
+  }
+
+  .contactWrapper
+  {
+    grid-column: 2/7;
+  }
 }
 
 @media (max-width: 480px) 
