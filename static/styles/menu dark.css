@@ -1,5 +1,5 @@
 /* ------------------- Fonts ------------------- */
-@font-face
+@font-face 
 {
   font-family: "Circular-Black";
   src: url("../fonts/CircularStd-Black.otf") format("opentype");
@@ -106,6 +106,7 @@ body
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   width: 100vw;
+  /* overflow-x: hidden; */
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -139,7 +140,7 @@ section
   background-color: white;
 }
 
-
+/* --- навигация --- */
 .nav 
 {
   display: flex;
@@ -149,7 +150,7 @@ section
   position: relative;
 }
 
-
+/* --- список без маркеров --- */
 .nav-list 
 {
   display: flex;
@@ -159,7 +160,7 @@ section
   padding: 0;
 }
 
-
+/* --- ссылки --- */
 .nav-list a 
 {
   color: white;
@@ -175,7 +176,7 @@ section
   color: black;
 }
 
-
+/* --- язык справа --- */
 .language-change 
 {
   position: absolute;
@@ -197,15 +198,15 @@ section
 /* --- Dark mode switcher --- */
 .darkmodeimg 
 {
-  width: 21svh;
+  width: 20svh;
   height: auto;
 }
 
 .darkmode-change 
 {
   position: absolute;
-  left: 0.8vw;
-  top: -0.4vw;
+  left: 1vw;
+  top: -0.5vh;
   font-size: 2rem;
   color: white;
   font-family: "Circular-Light";
@@ -239,7 +240,7 @@ section
 
 .hero-title 
 {
-  grid-column: 1 / -1;
+  grid-column: 1 / -1; /* По центру, на всю ширину */
   color: white;
   font-size: 5rem;
   font-family: "Circular-Book";
@@ -254,7 +255,7 @@ section
 {
   grid-column: 1 / -1;
   height: fit-content;
-  background-color: #00657C;
+  background-color: #052B33;
 
   display: grid;
   grid-template-columns: repeat(18, 1fr);
@@ -624,7 +625,7 @@ section
 
 .coffe-menu img 
 {
-  max-width: 100%;
+  min-width: 100%;
   z-index: 2;
 }
 
@@ -640,7 +641,7 @@ section
 
 .tea-menu img 
 {
-  max-width: 100%;
+  min-width: 100%;
   z-index: 2;
 }
 
@@ -674,37 +675,37 @@ section
   background-size: 6%;
   background-position: center;
 
-  z-index: 0;
-  opacity: 0.15;
+  z-index: 0; /* под контентом */
+  opacity: 0.15; /* можешь убрать, если не нужна прозрачность */
 }
 .hot-drinks #upper-background 
 {
-  top: 5vw;
+  top: 5vw; /* по центру секции */
 }
 
 .hot-drinks #bottom-background 
 {
-  bottom:0vw;
+  bottom:0vw; /* по центру секции */
 }
 
 .white-decoration-line 
 {
   position: absolute;
-  top: 40vw;
+  top: 40vw; /* по центру секции */
   left: 0;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* чтобы центрировать по вертикали */
   width: 100%;
   height: 3vh;
 
   background-color: white;
-  z-index: 0;
+  z-index: 0; /* под контентом */
 }
 
 /* ------------------- COLD REFRESHMENTS ------------------- */
 .cold-drinks 
 {
   grid-column: 1 / -1;
-  background-color: #00657C;
+  background-color: #052B33;
   background-image: url("../illustrations/eb484a1d8bcb3d8f5d5365420a64dba1560b0391.png");
   background-repeat: repeat;
   background-size: 15%;
@@ -712,8 +713,9 @@ section
   width: 100vw;
 
   display: grid;
-  width: 100vw;
-  grid-template-columns: repeat(18, minmax(0, 1fr));
+  width: 100vw;              /* точно не больше ширины экрана */
+  grid-template-columns: repeat(18, minmax(0, 1fr)); /* чтобы колонки сжимались */
+  /* justify-content: center; */
   align-content: start;
   padding-bottom: 5vh;
   gap: 5vh;
@@ -755,9 +757,10 @@ section
 {
   grid-column: 2/19;
   display: grid;
-  width: 100vw;
-  grid-template-columns: repeat(17, minmax(0, 1fr));
+  width: 100vw;              /* точно не больше ширины экрана */
+  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(10, 1fr);
+  /* justify-content: center; */
   align-content: start;
 }
 
@@ -792,9 +795,10 @@ section
 {
   grid-column: 1/18;
   display: grid;
-  width: 100vw;
-  grid-template-columns: repeat(17, minmax(0, 1fr));
+  width: 100vw;              /* точно не больше ширины экрана */
+  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(10, 1fr);
+  /* justify-content: center; */
   align-content: start;
 }
 
@@ -824,8 +828,8 @@ section
 {
   grid-column: 2/19;
   display: grid;
-  width: 100vw;
-  grid-template-columns: repeat(17, minmax(0, 1fr));
+  width: 100vw;              /* точно не больше ширины экрана */
+  grid-template-columns: repeat(17, minmax(0, 1fr)); /* чтобы колонки сжимались */
   grid-template-rows: repeat(10, 1fr);
   justify-content: center;
   align-content: start;
@@ -876,11 +880,12 @@ section
 .vegan-dishes 
 {
   grid-column: 1 / -1;
-  background-color: #00657C;
+  background-color: #052B33;
   
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(18, minmax(0, 1fr));
+  grid-template-columns: repeat(18, minmax(0, 1fr)); /* чтобы колонки сжимались */
+  /* justify-content: center; */
   align-content: start;
   padding-bottom: 5vh;
   gap: 5vh;
@@ -1161,15 +1166,13 @@ footer
   {
     height: 60vh;
   }
-  
   .footerbox1 
   {
-  grid-area: 1/4/8/16;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    grid-area: 1/4/8/16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
   .footerbox2 
   {
     grid-area: 13/8/18/12;
@@ -1178,11 +1181,11 @@ footer
 
   .footerline2 
   {
-  grid-area: auto;
-  margin: 2vh auto 0 auto;
-  background-color: #00657C;
-  min-height: 1px;
-  width: 20vw;
+    grid-area: auto;
+    margin: 2vh auto 0 auto;
+    background-color: #00657C;
+    min-height: 1px;
+    width: 20vw;
   }
 }
 
@@ -1201,31 +1204,26 @@ footer
   {
     height: 10vh;
     width: 100%;
-    gap: 2vw;
+    gap: 4vw;
     background-color: white;
   }
 
   .nav-list 
   {
-    gap: 2vw;
+    gap: 3vw;
   }
 
   .nav-list a 
   {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: black;
   }
 
   .language-change 
   {
-    font-size: 1rem;
+    font-size: 1.4rem;
     right: 4vw;
     top: 2.5vh;
-  }
-
-  .darkmode-change 
-  {
-    position: static;
   }
 }
 
@@ -1268,8 +1266,8 @@ footer
     flex-direction: column;
     align-items: center;
     gap: 4vh; 
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 90%;          /* чтобы не растягивалось на всю ширину */
+    margin: 0 auto;          /* центрируем весь блок */
     padding-bottom: 3vh;
   }
 
@@ -1279,8 +1277,8 @@ footer
     flex-direction: column;
     align-items: center;
     gap: 4vh; 
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 90%;          /* чтобы не растягивалось на всю ширину */
+    margin: 0 auto;          /* центрируем весь блок */
   }
 
   .ecleir-box img,
@@ -1379,12 +1377,12 @@ footer
   {
     grid-column: 6/14;
   }
-  .coffe-menu
+  .coffe-menu 
   {
     max-width: 100%;
     grid-column: 3 / 17;
   }
-  .coffe-menu img
+  .coffe-menu img 
   {
     width: 70%;
   }
@@ -1419,7 +1417,7 @@ footer
   }
   .cold-drinks 
   {
-    grid-template-columns: repeat(18, minmax(0, 3vw));
+    grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
     gap: 2vh;
   }
 
@@ -1459,7 +1457,7 @@ footer
 
   .vegan-dishes 
   {
-    grid-template-columns: repeat(18, minmax(0, 3vw));
+    grid-template-columns: repeat(18, minmax(0, 3vw)); /* Уменьшаем ширину колонок */
     gap: 2vh;
   }
 
