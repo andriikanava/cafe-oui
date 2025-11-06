@@ -3,7 +3,6 @@
     $navigationLink=array("index dark.php", "about_us dark.php", "menu dark.php", "contact dark.php", "impressions dark.php");
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,13 +15,13 @@
         <header class="header">
             <nav class="nav">
             <ul class="nav-list">
-                <li><a href="Impressions.php" class="darkmode-change">Light</a></li>
+                <li><a href="Impressions.html" class="darkmode-change"><img src="static/images/darkmode.png" alt="Light" class="darkmodeimg"></a></li>
                 <?php
                     for ($i=0; $i<count($navigation); $i++) {
                         echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></li>';
                     }
                 ?>
-                <li><a href="" class="language-change">NL</a></li>
+                <li><a href="Impressions_nl.html" class="language-change">NL</a></li>
             </ul>
             </nav>
         </header>

@@ -1,6 +1,6 @@
 <?php
     $navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
-    $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+    $navigationLink=array("index dark_nl.php", "about_us dark_nl.php", "menu dark_nl.php", "contact dark_nl.php", "impressions dark_nl.php");
 ?>
 
 <!DOCTYPE html>
@@ -9,25 +9,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Impressions</title>
-        <link rel="stylesheet" href="static/styles/Impressions.css">
+        <link rel="stylesheet" href="static/styles/Impressions dark.css">
     </head>
     <body>
         <header class="header">
             <nav class="nav">
             <ul class="nav-list">
-                <li><a href="Impressions dark.html" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
+                <li><a href="Impressions_nl.php" class="darkmode-change"><img src="static/images/darkmode.png" alt="Light" class="darkmodeimg"></a></li>
                 <?php
                     for ($i=0; $i<count($navigation); $i++) {
                         echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></li>';
                     }
                 ?>
-                <li><a href="Impressions_nl.html" class="language-change">NL</a></li>
+                <li><a href="Impressions.html" class="language-change">EN</a></li>
             </ul>
             </nav>
         </header>
         <div class="hero-text">
             <h1>
-                OUI Café Gallery
+                OUI Café Gallerij
             </h1>
         </div>
         <div class="hero-image-container">

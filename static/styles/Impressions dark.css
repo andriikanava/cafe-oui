@@ -154,10 +154,15 @@ body {
   color: black;
 }
 
+.darkmodeimg {
+  width: 20svh;
+  height: auto;
+}
+
 .darkmode-change {
   position: absolute;
-  left: 2vw;
-  top: 0.5vh;
+  left: 1vw;
+  top: -0.5vh;
   font-size: 2rem;
   color: white;
   font-family: "Circular-Light";
