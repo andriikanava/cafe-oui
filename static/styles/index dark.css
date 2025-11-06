@@ -221,11 +221,17 @@ header:hover .language-change
 
 /* --- dark mode top --- */
 
+.darkmodeimg 
+{
+  width: 20svh;
+  height: auto;
+}
+
 .darkmode-change 
 {
   position: absolute;
-  left: 2vw;
-  top: 0.5vh;
+  left: 1vw;
+  top: -0.5vh;
   font-size: 2rem;
   color: white;
   font-family: "Circular-Light";
@@ -234,7 +240,8 @@ header:hover .language-change
   transition: all 0.5s ease;
 }
 
-header:hover .darkmode-change {
+header:hover .darkmode-change 
+{
   color: black;
 }
 
