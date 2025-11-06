@@ -72,6 +72,9 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
                     <span class="hl"></span>
                     <img class="coffeeIllustration" src="static/images/illustrations_blueGreen_coffee.svg" alt="">
                 </div>
+                <div>
+                    <img class="sayYesText" src="static/images/Say Yes Light.svg" alt="Say Yes More Often; as red text">
+                </div>
                 <div class="blueBackdropL"></div>
                 <div class="carousel">
                     <img class="carouselImg" src="static/images/scroll1.png" alt="">

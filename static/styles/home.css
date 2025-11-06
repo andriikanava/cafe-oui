@@ -537,6 +537,12 @@ header:hover .language-change
   height: 8vw;
 }
 
+.sayYesText{
+  position: absolute;
+  width: 50%;
+  transform: translate(47vw, 12vw);
+}
+
 /* ------------------- Vertical Lines ------------------- */
 
 .vl1
