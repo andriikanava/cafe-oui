@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url("../fonts/Caveat-Regular.ttf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circular-Black";
+    src: url("../fonts/CircularStd-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circular-BlackItalic";
+    src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Circular-Bold";
+    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circular-BoldItalic";
+    src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Circular-Book";
+    src: url("../fonts/CircularStd-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circular-BookItalic";
+    src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Circular-Light";
+    src: url("../fonts/CircularStd-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circular-LightItalic";
+    src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Circular-Medium";
+    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circular-MediumItalic";
+    src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #F9F6F1;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    font-family: "Circular";
+    color: #00657C;
+}
+
+a
+{
+    font-family: "Caveat-Regular";
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+h1
+{
+    font-family: "Caveat-Regular";
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 2vh;
+}
+
+h2
+{
+    font-family: "Caveat-Regular";
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.centerContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.columnLeft
+{
+    grid-column: 1/7;
+    margin-top: 40vh;
+    justify-content: end;
+    z-index: 1;
+}
+
+.columnLeft > hr
+{
+    width: 75%;
+}
+
+.columnRight
+{
+    grid-column: 13/19;
+    margin-top: 40vh;
+    justify-content: start;
+    z-index: 1;
+}
+
+.columnRight > hr
+{
+    width: 75%;
+}
+
+.columnCenter
+{
+    grid-column: 7/13;
+    margin-top: 30vh;
+}
+
+.errorWrapper > img
+{
+    width: 90%;
+    height: auto;
+}
+
+.homepageWrapper
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #005f6b;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 15px 0 0 5px #68a2ab;
+    padding: 1em 2em;
+    width: 25%;
+    height: 50px;
+}
+
+.menuWrapper
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #005f6b;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: -15px 0 0 5px #68a2ab;
+    padding: 1em 2em;
+    width: 25%;
+    height: 50px;
+}
