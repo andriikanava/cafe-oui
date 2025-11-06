@@ -183,17 +183,22 @@ a {
     color: black;
   }
 
-  .darkmode-change {
-    position: absolute;
-    left: 2vw;
-    top: 0.5vh;
-    font-size: 2rem;
-    color: white;
-    font-family: "Circular-Light";
-    font-weight: 100;
-    text-decoration: none;
-    transition: all 0.5s ease;
-  }
+    .darkmodeimg {
+        width: 20svh;
+        height: auto;
+    }
+
+    .darkmode-change {
+        position: absolute;
+        left: 1vw;
+        top: -0.5vh;
+        font-size: 2rem;
+        color: white;
+        font-family: "Circular-Light";
+        font-weight: 100;
+        text-decoration: none;
+        transition: all 0.5s ease;
+    }
 
     .header:hover .darkmode-change {
         color: black;
