@@ -84,7 +84,7 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
             <div class="contactInfo">
                 <p>+31 6 31782094</p>
                 <p>claire@oui-cafe.fr</p>
-                <img src="static/images/triangle_line.png" alt="triangleLine">
+                <img src="static/images/triangle_line.png" alt="triangleLine" id="triangleLine">
                 <br>
                 <img src="static/images/facebook.png" alt="facebookImage">
                 <img src="static/images/instagram.png" alt="instagramImage">

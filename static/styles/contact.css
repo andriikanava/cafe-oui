@@ -256,7 +256,7 @@ hr
 
 .hours > .details
 {
-  align-items: self-end;
+  text-align: right;
 }
 
 #googleMap
@@ -712,7 +712,6 @@ footer
     grid-template-columns: repeat(6, 1fr);
   }
 
-
   .header 
   {
     height: 10vh;
@@ -743,15 +742,25 @@ footer
   {
     position: static;
   }
-  
+
   .leftSpacing
   {
     grid-column: 2/4;
   }
 
+  .leftSpacing hr
+  {
+    margin-right: 10px;
+  }
+
   .rightSpacing
   {
     grid-column: 4/6;
+  }
+
+  .rightSpacing hr
+  {
+    margin-left: 10px;
   }
 
   .centerSpacing
@@ -762,6 +771,11 @@ footer
   .contactWrapper
   {
     grid-column: 2/7;
+  }
+
+  #triangleLine
+  {
+    width: 90%;
   }
 }
 
