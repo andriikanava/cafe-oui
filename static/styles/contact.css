@@ -1,71 +1,81 @@
-@font-face {
-    font-family: "Circular-Black";
-    src: url("../fonts/CircularStd-Black.otf") format("opentype");
-    font-weight: 900;
-    font-style: normal;
+@font-face
+{
+  font-family: "Circular-Black";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: "Circular-BlackItalic";
-    src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
-    font-weight: 900;
-    font-style: italic;
+@font-face
+{
+  font-family: "Circular-BlackItalic";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
 }
 
-@font-face {
-    font-family: "Circular-Bold";
-    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
-    font-weight: 700;
-    font-style: normal;
+@font-face
+{
+  font-family: "Circular-Bold";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: "Circular-BoldItalic";
-    src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
-    font-weight: 700;
-    font-style: italic;
+@font-face
+{
+  font-family: "Circular-BoldItalic";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
 }
 
-@font-face {
-    font-family: "Circular-Book";
-    src: url("../fonts/CircularStd-Book.otf") format("opentype");
-    font-weight: 400;
-    font-style: normal;
+@font-face
+{
+  font-family: "Circular-Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: "Circular-BookItalic";
-    src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
-    font-weight: 400;
-    font-style: italic;
+@font-face
+{
+  font-family: "Circular-BookItalic";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
 }
 
-@font-face {
-    font-family: "Circular-Light";
-    src: url("../fonts/CircularStd-Light.otf") format("opentype");
-    font-weight: 300;
-    font-style: normal;
+@font-face
+{
+  font-family: "Circular-Light";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: "Circular-LightItalic";
-    src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
-    font-weight: 300;
-    font-style: italic;
+@font-face
+{
+  font-family: "Circular-LightItalic";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
 }
 
-@font-face {
-    font-family: "Circular-Medium";
-    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
-    font-weight: 500;
-    font-style: normal;
+@font-face
+{
+  font-family: "Circular-Medium";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: "Circular-MediumItalic";
-    src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
-    font-weight: 500;
-    font-style: italic;
+@font-face
+{
+  font-family: "Circular-MediumItalic";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
 }
 
 * 
@@ -92,10 +102,10 @@ div
 /* ------------------- GRID SYSTEM ------------------- */
 body
 {
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
-    font-family: "Circular-Light";
-    color: #00657C;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  font-family: "Circular-Light";
+  color: #00657C;
 }
 
 /* ------------------- Header ------------------- */
@@ -115,12 +125,11 @@ body
   width: 100%;
   transition: all 0.5s ease;
   z-index: 100;
-  background-color: #074C5C;
 }
 
 .header:hover 
 {
-  background-color: white;
+  background-color: #074C5C;
 }
 
 
@@ -145,7 +154,7 @@ body
 
 .nav-list a 
 {
-  color: white;
+  color: black;
   font-size: 2rem;
   font-family: "Circular-Light";
   font-weight: 100;
@@ -155,7 +164,7 @@ body
 
 .header:hover .nav-list a 
 {
-  color: black;
+  color: white;
 }
 
 
@@ -204,114 +213,114 @@ body
 
 hr
 {
-    border-top: 1px solid #00657C;
+  border-top: 1px solid #00657C;
 }
 
 .location
 {
-    margin-block-start: 3vh;
-    display: flex;
-    flex-direction: column;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .location > h3
 {
-    padding-block: 2vh;
+  padding-block: 2vh;
 }
 
 .details
 {
-    margin-block: 2vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  margin-block: 2vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .details > *
 {
-    padding-block: 2vh;
+  padding-block: 2vh;
 }
 
 .hours
 {
-    margin-block-start: 3vh;
-    display: flex;
-    flex-direction: column;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hours > h3
 {
-    margin-block: 2vh;
-    text-align: right;
+  margin-block: 2vh;
+  text-align: right;
 }
 
 .hours > .details
 {
-    align-items: self-end;
+  align-items: self-end;
 }
 
 #googleMap
 {
-    min-height: 45vh;
-    filter: grayscale(100);
-    border: 10px solid #ffffff;
-    border-radius: 10px;
-    outline: 2px solid #cccccc;
+  min-height: 45vh;
+  filter: grayscale(100);
+  border: 10px solid #ffffff;
+  border-radius: 10px;
+  outline: 2px solid #cccccc;
 }
 
 .getInTouch
 {
-    justify-self: center;
-    text-align: center;
+  justify-self: center;
+  text-align: center;
 }
 
 .getInTouch > p, h2
 {
-    padding-block: 2vh;
+  padding-block: 2vh;
 }
 
 .getInTouch > h2
 {
-    font-family: "Caveat";
-    font-size: 40px;
+  font-family: "Caveat";
+  font-size: 40px;
 }
 
 .vl
 {
-    justify-self: center;
-    display: block;
-    width: 1px;
-    background-color: #00657C;
+  justify-self: center;
+  display: block;
+  width: 1px;
+  background-color: #00657C;
 }
 
 .span-50
 {
-    height: 50px;
+  height: 50px;
 }
 
 .span-25
 {
-    height: 25px;
+  height: 25px;
 }
 
 .leftSpacing
 {
-    grid-column: 3/9;
+  grid-column: 3/9;
 }
 
 .rightSpacing
 {
-    grid-column: 11/17;
+  grid-column: 11/17;
 }
 
 .centerSpacing
 {
-    grid-column: 3/17;
+  grid-column: 3/17;
 }
 
 .triangleList
 {
-    display: flex;
+  display: flex;
 }
 
 .triangleUp {
@@ -324,223 +333,222 @@ hr
 
 .contactWrapper
 {
-    grid-column: 3/18;
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
+  grid-column: 3/18;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
 }
 
 .contactInfo
 {
-    grid-column: 1/7;
-    text-align: left;
-    padding-top: 1rem;
+  grid-column: 1/7;
+  text-align: left;
+  padding-top: 1rem;
 }
 
 .contactInfo p
 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .headingLine
 {
-    grid-column: 1/14;
-    border-top: 1px solid #4a6a74;
-    margin-bottom: 1vh;
+  grid-column: 1/14;
+  border-top: 1px solid #4a6a74;
+  margin-bottom: 1vh;
 }
 
 .contactFormWrapper
 {
-    grid-column: 7 / span 14;
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
-    grid-template-rows: repeat(18, 1fr);
-    margin-bottom: 7vh;
+  grid-column: 7 / span 14;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  margin-bottom: 7vh;
 }
 
 .contactFormWrapper > form
 {
-    grid-column: 2/18;
-    grid-row: 3/18;
+  grid-column: 2/18;
+  grid-row: 3/18;
 }
 
 label
 {
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .formNote
 {
-    grid-column: 1/15;
-    background-color: #00657C;
-    color: #ffffff;
-    font-size: 0.8rem;
+  grid-column: 1/15;
+  background-color: #00657C;
+  color: #ffffff;
+  font-size: 0.8rem;
 }
 
 .filler
 {
-    background-color: #00657C;
+  background-color: #00657C;
 }
 
 /* form */
 .formTop
 {
-    grid-column: 1/15;
-    grid-row: 1/3;
+  grid-column: 1/15;
+  grid-row: 1/3;
 }
 .formTop > p
 {
-    color: #ffffff;
-    font-size: 0.7rem;
-    padding: 10px;
-    font-weight: 300;
+  color: #ffffff;
+  font-size: 0.7rem;
+  padding: 10px;
+  font-weight: 300;
 }
 .formLeft
 {
-    grid-column: 1/2;
-    grid-row: 3/18;
+  grid-column: 1/2;
+  grid-row: 3/18;
 }
 .formBottom
 {
-    grid-column: 1/18;
-    grid-row: 18/19;
-    height: 10px;
+  grid-column: 1/18;
+  grid-row: 18/19;
+  height: 10px;
 }
 .formCorner
 {
-    grid-column: 18/19;
-    grid-row: 18/19;
-    height: 10px;
-    width: 10px;
+  grid-column: 18/19;
+  grid-row: 18/19;
+  height: 10px;
+  width: 10px;
 }
 .formRight
 {
-    grid-column: 18/19;
-    grid-row: 17/18;
-    width: 10px;
+  grid-column: 18/19;
+  grid-row: 17/18;
+  width: 10px;
 }
-
 
 .formContent 
 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 90%;
-    padding: 20px;
-    padding-bottom: 0;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  padding: 20px;
+  padding-bottom: 0;
+  margin: auto;
 }
 
 .form-row 
 {
-    display: flex;
-    gap: 20px;
-    width: 100%;
+  display: flex;
+  gap: 20px;
+  width: 100%;
 }
 
 .form-group 
 {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 8px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+  width: 100%;
 }
 
 .form-input 
 {
-    padding: 1vh;
-    padding-left: 2vw;
-    border: 1px solid #00657C;
-    border-radius: 25px;
-    background: transparent;
-    font-family: "Circular-Light";
-    color: #00657C;
-    width: 100%;
-    box-sizing: border-box;
+  padding: 1vh;
+  padding-left: 2vw;
+  border: 1px solid #00657C;
+  border-radius: 25px;
+  background: transparent;
+  font-family: "Circular-Light";
+  color: #00657C;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 textarea.form-input 
 {
-    height: 100px;
-    resize: none;
+  height: 100px;
+  resize: none;
 }
 
 #submit 
 {
-    display: block;
-    background: #EDE5BB;
-    border: none;
-    padding: 12px 40px;
-    color: #00657C;
-    font-weight: bold;
-    font-family: "Circular-Medium";
-    cursor: pointer;
-    margin: 2vh auto;
-    transition: background-color 0.3s ease;
+  display: block;
+  background: #EDE5BB;
+  border: none;
+  padding: 12px 40px;
+  color: #00657C;
+  font-weight: bold;
+  font-family: "Circular-Medium";
+  cursor: pointer;
+  margin: 2vh auto;
+  transition: background-color 0.3s ease;
 }
 
 #submit:hover 
 {
-    background: #e6dba0;
+  background: #e6dba0;
 }
 
 label 
 {
-    color: #00657C;
-    font-family: "Circular-Medium";
+  color: #00657C;
+  font-family: "Circular-Medium";
 }
 
 .message-section-red 
 {
-    width: 100%;
-    margin: 20px auto;
+  width: 100%;
+  margin: 20px auto;
 }
 
 .message-section-red ul 
 {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .message-section-green,
 .message-section-red
 {
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-    grid-column: 8/17;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  grid-column: 8/17;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 .message-section-red
 {
-    border: 1px solid #ffb3b3;
-    background-color: #fff5f5;
+  border: 1px solid #ffb3b3;
+  background-color: #fff5f5;
 }
 
 .message-section-green{
-    border: 1px solid #41ad45;
-    background-color: #daefd2;
+  border: 1px solid #41ad45;
+  background-color: #daefd2;
 }
 
 textarea
 {
-    font-family: inherit;
-    text-align: center;
+  font-family: inherit;
+  text-align: center;
 }
 
 button
 {
-    background: #EDE5BB;
-    border: none;
-    color: #00657C;
-    font-weight: bold;
+  background: #EDE5BB;
+  border: none;
+  color: #00657C;
+  font-weight: bold;
 }
 
 
@@ -674,10 +682,10 @@ footer
   
   .footerbox1 
   {
-  grid-area: 1/4/8/16;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    grid-area: 1/4/8/16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footerbox2 
@@ -688,11 +696,11 @@ footer
 
   .footerline2 
   {
-  grid-area: auto;
-  margin: 2vh auto 0 auto;
-  background-color: #00657C;
-  min-height: 1px;
-  width: 20vw;
+    grid-area: auto;
+    margin: 2vh auto 0 auto;
+    background-color: #00657C;
+    min-height: 1px;
+    width: 20vw;
   }
 }
 
@@ -752,7 +760,7 @@ footer
     width: 70vw; 
   }
 
-   .footertext
+  .footertext
   {
     font-size: 1.5vh;
   }
