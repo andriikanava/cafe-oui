@@ -25,7 +25,7 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
                 echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
             }
             ?>
-             <li><a href="" class="language-change">NL</a></li>
+             <li><a href="about_us.php" class="language-change">NL</a></li>
         </ul>
         </nav>
     </header>
