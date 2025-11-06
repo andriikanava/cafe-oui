@@ -17,7 +17,8 @@
             <ul class="nav-list">
                 <li><a href="Impressions_nl.php" class="darkmode-change"><img src="static/images/darkmode.png" alt="Light" class="darkmodeimg"></a></li>
                 <?php
-                    for ($i=0; $i<count($navigation); $i++) {
+                    for ($i=0; $i<count($navigation); $i++) 
+                    {
                         echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></li>';
                     }
                 ?>
@@ -93,7 +94,8 @@
             <div class="footerline1"></div>
             <ul class="footerbuttons">
                 <?php
-                    for ($i=0; $i<count($navigation); $i++) {
+                    for ($i=0; $i<count($navigation); $i++) 
+                    {
                         echo '<li class="footertext"><a href="'.$navigationLink[$i].'"><b>'.$navigation[$i].'</b></a></li>';
                     }
                 ?>
