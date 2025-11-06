@@ -118,6 +118,7 @@ body
   flex-wrap: wrap;
   gap: 2vw;
   height: 8vh;
+  background-color: #074C5C;
 
   position: fixed;
   top: 0;
@@ -129,9 +130,8 @@ body
 
 .header:hover 
 {
-  background-color: #074C5C;
+  background-color: white;
 }
-
 
 .nav 
 {
@@ -153,10 +153,9 @@ body
   padding: 0;
 }
 
-
 .nav-list a 
 {
-  color: black;
+  color: white;
   font-size: 2rem;
   font-family: "Circular-Light";
   font-weight: 100;
@@ -166,12 +165,11 @@ body
 
 .header:hover .nav-list a 
 {
-  color: white;
+  color: black;
 }
 
-
-.language-change 
-{
+.language-change
+ {
   position: absolute;
   right: 2vw;
   top: 0.5vh;
@@ -183,15 +181,14 @@ body
   transition: all 0.5s ease;
 }
 
-.header:hover .language-change 
-{
+.header:hover .language-change
+ {
   color: black;
 }
 
-/* --- Dark mode switcher --- */
 .darkmodeimg 
 {
-  width: 21svh;
+  width: 4svh;
   height: auto;
 }
 
@@ -208,7 +205,7 @@ body
   transition: all 0.5s ease;
 }
 
-.header:hover .darkmode-change 
+.header:hover .darkmode-change
 {
   color: black;
 }
@@ -326,14 +323,6 @@ hr
 .triangleList
 {
   display: flex;
-}
-
-.triangleUp {
-	width: 0;
-	height: 0;
-	border-left: 0.6rem solid transparent;
-	border-right: 0.6rem solid transparent;
-	border-bottom: 0.8rem solid #555;
 }
 
 .contactWrapper

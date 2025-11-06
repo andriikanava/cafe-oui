@@ -9,8 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 ?>
 
 <?php
-$navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
-$navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+$navigation=array("Home", "Over Ons", "Menu", "Contact", "Indruk");
+$navigationLink=array("home_nl.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
 ?>
 
 
@@ -26,34 +26,34 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
         <header class="header">
             <nav class="nav">
             <ul class="nav-list">
-                <li><a href="contact dark.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
+                <li><a href="contact_nl dark.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
                 <?php
                 for ($i=0; $i<count($navigation); $i++)
                 {
                     echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
                 }
                 ?>
-                <li><a href="contact_nl.php" class="language-change">NL</a></li>
+                <li><a href="contact.php" class="language-change">NL</a></li>
             </ul>
             </nav>
         </header>
         
         <div class="leftSpacing location">
-            <h3>Location</h3>
+            <h3>Locatie</h3>
             <hr>
             <div class="details">
                 <p>Hoofdstraat 75</p>
-                <p>7811 ED Emmen, The Netherlands</p>
+                <p>7811 ED Emmen, Nederland</p>
             </div>
         </div>
 
         <div class="rightSpacing hours">
-            <h3>Hours</h3>
+            <h3>Openingstijden</h3>
             <hr>
             <div class="details">
                 <p>Mon-Fri 10:00-18:00</p>
                 <p>Sat-Sun 11:00-17:00</p>
-                <p>Breakfast // Coffee // Wifi</p>
+                <p>Ontbijt // Koffie // Wifi</p>
             </div>
         </div>
         
@@ -72,13 +72,13 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
         
         <div class="centerSpacing getInTouch">
             <div class="vl span-50"></div>
-            <h2>Get In Touch</h2>
+            <h2>Kom In Contact</h2>
             <div class="vl span-25"></div>
-            <p>We would like to hear from you!</p>
+            <p>Wij horen graag van u!</p>
         </div>
         <div class="contactWrapper">
             <div class="contactInfo">
-                <h2>Contact Us</h2>
+                <h2>Neem Contact Op</h2>
             </div>
             <div class="headingLine"></div>
             <div class="contactInfo">
@@ -92,7 +92,7 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
             </div>
             <div class="contactFormWrapper">
                 <div class="filler formTop">
-                    <p>If you have any inquiries or just want to say hi, please use the contact form!</p>
+                    <p>Als u vragen heeft of gewoon even gedag wil zeggen, gebruik dan het formulier!</p>
                 </div>
                 <div class="filler formLeft"></div>
                 <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
@@ -100,28 +100,28 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
                     <div class="formContent">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="fname">First Name</label>
+                                <label for="fname">Voornaam</label>
                                 <input type="text" name="fname" id="fname" class="form-input">
                             </div>
 
                             <div class="form-group">
-                                <label for="lname">Last Name</label>
+                                <label for="lname">Achternaam</label>
                                 <input type="text" name="lname" id="lname" class="form-input">
                             </div>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Email*</label>
-                            <input type="email" name="email" id="email" placeholder="myname@example.com" class="form-input">
+                            <input type="email" name="email" id="email" placeholder="mijnnaam@voorbeeld.com" class="form-input">
                         </div>
 
                         <div class="form-group">
-                            <label for="textarea">Message</label>
-                            <textarea id="textarea" name="textarea" placeholder="The Best Cafe Ever!" class="form-input"></textarea>
+                            <label for="textarea">Bericht</label>
+                            <textarea id="textarea" name="textarea" placeholder="Het Beste Cafe Ooit!" class="form-input"></textarea>
                         </div>
                     </div>
 
-                    <button type="submit" id="submit">Say Bonjour!</button>
+                    <button type="submit" id="submit">Zeg Bonjour!</button>
                 </form>
                 <div class="filler formRight"></div>
                 <div class="filler formCorner"></div>
@@ -137,37 +137,37 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
             {
                 if (empty($fname)) 
                 {
-                    $errors[] = "First name cannot be empty.";
+                    $errors[] = "Voornaam kan niet leeg zijn.";
                 } elseif (strlen($fname) < 3) 
                 {
-                    $errors[] = "First name must be at least 3 letters long.";
+                    $errors[] = "Voornaam moet minstens 3 characters bevatten.";
                 }
         
                 if (empty($lname))
                 {
-                $errors[] = "Last name cannot be empty.";
+                $errors[] = "Achternaam kan niet leeg zijn.";
                 } elseif (!preg_match("/^[A-Z]/", $lname)) 
                 {
-                    $errors[] = "Last name must start with a capital letter.";
+                    $errors[] = "Achternaam moet starten met een hoofdletter.";
                 }
         
                 if (empty($_POST["email"])) 
                 {
-                    $errors[] = "Email cannot be empty.";
+                    $errors[] = "Email kan niet leeg zijn.";
                 } elseif (!$email) 
                 {
-                    $errors[] = "Please enter a valid email address.";
+                    $errors[] = "Voer een geldig Email adress in.";
                 }
 
                 if (empty($review)) 
                 {
-                    $errors[] = "Comments cannot be empty.";
+                    $errors[] = "Review kan niet leeg zijn.";
                 } else 
                 {
                     $wordCount = str_word_count(trim($review));
                     if ($wordCount < 3) 
                     {
-                        $errors[] = "Comments must contain at least 3 words.";
+                        $errors[] = "Review moet minstens 3 characters bevatten.";
                     }
                 } 
                 
@@ -184,7 +184,7 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
                     echo "</div>";
                 } else 
                 {
-                    echo "<div class='message-section-green'><p style='color: green;'>Form Submitted Successfully!</p></div>";
+                    echo "<div class='message-section-green'><p style='color: green;'>Form Successful Verstuurd!</p></div>";
                 }
 
             }
@@ -197,7 +197,7 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
             <div class="footerbox1">
                 <p class="footerlogo">OUI Café</p>
                 <p class="footertext">Hoofdstraat 75</p>
-                <p class="footertext">7811 ED Emmen, The Netherlands</p>
+                <p class="footertext">7811 ED Emmen, Nederland</p>
                 <div class="footerline1"></div>
                 <ul class="footerbuttons">
                     <?php
