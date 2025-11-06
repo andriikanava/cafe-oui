@@ -1201,26 +1201,31 @@ footer
   {
     height: 10vh;
     width: 100%;
-    gap: 4vw;
+    gap: 2vw;
     background-color: white;
   }
 
   .nav-list 
   {
-    gap: 3vw;
+    gap: 2vw;
   }
 
   .nav-list a 
   {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: black;
   }
 
   .language-change 
   {
-    font-size: 1.4rem;
+    font-size: 1rem;
     right: 4vw;
     top: 2.5vh;
+  }
+
+  .darkmode-change 
+  {
+    position: static;
   }
 }
 
