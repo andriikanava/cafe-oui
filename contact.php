@@ -191,7 +191,8 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
         ?>
 
 
-        <!-- Footer -->
+         <!-- Footer -->
+
         <footer>
             <div class="footerbox1">
                 <p class="footerlogo">OUI Café</p>
@@ -202,22 +203,19 @@ $navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "i
                     <?php
                     for ($i=0; $i<count($navigation); $i++)
                     {
-                        echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
+                        echo '<li class="footertext"><a href="'.$navigationLink[$i].'"><b>'.$navigation[$i].'</b></a></li>';
                     }
                     ?>
                 </ul>               
             </div>
             <div class="footerillustrationbox">
-                <img src="static/images/footerimg.svg" alt="macaroon illustration" class="imgfooter">
+                <img src="static/images/footerimg.svg" alt="macaron illustration" class="imgfooter">
             </div>
             <div class="footerbox2">
                 <p class="footertext">claire@oui-cafe.fr</p>
                 <p class="footertext">+31 6 31782094</p>
                 <div class="footerline2"></div>
-                <p class="copyright">COPYRIGHT @ 2025 GROUP 1B</p>
-            </div>
-            <div class="languagebox">
-                <p class="language">Fr/En</p>
+                <p class="copyright">COPYRIGHT &copy; 2025 GROUP 1B</p>
             </div>
         </footer>
         
