@@ -118,6 +118,7 @@ body
   flex-wrap: wrap;
   gap: 2vw;
   height: 8vh;
+  background-color: #074C5C;
 
   position: fixed;
   top: 0;
@@ -129,7 +130,7 @@ body
 
 .header:hover 
 {
-  background-color: #074C5C;
+  background-color: white;
 }
 
 .nav 
@@ -154,7 +155,7 @@ body
 
 .nav-list a 
 {
-  color: black;
+  color: white;
   font-size: 2rem;
   font-family: "Circular-Light";
   font-weight: 100;
@@ -164,7 +165,7 @@ body
 
 .header:hover .nav-list a 
 {
-  color: white;
+  color: black;
 }
 
 .language-change
