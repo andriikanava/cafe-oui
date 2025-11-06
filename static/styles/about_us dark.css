@@ -192,7 +192,7 @@
 
 .darkmodeimg 
 {
-  width: 20svh;
+  width: 5svh;
   height: auto;
 }
 
@@ -1143,6 +1143,10 @@ footer
 
 @media (max-width: 480px) 
 {
+  .darkmode-change 
+  {
+    position: static;
+  }
   .header 
   {
     height: auto;
