@@ -195,11 +195,17 @@ section
 }
 
 /* --- Dark mode switcher --- */
+.darkmodeimg 
+{
+  width: 21svh;
+  height: auto;
+}
+
 .darkmode-change 
 {
   position: absolute;
-  left: 2vw;
-  top: 0.5vh;
+  left: 0.8vw;
+  top: -0.4vw;
   font-size: 2rem;
   color: white;
   font-family: "Circular-Light";
