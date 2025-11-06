@@ -192,15 +192,15 @@
 
 .darkmodeimg 
 {
-  width: 21svh;
+  width: 20svh;
   height: auto;
 }
 
 .darkmode-change 
 {
   position: absolute;
-  left: 0.8vw;
-  top: -0.4vw;
+  left: 1vw;
+  top: -0.5vh;
   font-size: 2rem;
   color: white;
   font-family: "Circular-Light";
@@ -210,7 +210,7 @@
 }
 
 .header:hover .darkmode-change
-{
+ {
   color: black;
 }
 
@@ -262,10 +262,10 @@ padding-bottom: 2.5vh;
 {
   height: 90vh;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #052B33;
   display: grid;
   grid-template-columns: repeat(18,1fr);
-  grid-template-rows: repeat(18, 1fr);
+  grid-template-rows: repeat(21, 1fr);
 }
 
 .about-oui-slogan
@@ -281,24 +281,26 @@ padding-bottom: 2.5vh;
 .about-oui-line
 {
   margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
   background-color:#00657C;
+  grid-area: 1/10/2/10;
   width: 1px;
-  height: 3vh;
+  height: 100%;
 }
 
 .about-oui-text
 {
   font-family: "Circular-Book";
-  color: #00657C;
+  color: white;
   font-size: 1.5vw;
   text-align: left;
-  padding-top: 3vh;
+  padding-top: 1vh;
 }
 
 .about-oui-info-box
 {
   grid-area: 4/1/17/19;
-  background-color: rgba(217, 217, 217, 0.5);
+  background-color: rgba(165, 115, 115, 20%);
 }
 
 .about-us-image-history
@@ -328,13 +330,13 @@ padding-bottom: 2.5vh;
 .about-oui-text-header
 {
   font-family: "Caveat-SemiBold";
-  color: #00657C;
+  color: white;
   font-size: 4vw;
 }
 
 .about-oui-decoration-line
 {
-  background-color:#00657C;
+  background-color: white;
   grid-area: 2/7/5/7;
   width: 15vw;
   height: 1px;
@@ -344,7 +346,7 @@ padding-bottom: 2.5vh;
 .about-oui-decoration-line2
 {
   margin-top: 2vh;
-  background-color:#00657C;
+  background-color:white;
   grid-area: 17/10/18/10;
   width: 1px;
   height: 100%;
@@ -381,7 +383,7 @@ padding-bottom: 2.5vh;
 {
   font-family: "Circular-Bold";
   font-size: 2vh;
-  color: #00657C;
+  color: white;
   font-size: 4vh;
 }
 
@@ -390,8 +392,7 @@ padding-bottom: 2.5vh;
   padding-top: 1vh;
   font-family: "Circular-Book";
   font-size: 2.5vh;
-  color: #00657C;
-  wrap:no-wrap;
+  color: white;
 }
 
 .timeline-line-box 
@@ -461,7 +462,7 @@ padding-bottom: 2.5vh;
 {
   font-family: "Circular-Bold";
   font-size: 2.5vh;
-  color: #00657C;
+  color: white;
   padding-bottom: 1vh;
 }
 
@@ -469,13 +470,13 @@ padding-bottom: 2.5vh;
 {
   font-family: "Circular-Book";
   font-size: 2vh;
-  color: #00657C;
+  color: white;
 }
 
 .timeline-bottom-line
 {
   grid-area: 33/-24/33/-10;
-  background-color:  #00657C;
+  background-color:  white;
   width: 100%;
   height: 1px;
 }
@@ -489,11 +490,12 @@ padding-bottom: 2.5vh;
   grid-template-rows: repeat(32,1fr);
   width: 100%;
   height: 100vh;
+  background-color: #052B33;
 }
 
 .timeline-line 
 {
-  background-color: #00657C;
+  background-color: white;
   justify-self: center;
   width: 5px;
   grid-area: 3/16/32/18;
@@ -523,7 +525,7 @@ padding-bottom: 2.5vh;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #00657C;
+  background: white;
   transform: translate(-50%, -50%);
   z-index: 5;          
 }
@@ -592,6 +594,7 @@ padding-bottom: 2.5vh;
   width: 100%;
   height: auto;
   padding-top: 1.5vh;
+  background-color: #052B33;
 }
 
 .Our-Philosophy-square
@@ -613,7 +616,7 @@ padding-bottom: 2.5vh;
 .Our-Philosophy-illustartion
 {
   grid-area: 4/1/16/19;
-  z-index: 1000;
+  z-index: 0;
   background-image: url("../images/our_philosophy_illustration.svg");
 }
 
@@ -621,7 +624,7 @@ padding-bottom: 2.5vh;
 {
   z-index: 1;
   grid-area: 4/3/4/17;
-  background-color: #00657C;
+  background-color: white;
   width: 100%;
   height: 3px;
 }
@@ -629,7 +632,7 @@ padding-bottom: 2.5vh;
 .line-our-philosophy2
 {
   grid-area: 4/5/6/5;
-  background-color: #00657C;
+  background-color: white;
   width: 3px;
   height: 100%;
 }
@@ -637,7 +640,7 @@ padding-bottom: 2.5vh;
 .line-our-philosophy3
 {
   grid-area: 4/10/6/10;
-  background-color: #00657C;
+  background-color: white;
   width: 3px;
   height: 100%;
 }
@@ -645,15 +648,15 @@ padding-bottom: 2.5vh;
 .line-our-philosophy4
 {
   grid-area: 4/15/6/15;
-  background-color: #00657C;
+  background-color: white;
   width: 3px;
-  height: 100%;
+  height: 70%;
 }
 
 .line-our-philosophy5
 {
   grid-area: 10/10/12/10;
-  background-color: #00657C;
+  background-color: white;
   width: 3px;
   height: 70%;
 }
@@ -671,14 +674,14 @@ padding-bottom: 2.5vh;
 {
   font-family: "Circular-Light";
   font-size: 2vw;
-  color: #00657C;
+  color: white;
 }
 
 .Our-Philosophy-main-text
 {
   font-family: "Circular-Book";
   font-size: 1vw;
-  color: #00657C;
+  color: white;
   text-align: center;
   margin-top: 1vw;
 }
@@ -714,7 +717,7 @@ padding-bottom: 2.5vh;
   grid-area: 16/6/16/14;
   height: 1px;
   width: 100%;
-  background-color:#00657C;
+  background-color:white;
 }
 
 .line-our-philosophy-bottomvertical
@@ -722,7 +725,7 @@ padding-bottom: 2.5vh;
   grid-area: 17/10/18/10;
   width: 1px;
   height: 100%;
-  background-color:#00657C;
+  background-color:white;
 }
 
 /* OUI Philosophy section closing part */
@@ -733,6 +736,7 @@ padding-bottom: 2.5vh;
   display: grid;
   grid-template-columns: repeat(32, 1fr);
   grid-template-rows: repeat(32,1fr);
+  background-color: #052B33;
 }
 .quote-box
 {
@@ -747,7 +751,7 @@ padding-bottom: 2.5vh;
 {
   font-family: "Circular-LightItalic";
   font-size: 1.5vw;
-  color: #00657C;
+  color: white;
   text-align: center;
 }
 
@@ -765,7 +769,7 @@ padding-bottom: 2.5vh;
   grid-area: 27/17/29/17;
   width: 1px;
   height: 100%;
-  background-color:#00657C;
+  background-color:white;
 }
 
 .catch-phrase-philosophy-box
@@ -781,7 +785,7 @@ padding-bottom: 2.5vh;
   font-family: "Circular-LightItalic";
   font-size: 1.5vw;
   text-align: center;
-  color: #00657C;
+  color: white;
 }
 
 /* Footer */
@@ -932,10 +936,6 @@ footer
   min-height: 1px;
   width: 20vw;
 }
-.oui-story p
-  {
-    font-size: 2vw;
-  }
 }
 
 
@@ -971,7 +971,6 @@ footer
   .about-oui-slogan 
   {
     grid-area: 1/4/4/16;
-    padding-bottom: 2vh;
   }
 
   .Hero 
@@ -1060,7 +1059,7 @@ footer
   .oui-story p
   {
     margin-left: 3vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: left;
     padding-top: 0.5vh;
   }
@@ -1183,13 +1182,6 @@ footer
    .footertext
   {
     font-size: 1.5vh;
-  }
-  .oui-story p
-  {
-    margin-left: 3vw;
-    font-size: 2.5vw;
-    text-align: left;
-    padding-top: 0.5vh;
   }
  
 }
