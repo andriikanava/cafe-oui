@@ -198,7 +198,7 @@ section
 /* --- Dark mode switcher --- */
 .darkmodeimg 
 {
-  width: 20svh;
+  width: 5svh;
   height: auto;
 }
 
@@ -1257,6 +1257,11 @@ footer
     position: static;
     margin-top: 8px;
     font-size: 1rem;
+  }
+
+  .darkmode-change 
+  {
+    position: static;
   }
 
   .pain-box,
