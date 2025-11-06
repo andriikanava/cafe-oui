@@ -1,6 +1,6 @@
 <?php
 $navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
-$navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+$navigationLink=array("home_nl.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
 ?>
 
 <!DOCTYPE html>
