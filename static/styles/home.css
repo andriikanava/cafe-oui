@@ -161,10 +161,17 @@ header:hover
 }
 
 /* --- dark mode top --- */
-.darkmode-change {
+.darkmodeimg 
+{
+  width: 21svh;
+  height: auto;
+}
+
+.darkmode-change 
+{
   position: absolute;
-  left: 2vw;
-  top: 0.5vh;
+  left: 0.8vw;
+  top: -0.4vw;
   font-size: 2rem;
   color: white;
   font-family: "Circular-Light";
@@ -173,7 +180,8 @@ header:hover
   transition: all 0.5s ease;
 }
 
-header:hover .darkmode-change {
+header:hover .darkmode-change 
+{
   color: black;
 }
 

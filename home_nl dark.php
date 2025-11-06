@@ -16,7 +16,7 @@ $navigationLink=array("home_nl dark.php", "about_us.php", "menu.php", "contact.p
         <header>
         <nav class="nav">
         <ul class="nav-list">
-            <li><a href="home_nl.php" class="darkmode-change">Light</a></li>
+            <li><a href="home_nl.php" class="darkmode-change"><img src="static/images/darkmode.png" alt="Light" class="darkmodeimg"></a></li>
             <?php
             for ($i=0; $i<count($navigation); $i++)
             {
