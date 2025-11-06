@@ -1,0 +1,1193 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  color: var(--oui_darkblue);
+}
+
+/* ------------------- Fonts ------------------- */
+
+@font-face
+{
+  font-family: "Circular-Black";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Circular-BlackItalic";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face
+{
+  font-family: "Circular-Bold";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: "Circular-BoldItalic";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face
+{
+  font-family: "Circular-Book";
+  src: url("/static/fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: "Circular-BookItalic";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face
+{
+  font-family: "Circular-Light";
+  src: url("../fonts/CircularStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: "Circular-LightItalic";
+  src: url("../fonts/CircularStd-Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face
+{
+  font-family: "Circular-Medium";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: "Circular-MediumItalic";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face 
+{
+  font-family: "Caveat-Bold";
+  src: url("../fonts/Caveat-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-Medium";
+  src: url("../fonts/Caveat-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-Regular";
+  src: url("../fonts/Caveat-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "Caveat-SemiBold";
+  src: url("../fonts/Caveat-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ------------------- Colours ------------------- */
+
+:root
+{
+  --oui_darkblue: #00657C;
+  --oui_beige: #EDE5BB;
+  --oui_red: #95261F;
+  --oui_lightblue: #BAD3EE;
+  --offwhite: #f3f3f3;
+}
+
+.mainGrid
+{
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+}
+
+/* ------------------- Header ------------------- */
+
+header 
+{
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  height: 8vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+header:hover 
+{
+  background-color: white;
+}
+
+/* --- dark mode top --- */
+.darkmodeimg 
+{
+  width: 21svh;
+  height: auto;
+}
+
+.darkmode-change 
+{
+  position: absolute;
+  left: 0.8vw;
+  top: -0.4vw;
+  font-size: 2rem;
+  color: white;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+header:hover .darkmode-change 
+{
+  color: black;
+}
+
+/* --- navigation --- */
+
+.nav 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* --- remove bullet points --- */
+
+.nav-list 
+{
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- links --- */
+
+.nav-list a 
+{
+  color: white;
+  font-size: 2rem;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+header:hover .nav-list a 
+{
+  color: black;
+}
+
+/* --- language top --- */
+
+.language-change 
+{
+  position: absolute;
+  right: 2vw;
+  top: 0.5vh;
+  font-size: 2rem;
+  color: white;
+  font-family: "Circular-Light";
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+header:hover .language-change 
+{
+  color: black;
+}
+
+/* ------------------- Logo ------------------- */
+
+.ouiLogo
+{
+  position: absolute;
+  justify-self: anchor-center;
+  align-self: anchor-center;
+  width: 15vw;
+}
+
+.smallCircle
+{
+  position: absolute;
+  justify-self: anchor-center;
+  align-self: anchor-center;
+  background-color: var(--oui_beige);
+  display:inline-block ;
+  width: 24vw;
+  height: 17vw;
+  border-radius: 50%;
+}
+
+.mediumCircle
+{
+  position: absolute;
+  justify-self: anchor-center;
+  align-self: anchor-center;
+  background-color: var(--oui_beige);
+  opacity: 80%;
+  width: 28vw;
+  height: 20vw;
+  border-radius: 50%;
+}
+
+.largeCircle
+{
+  position: absolute;
+  justify-self: anchor-center;
+  align-self: anchor-center;
+  background-color: var(--oui_beige);
+  opacity: 30%;
+  width: 32vw;
+  height: 23vw;
+  border-radius: 50%;
+}
+
+/* ------------------- Content Sections ------------------- */
+
+.content
+{
+  grid-template-columns: repeat(18, 1fr);
+  display: grid;
+  grid-column: 1/19;
+}
+
+.mainImg
+{
+  grid-column: 1/19;
+  background-image: url("../images/headerimage-homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  height: 52vw;
+}
+
+.logoBackdrop
+{
+  display: flex;
+}
+
+.rectangle1
+{
+  grid-column: 1/19;
+  grid-template-columns: repeat(18, 1fr);
+  display: grid;
+  width: 100%;
+  background-color: var(--offwhite);
+  margin-block: 1rem;
+}
+
+.rectangle2
+{
+  grid-column: 1/19;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  margin-block: 1rem;
+  padding-bottom: 5rem;
+}
+
+.rectangle3
+{
+  grid-column: 1/19;
+  grid-template-columns: repeat(18, 1fr);
+  display: grid;
+  background-color: var(--offwhite);
+  padding-block: 4rem;
+  margin-top: 2rem;
+}
+
+.rectangle4
+{
+  grid-column: 1/19;
+  grid-template-columns: repeat(18, 1fr);
+  display: grid;
+  background-color: var(--offwhite);
+  margin-top: 1rem;
+  padding-top: 3rem;
+}
+
+.rectangle5
+{
+  grid-column: 1/19;
+}
+
+/* ------------------- Carousel ------------------- */
+
+.carousel
+{
+  display: flex;
+  max-width: 38.75vw;
+  overflow-x: auto;
+  position: absolute;
+  margin-left: 3vw;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  anchor-name: --carousel;
+}
+
+.carouselImg
+{
+  max-width: 100%;
+  scroll-snap-align: start;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left)
+{
+  content: "\25BB";
+  justify-items: center;
+  font-family: "Circular-Light";
+  font-size: 1.5vw;
+  background-color: var(--oui_beige);
+  color: var(--oui_darkblue);
+  border: none;
+  border-radius: 50%;
+  height: 4vw;
+  width: 4vw;
+  position: fixed;
+  position-anchor: --carousel;
+  position-area: right center;
+  cursor: pointer;
+  translate: -110%;
+}
+
+.carousel::scroll-button(left)
+{
+  content: "\25C5";
+  position-area: left center;
+  translate: 110%;
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled
+{
+  opacity: 40%;
+}
+
+.carousel::-webkit-scrollbar
+{
+  display: none;
+}
+
+/* ------------------- Images and Elements ------------------- */
+
+.historyUnderline
+{
+  width: 50%;
+  height: 1px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  background-color: var(--oui_darkblue);
+}
+
+.hl
+{
+  align-self: center;
+  width: 20vw;
+  height: 1px;
+  background-color: var(--oui_darkblue);
+}
+
+.veganOptions
+{
+  grid-column: 1/19;
+  width: 100%;
+}
+
+.croissant
+{
+  width: 100%;
+}
+
+.horizontalLineDBlue
+{
+  background-color: var(--oui_darkblue);
+  height: 2vw;
+  width: 100%;
+}
+
+.blueBackdropWide
+{
+  background-color: var(--oui_darkblue);
+  grid-column: 1/19;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+}
+
+.whiteBackdropWide
+{
+  justify-items: center;
+  flex-direction: column;
+  background-color: white;
+  display: flex;
+}
+
+.images
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-inline: 5rem;
+}
+
+.imgHover
+{
+  max-width: 100%;
+}
+
+.imgHover:hover, .veganLink:hover, .menuLink:hover, .browseLink:hover, .readMore:hover
+{
+  scale: 1.02;
+  transition: 0.3s ease-in-out;
+}
+
+.blueBackdropL
+{
+  grid-column: 2/9;
+  margin-top: 2rem;
+  height: 26vw;
+  background-color: var(--oui_darkblue);
+}
+
+.right
+{
+  grid-column: 11/19;
+  padding-top: 3rem;
+  display: flex;
+}
+
+.bold
+{
+  font-weight:800;
+}
+
+.left
+{
+  grid-column: 1/10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.cafebw
+{
+  justify-content: center;
+  width: 100%;
+}
+
+.browse
+{
+  grid-column: 10/19;
+  display: flex;
+  margin-left: 50vw;
+  position: absolute;
+}
+
+.coffeeIllustration
+{
+  height: 8vw;
+}
+
+.sayYesText{
+  position: absolute;
+  width: 50%;
+  transform: translate(47vw, 12vw);
+}
+
+/* ------------------- Vertical Lines ------------------- */
+
+.vl1
+{
+  height: 2vw;
+}
+
+.vl2
+{
+  height: 5vw;
+}
+
+.vl1, .vl2
+{
+  grid-column: 10;
+  justify-items: center;
+  background-color: var(--oui_darkblue);
+  width: 1px;
+}
+
+.hl2
+{
+  width: 15vw;
+  height: 1px;
+  background-color: var(--oui_darkblue);
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+
+.veganLinkHl
+{
+  align-self: center;
+  width: 25vw;
+  height: 1px;
+  background-color: var(--oui_darkblue);
+  margin-right: 2rem;
+}
+
+.vegan1 > img
+{
+  width:100%;
+}
+
+/* ------------------- Link Buttons ------------------- */
+
+.veganLinkContent
+{
+  grid-column: 10/18;
+  position: absolute;
+  margin-left: 43%;
+  display: flex;
+}
+
+.veganLink
+{
+  /*box*/
+  background-color: var(--oui_beige);
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  /*text*/
+  color: black;
+  font-size: 1.5vw;
+  font-family: "Circular-Light";
+}
+
+.browseLink
+{
+  /*box*/
+  background-color: var(--oui_darkblue);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  align-self: center;
+  /*text*/
+  color: white;
+  font-size: 1.2vw;
+  font-family: "Circular-Light";
+}
+
+.menuLink
+{
+  position: absolute;
+  align-self: flex-end;
+  transform: translateY(50px);
+  overflow-x: auto;
+  /*box*/
+  background-color: var(--oui_beige);
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  /*text*/
+  color: black;
+  font-size: 1.5vw;
+  justify-self: center;
+  align-content: center;
+  font-family: "Circular-Light";
+}
+
+.readMore
+{
+  /*box*/
+  background-color: var(--oui_darkblue);
+  position: relative;
+  padding-inline: 2vw;
+  padding-block: 1vw;
+  left: 1rem;
+  margin-bottom: 2rem;
+  /*text*/
+  color: white;
+  font-size: 1.5vw;
+  font-family: "Circular-Light";
+}
+
+a
+{
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3vw;
+}
+
+/* ------------------- Text(s) ------------------- */
+
+.bounce
+{
+  color: #FFFFFF;
+  font-family: "Circular-Light";
+  font-size: 1.3vw;
+  position: absolute;
+  justify-self: center;
+  bottom: 2vh;
+  animation: bounce 1.5s ease-in-out infinite;
+  padding-bottom: 3vh;
+}
+
+@keyframes bounce
+{
+  0%, 100%
+  {
+      transform: translateY(0);
+  }    
+  50%
+  {
+      transform: translateY(-30px);
+  }
+}
+
+.content >h3
+{
+  text-align: center;
+  justify-self: center;
+  color: var(--oui_darkblue);
+  padding-block: 1rem;
+  padding-inline: 13rem;
+}
+
+.history
+{
+  font-family: "Caveat-Regular";
+  font-size: 3vw;
+  padding-left: 1rem;
+  padding-top: 5rem;
+}
+
+.briefIntroText
+{
+  font-family: "Circular-Light";
+  line-height: 3vw;
+  padding-inline: 1rem;
+  width: 100%;
+  font-size: 1.3vw;
+  text-align: left;
+}
+
+.todayText
+{
+  padding-block: 2rem;
+}
+
+.popular
+{
+  padding-block: 2rem;
+  padding-inline: 5rem;
+  font-family: "Circular-Light";
+  font-size: 2.2vw;
+}
+
+.textc1, .textc2
+{
+  justify-items: center;
+  grid-column: 8 / 12;
+  font-family: "Circular-Light";
+  padding-block: 1rem;
+  text-align: center;
+  font-size: 1.3vw;
+}
+
+.textc2
+{
+  grid-column: 3/16;
+}
+
+.choicesText
+{
+  text-align: center; 
+  color: black;
+  font-family: "Circular-Light";
+  font-size: 1.4vw;
+}
+
+.textPopular
+{
+  justify-items: center;
+}
+
+/* ------------------- Footer ------------------- */
+
+footer 
+{
+  background-color: rgba(0, 101, 124, 0.7);
+  width: 100%;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18,1fr);
+  grid-column: 1/19;
+}
+
+.footertext 
+{
+  font-family: "Circular-Light";
+  color:#ffffff ;
+  font-size: 2vh;
+}
+
+.footerbox1 
+{
+  padding-left: 2vh;
+  grid-area: 1/1/15/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footerlogo 
+{
+  font-family: "Circular-Medium";
+  color:#EDE5BB ;
+  font-size: 8vh;
+}
+
+.footerline1 
+{
+  margin-top: 2vh;
+  background-color:#00657C;
+  width: 100%;
+  min-height: 1px;
+}
+
+.footerline2 
+{
+  grid-area: -8/14/-8/18;
+  margin-top: 2vh;
+  background-color:#00657C;
+  min-height: 1px;
+  width: 20vw;
+}
+
+.footerbuttons 
+{
+  padding-left: 0;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2vh;
+  list-style-type: none;
+} 
+
+ .footerbuttons a 
+{
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footerbuttons a::after 
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #EDE5BB;
+  transition: width 0.4s ease-in-out;
+}
+
+.footerbuttons a:hover 
+{
+  color: #EDE5BB;
+}
+
+.footerbuttons a:hover::after 
+{
+  width: 100%;
+}
+
+.footerillustrationbox 
+{
+  grid-area: 1/8/19/12;
+  display: flex;
+}
+
+.imgfooter 
+{
+  width: 100%;
+  height: 100%;
+}
+
+.footerbox2 
+{
+  grid-area: 7/14/19/19;
+}
+
+.copyright 
+{
+  margin-top: 2vh;
+  font-family: "Circular-Light";
+  color:#ffffff ;
+  font-size: 1.5vh;
+}
+
+.languagebox 
+{
+  grid-area: -8/18/-7/19;
+}
+
+.footerlanguage 
+{
+  font-family: "Circular-Light";
+  color:#ffffff ;
+  font-size: 2vh;
+}
+
+/* ------------------- Popup ------------------- */
+
+.popup 
+{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 12vw;
+  height: 12vw;
+  background: #FDF5ED;
+  border-radius: 10px;
+  border: #00657CB2 solid 3px;
+  padding: 16px;
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:1vh;
+}
+
+.popup img 
+{
+  width: 80%;
+  height: auto;
+}
+
+.popup strong 
+{
+  text-align: center;
+  font-size: 0.8vw;
+}
+
+.popup .discover_btn 
+{
+  background-color: #00657C;
+  text-decoration: none;
+  color: white;
+  padding-inline: 1vw;
+  padding-block: 0.3vw;
+}
+
+.popup .discover_btn:hover 
+{
+  color: black;
+  background: #EDE5BB;
+}
+.close-btn 
+{
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: #00657CB2;
+  text-decoration: none;
+}
+.close-btn:hover 
+{
+  color: #000;
+}
+
+/* -------Responsiveness------- */
+
+@media (max-width: 320px) 
+{
+  .nav-list a
+  {
+    font-size: 4vw;
+  }
+  .browseLink
+  {
+    padding-inline: 2vw;
+    padding-block: 1vw;
+  }
+  .footertext
+  {
+    font-size: 3vw;
+  }
+  .footerline1
+  {
+    margin-top: 1vw;
+  }
+  .footerbuttons
+  {
+    padding-top: 0;
+  }
+  .footerlogo
+  {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 1000px)
+{
+  footer
+  {
+    height: 60vh;
+  }
+  .footerbox1 
+  {
+    grid-area: 1/4/8/16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerbox2 
+    {
+      grid-area: 13/8/18/12;
+      text-align: center;
+    }
+
+  .footerline2 
+  {
+    grid-area: auto;
+    margin: 2vh auto 0 auto;
+    background-color: #00657C;
+    min-height: 1px;
+    width: 20vw;
+  }
+}
+
+/* ------------------- MOBILE RESPONSIVENESS ------------------- */
+
+@media (max-width: 480px) 
+{
+  .header 
+  {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav 
+  {
+    flex-direction: column;
+  }
+
+  .nav-list 
+  {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .nav-list a 
+  {
+    font-size: 1rem;
+  }
+
+  .language-change 
+  {
+    position: static;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  .footerbox2
+  {
+    grid-area: 13/6/18/14;
+  }
+
+  .footerlogo
+  {
+    font-size: 5.5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-change 
+  {
+    position: static;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  .HeroImage
+  {
+    object-fit: cover;
+    width: 70vw; 
+  }
+
+  .footertext
+  {
+    font-size: 1.5vh;
+  }
+
+  .bounce
+  {
+    bottom: 76vh;
+    padding-bottom: 0vw;
+  }
+}
+
+@media (max-width: 375px) 
+{
+  .footerillustrationbox
+  {
+    grid-area: 9/3/12/17;
+  }
+
+  .footerbox2
+  {
+    grid-area: 13/6/18/14;
+  }
+
+  footer 
+  {
+    height: 50vh;
+  }
+
+  .footerlogo
+  {
+    font-size: 4.5vh;
+  }
+}
+
+@media (max-width: 1024px)
+{ /*logo for tablet*/
+  .smallCircle, .mediumCircle, .largeCircle, .ouiLogo
+  {
+    top: -20%;
+  }
+}
+
+@media (max-width: 768px)
+{ /*logo for tablet*/
+  .menuLink
+  {
+    transform: translateY(15px)
+  }
+
+  .smallCircle, .mediumCircle, .largeCircle, .ouiLogo
+  {
+    top: -40%;
+  }
+}
+
+@media (max-width: 480px)
+{ /*logo for medium*/
+  .smallCircle, .mediumCircle, .largeCircle, .ouiLogo
+  {
+    top: -65%;
+  }
+}
+
+
+@media (max-width: 375px)
+{
+  .smallCircle, .mediumCircle, .largeCircle, .ouiLogo
+  {
+    top: -70%;
+  }
+}
+
+@media (max-width: 375px), (max-width: 480px), (max-width: 768px)
+{ /*small medium and tablet*/
+  .blueBackdropL
+  {
+    margin-top: 1rem;
+  }
+
+  .rectangle2
+  {
+    padding-bottom: 0;
+  }
+
+  .browseLink, .menuLink, .veganLink
+  {
+    padding-inline: 2vw;
+    padding-block: 1vw;
+  }
+
+  .menuLink
+  {
+    transform: translateY(10px);
+  }
+
+  .rectangle3
+  {
+    padding-block: 2rem;
+  }
+
+  .left
+  {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+
+  .history
+  {
+    padding-top: 1rem;
+  }
+
+  .historyUnderline, .readMore
+  {
+    margin-bottom: 1rem;
+  }
+
+  .todayText
+  {
+    padding-block: 1rem;
+  }
+}
