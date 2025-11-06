@@ -1,6 +1,6 @@
 <?php
 $navigation=array("Home", "Over Ons", "Menu", "Contact", "Indruk");
-$navigationLink=array("home_nl dark.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+$navigationLink=array("home dark_nl.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
 ?>
 
 <!DOCTYPE html> <!-- Home Page Dark (NL) -->
