@@ -21,7 +21,7 @@
                         echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></li>';
                     }
                 ?>
-                <li><a href="Impressions_nl.php" class="language-change">NL</a></li>
+                <li><a href="Impressions dark_nl.php" class="language-change">NL</a></li>
             </ul>
             </nav>
         </header>

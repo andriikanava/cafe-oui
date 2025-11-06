@@ -15,7 +15,7 @@
         <header class="header">
             <nav class="nav">
             <ul class="nav-list">
-                <li><a href="Impressions dark.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
+                <li><a href="Impressions dark_nl.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
                 <?php
                     for ($i=0; $i<count($navigation); $i++) {
                         echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></li>';
