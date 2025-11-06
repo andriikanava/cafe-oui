@@ -13,20 +13,20 @@ $navigationLink=array("home dark.php", "about_us dark.php", "menu dark.php", "co
 </head>
 <body>
     <div class="mainGrid">
-        <header>
-        <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="home.php" class="darkmode-change"><img src="static/images/darkmode.png" alt="Light" class="darkmodeimg"></a></li>
-            <?php
-            for ($i=0; $i<count($navigation); $i++)
-            {
-                echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
-            }
-            ?>
-             <li><a href="home dark_nl.php" class="language-change">NL</a></li>
-        </ul>
-        </nav>
-        </header>
+       <header class="header">
+            <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="home dark.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
+                <?php
+                for ($i=0; $i<count($navigation); $i++)
+                {
+                    echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
+                }
+                ?>
+                <li><a href="home_nl.php" class="language-change">NL</a></li>
+            </ul>
+            </nav>
+        </header> 
         <div class="mainImg">
             <div class="logoBackdrop">
                 <span class="smallCircle"></span>
