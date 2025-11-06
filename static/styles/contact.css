@@ -145,6 +145,8 @@ body
 .nav-list 
 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2vw;
   list-style: none;
   margin: 0;
@@ -306,16 +308,19 @@ hr
 .leftSpacing
 {
   grid-column: 3/9;
+  transition: all 0.5s ease;
 }
 
 .rightSpacing
 {
   grid-column: 11/17;
+  transition: all 0.5s ease;
 }
 
 .centerSpacing
 {
   grid-column: 3/17;
+  transition: all 0.5s ease;
 }
 
 .triangleList
@@ -359,7 +364,7 @@ hr
 
 .contactFormWrapper
 {
-  grid-column: 7 / span 14;
+  grid-column: 7/21 ;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(18, 1fr);
@@ -781,6 +786,29 @@ footer
 
 @media (max-width: 480px) 
 {
+  .header 
+  {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav 
+  {
+    flex-direction: column;
+  }
+
+  .nav-list 
+  {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .nav-list a 
+  {
+    font-size: 1rem;
+  }
+
   .language-change 
   {
     position: static;
@@ -788,15 +816,39 @@ footer
     font-size: 1rem;
   }
 
-  .HeroImage
+  .location
   {
-    object-fit: cover;
-    width: 70vw; 
+    padding-top: 20vh;
+  }
+
+  .hours
+  {
+    padding-top: 20vh;
+  }
+
+  .details > *
+  {
+    padding-block: 1vh;
   }
 
   .footertext
   {
     font-size: 1.5vh;
+  }
+
+  .contactInfo
+  {
+    grid-column: 1/13;
+  }
+
+  .contactFormWrapper
+  {
+    grid-column: 1/22; 
+  }
+
+  #triangleLine
+  {
+    width: 30vh;
   }
 }
 
