@@ -23,7 +23,7 @@ $navigationLink=array("home dark_nl.php", "about_us.php", "menu.php", "contact.p
                     echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
                 }
                 ?>
-                <li><a href="home_nl.php" class="language-change">EN</a></li>
+                <li><a href="home dark.php" class="language-change">EN</a></li>
             </ul>
             </nav>
         </header> 
