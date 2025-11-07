@@ -16,14 +16,14 @@ $navigationLink=array("home dark.php", "about_us dark.php", "menu dark.php", "co
        <header class="header">
             <nav class="nav">
             <ul class="nav-list">
-                <li><a href="home dark.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
+                <li><a href="home.php" class="darkmode-change"><img src="static/images/darkmode.png" alt="Light" class="darkmodeimg"></a></li>
                 <?php
                 for ($i=0; $i<count($navigation); $i++)
                 {
                     echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
                 }
                 ?>
-                <li><a href="home_nl.php" class="language-change">NL</a></li>
+                <li><a href="home.php" class="language-change">NL</a></li>
             </ul>
             </nav>
         </header> 
@@ -173,7 +173,7 @@ $show_popup = !isset($_GET['close']);
         <h6>Bonjour</h6>
         <?php endif;?>
   <strong>Discover our extended menu - plenty to enjoy!</strong>
-  <a href="menu.html" class="discover_btn">Discover</a>
+  <a href="menu.php" class="discover_btn">Discover</a>
 </div>
 <?php endif; ?>
 </body>

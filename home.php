@@ -174,7 +174,7 @@ $show_popup = !isset($_GET['close']);
         <h6>Bonjour</h6>
         <?php endif;?>
   <strong>Discover our extended menu - plenty to enjoy!</strong>
-  <a href="menu.html" class="discover_btn">Discover</a>
+  <a href="menu.php" class="discover_btn">Discover</a>
 </div>
 <?php endif; ?>
 

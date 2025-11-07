@@ -33,7 +33,7 @@ $navigationLink=array("home_nl.php", "about_us.php", "menu.php", "contact.php", 
                     echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
                 }
                 ?>
-                <li><a href="contact.php" class="language-change">NL</a></li>
+                <li><a href="contact.php" class="language-change">EN</a></li>
             </ul>
             </nav>
         </header>
