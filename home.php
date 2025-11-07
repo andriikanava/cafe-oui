@@ -1,6 +1,6 @@
 <?php
 $navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
-$navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+$navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Impressions.php");
 ?>
 
 <!DOCTYPE html> <!-- Home Page Light (EN) -->
@@ -16,14 +16,14 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
         <header class="header">
             <nav class="nav">
             <ul class="nav-list">
-                <li><a href="menu dark.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
+                <li><a href="home dark.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
                 <?php
                 for ($i=0; $i<count($navigation); $i++)
                 {
                     echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
                 }
                 ?>
-                <li><a href="menu_nl.php" class="language-change">NL</a></li>
+                <li><a href="home_nl.php" class="language-change">NL</a></li>
             </ul>
             </nav>
         </header> 
@@ -68,7 +68,7 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "im
             <div class="vl2"></div>  <!--Vertical Line-->
             <div class="rectangle2">
                 <div class="browse">
-                    <a class="browseLink" href="impressions.php">Browse Through Our Gallery</a>
+                    <a class="browseLink" href="Impressions.php">Browse Through Our Gallery</a>
                     <span class="hl"></span>
                     <img class="coffeeIllustration" src="static/images/illustrations_blueGreen_coffee.svg" alt="">
                 </div>

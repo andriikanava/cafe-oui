@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 <?php
 $navigation=array("Home", "Over Ons", "Menu", "Contact", "Indruk");
-$navigationLink=array("home_nl.php", "about_us.php", "menu.php", "contact.php", "impressions.php");
+$navigationLink=array("home_nl.php", "about_us.php", "menu.php", "contact.php", "Impressions.php");
 ?>
 
 

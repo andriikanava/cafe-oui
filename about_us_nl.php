@@ -1,6 +1,6 @@
 <?php
-$navigation=array("Home", "About Us", "Menu", "Contact", "Impressions");
-$navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Impressions.php");
+$navigation=array("Home", "Over Ons", "Menu", "Contact", "Indruk");
+$navigationLink=array("index.php", "about_us.php", "menu.php", "contact.php", "Impressions.php");
 ?>
 
 <!DOCTYPE html>
@@ -18,14 +18,14 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
     <header class="header">
         <nav class="nav">
         <ul class="nav-list">
-            <li><a href="about_us dark.php" class="darkmode-change"><img src="static/images/lightmode.png" alt="Dark" class="darkmodeimg"></a></li>
+            <li><a href="about_us dark.php" class="darkmode-change">Dark</a></li>
             <?php
             for ($i=0; $i<count($navigation); $i++)
             {
                 echo '<li><a href="'.$navigationLink[$i]. '">'. $navigation[$i]. '</a></i>';
             }
             ?>
-             <li><a href="about_us.php" class="language-change">NL</a></li>
+             <li><a href="" class="language-change">NL</a></li>
         </ul>
         </nav>
     </header>
@@ -34,7 +34,7 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
     <section class="Hero">
         <img src="static/images/OurStoryHeroSection.svg" alt="Our Story" class="HeroImage">
         <h3 class="DiscoverText">
-            Discover
+            Ontdek
         </h3>
     </section>
 
@@ -42,16 +42,16 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
     <section class="aboutoui">
         <div class="about-oui-slogan">
             <div class="about-oui-line"></div>
-             <p class="about-oui-text">OUI was born from a simple idea: say “yes” more often.</p>
+             <p class="about-oui-text">OUI is ontstaan uit een eenvoudig idee: zeg vaker “ja”</p>
         </div>
         <div class="about-oui-info-box"></div>
         <div class="about-us-image-history">
             <img src="static/images/about_us_history_img.svg" alt="about us image history">
         </div>
         <div class="about-us-history-textbox">
-            <p class="about-oui-text-header">About OUI</p>
+            <p class="about-oui-text-header">Over OUI</p>
             <div class="about-oui-decoration-line"></div>
-           <div class="oui-story"> <p class="about-oui-text">Rooted in French elegance and simplicity, our café is more than just a place for coffee—it’s a space to slow down, enjoy the moment, and embrace life’s small pleasures. Inspired by the French art of living, we serve coffee, tea, croissants, and light treats in an atmosphere of calm and class. With every detail, from our carefully chosen colors to the warm aroma of fresh pastries, OUI is an invitation to step in, breathe, and savor the present.</p></div>
+           <div class="oui-story"> <p class="about-oui-text">Geworteld in Franse elegantie en eenvoud is ons café meer dan alleen een plek voor koffie – het is een plek om te vertragen, van het moment te genieten en de kleine geneugten van het leven te omarmen. Geïnspireerd door de Franse levenskunst serveren we koffie, thee, croissants en lichte lekkernijen in een sfeer van rust en klasse. Met elk detail, van onze zorgvuldig gekozen kleuren tot de warme geur van vers gebak, nodigt OUI je uit om binnen te stappen, adem te halen en te genieten van het heden.</p></div>
         </div>
          <div class="about-oui-decoration-line2"></div>
     </section>
@@ -59,22 +59,22 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
     <!-- Timelines section -->
     <section class="grid-timeline">
         <div class="timeline-text-box">
-            <p class="timeline-header-text">Timeline</p>
-            <p class="our-story-text">Our Story</p>
+            <p class="timeline-header-text">Tijdlijn</p>
+            <p class="our-story-text">Ons Verhaal</p>
         </div>
         <div class="timeline-line"></div>
         <div class="timeline-box" id="timeline-right1">
             <div class="dot"></div>
             <div class="timeline-text">
-                <p class="timeline-intext-heading">The birth - 2013</p>
-                <p class="timeline-intext-main">The idea of “OUI” was born</p>
+                <p class="timeline-intext-heading">De Geboorte - 2013</p>
+                <p class="timeline-intext-main">Het idee van “OUI” was geboren</p>
             </div>
         </div>
 
         <div class="timeline-box timeline-left" id="timeline-left1">
             <div class="timeline-text">
-                <p class="timeline-intext-heading">The beginning - 2015</p>
-                <p class="timeline-intext-main">OUI opened its doors with a simple promise: to bring a corner of France closer to home.</p>
+                <p class="timeline-intext-heading">Het Begin - 2015</p>
+                <p class="timeline-intext-main">OUI opende haar deuren met een eenvoudige belofte: een hoek van Frankrijk dichter bij huis brengen.</p>
             </div>
             <div class="dot"></div>
         </div>
@@ -82,15 +82,15 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
         <div class="timeline-box" id="timeline-right2">
             <div class="dot"></div>
             <div class="timeline-text">
-                <p class="timeline-intext-heading">The birth - 2013</p>
-                <p class="timeline-intext-main">The idea of “OUI” was born</p>
+                <p class="timeline-intext-heading">Een Verzamel Plaats - 2017</p>
+                <p class="timeline-intext-main">Het werd een dagelijks ritueel voor velen: een ontmoetingspunt gevuld met de geur van croissants</p>
             </div>
         </div>
 
         <div class="timeline-box timeline-left" id="timeline-left2">
             <div class="timeline-text">
-                <p class="timeline-intext-heading">Renewed Elegance - 2020 </p>
-                <p class="timeline-intext-main">With a refreshed space and atmosphere, OUI embraced calm simplicity and introduced vegan pastries to make our French delights accessible to more guests.</p>
+                <p class="timeline-intext-heading">Vernieuwde Elegantie - 2020 </p>
+                <p class="timeline-intext-main">Met een vernieuwde ruimte en sfeer omarmt OUI kalme eenvoud en introduceert veganistisch gebak om onze Franse lekkernijen voor meer gasten toegankelijk te maken.</p>
             </div>
             <div class="dot"></div>
         </div>
@@ -98,8 +98,8 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
         <div class="timeline-box" id="timeline-right3">
             <div class="dot"></div>
             <div class="timeline-text">
-                <p class="timeline-intext-heading">Today</p>
-                <p class="timeline-intext-main">OUI continues to be a space where guests are welcomed with French warmth - a place to say yes to the moment, one cup at a time.</p>
+                <p class="timeline-intext-heading">Heden</p>
+                <p class="timeline-intext-main">OUI blijft een plek waar gasten met Franse warmte worden ontvangen. Een plek waar je ‘ja’ zegt tegen het moment, één kopje tegelijk.</p>
             </div>
         </div>
 
@@ -109,7 +109,7 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
     <!-- OUI Philosophy section -->
     <section class="Our-Philosophy-box">
         <div class="Our-Philosophy-square">
-            <p class="Our-Philosophy-text">Our Philosophy</p>
+            <p class="Our-Philosophy-text">Onze Filosophy</p>
         </div>
         <div class="Our-Philosophy-illustartion"></div>
         <div class="line-our-philosophy1"></div>
@@ -118,20 +118,20 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
         <div class="line-our-philosophy4"></div>
         <div class="line-our-philosophy5"></div>
         <div class="Our-Philosophy-box-left">
-            <p class="Our-Philosophy-header-text">Elegance</p>
-            <p class="Our-Philosophy-main-text">Inspired by French refinement, we believe beauty is found in the details - from the curve of a croissant to the tone of our walls. Elegance for us is quiet, timeless, and effortless.</p>
+            <p class="Our-Philosophy-header-text">Elegantie</p>
+            <p class="Our-Philosophy-main-text">Geïnspireerd door Franse verfijning, geloven wij dat schoonheid in de details zit - van de ronding van een croissant tot de kleur van onze muren. Elegantie is voor ons stil, tijdloos en moeiteloos.</p>
         </div>
         <div class="Our-Philosophy-box-middle1">
-            <p class="Our-Philosophy-header-text">Simplicity</p>
-            <p class="Our-Philosophy-main-text">Life is full of noise. OUI offers the opposite. Clean design, uncluttered spaces, and honest flavors remind us that less can truly be more.</p>
+            <p class="Our-Philosophy-header-text">Simpliciteit</p>
+            <p class="Our-Philosophy-main-text">Het leven zit vol lawaai. OUI biedt het tegenovergestelde. Strak design, opgeruimde ruimtes en eerlijke smaken herinneren ons eraan dat minder echt meer kan zijn.</p>
         </div>
         <div class="Our-Philosophy-box-right">
-            <p class="Our-Philosophy-header-text">Presence</p>
-            <p class="Our-Philosophy-main-text">A cup of coffee is more than a drink — it's a pause. We invite our guests to slow down, breathe, and enjoy the moment, one sip at a time.</p>
+            <p class="Our-Philosophy-header-text">Aanwezigheid</p>
+            <p class="Our-Philosophy-main-text">Een kopje koffie is meer dan een drankje – het is een pauze. We nodigen onze gasten uit om even te vertragen, adem te halen en van het moment te genieten, slokje voor slokje.</p>
         </div>
         <div class="Our-Philosophy-box-middle2">
-            <p class="Our-Philosophy-header-text">Inclusivity</p>
-            <p class="Our-Philosophy-main-text">A table for everyone, with vegan pastries and treats created to let all guests savor French flavors in their own way.</p>
+            <p class="Our-Philosophy-header-text">Inclusiviteit</p>
+            <p class="Our-Philosophy-main-text">Een tafel voor iedereen, met veganistische zoetigheden en lekkernijen, speciaal samengesteld om alle gasten op hun eigen manier te laten genieten van de Franse smaken.</p>
         </div>
         <div class="line-our-philosophy-bottom"></div>
         <div class="line-our-philosophy-bottomvertical"></div>
@@ -140,14 +140,14 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
     <!-- OUI Philosophy section closing part -->
     <section class="OUI-Philosophy-section-box">
         <div class="quote-box">
-            <p class="quote-text">OUI isn't just about coffee, it's about people. Our guests bring the café to life, making it a warm and vibrant meeting place.</p>
+            <p class="quote-text">Bij OUI draait het niet alleen om koffie, maar om mensen. Onze gasten brengen het café tot leven en maken er een warme en levendige ontmoetingsplek van.</p>
         </div>
         <div class="Image-Philosophy-box">
             <img src="static/images/phislosphy image.svg" alt="Family-Philosophy-image">
         </div>
         <div class="philosophy-section-line"></div>
         <div class="catch-phrase-philosophy-box">
-            <p class="catch-phrase-philosophy-text">Say yes to the moment - one cup at a time.</p>
+            <p class="catch-phrase-philosophy-text">Zeg ja tegen het moment - één kopje tegelijk.</p>
         </div>
     </section>
     
