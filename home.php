@@ -8,7 +8,7 @@ $navigationLink=array("home.php", "about_us.php", "menu.php", "contact.php", "Im
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, 1.0">
-    <title>oui Home Page</title>
+    <title>Home</title>
     <link rel="stylesheet" href="static/styles/home.css">
 </head>
 <body>

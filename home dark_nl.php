@@ -8,7 +8,7 @@ $navigationLink=array("home dark_nl.php", "about_us.php", "menu.php", "contact.p
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, 1.0">
-    <title>oui Home Pagina</title>
+    <title>Home</title>
     <link rel="stylesheet" href="static/styles/home dark.css">
 </head>
 <body>

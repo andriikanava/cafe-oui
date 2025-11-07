@@ -9,7 +9,7 @@ $navigationLink=array("home dark.php", "about_us dark.php", "menu dark.php", "co
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/styles/about_us dark.css">
-    <title>Document</title>
+    <title>About Us</title>
 
 </head>
 <!-- About Us Page -->
